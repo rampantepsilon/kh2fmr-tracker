@@ -2,6 +2,7 @@ function keybladeMark(num){
   var keybladeTemp = [];
   if (!keybladeDone.includes(num)){
     keybladeDone.push(num);
+    document.getElementById('keyNum').innerHTML = keybladeDone.length;
     document.getElementById(num).style.textDecoration = 'line-through';
     document.getElementById(num).style.backgroundColor = '#fff';
     document.getElementById(num).style.color = '#000';
@@ -15,6 +16,7 @@ function keybladeMark(num){
       }
     }
     keybladeDone = keybladeTemp;
+    document.getElementById('keyNum').innerHTML = keybladeDone.length;
     document.getElementById(num).style.textDecoration = 'initial';
     document.getElementById(num).style.backgroundColor = 'initial';
     document.getElementById(num).style.color = '#fff';
@@ -24,7 +26,8 @@ function keybladeMark(num){
   }
 }
 //Mark Kingdom Key by default
-keybladeMark('1')
+keybladeMark('1');
+
 function sttMark(num){
   var sttTemp = [];
   if (!sttDone.includes(num)){
@@ -36,6 +39,10 @@ function sttMark(num){
       document.getElementById('worldRoxas').style.filter = "brightness(100%)"
       document.getElementById('sttKey').setAttribute('src', 'img/keyhole_1.png')
     }
+    //Keeping incase I change courses (Would mean a lot more work)
+    /*if (sttDone.length == '25'){
+      document.getElementById('worldRoxas').setAttribute('src', 'img/Locations/Roxas_2.png');
+    }*/
   } else {
     for (var i = 0; i < sttDone.length; i++){
       if (sttDone[i] != num){
@@ -51,6 +58,7 @@ function sttMark(num){
       document.getElementById('sttKey').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('sttLeft').innerHTML = (25 - sttDone.length);
 }
 function ttMark(num){
   var ttTemp = [];
@@ -90,6 +98,41 @@ function ttMark(num){
       document.getElementById('tt3Key').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('ttLeft').innerHTML = (47 - ttDone.length);
+}
+function hbMark(num){
+  var hbTemp = [];
+  if (!hbDone.includes(num)){
+    hbDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000'
+    if (num == '9'){
+      document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+    if (num == '28'){
+      document.getElementById('worldHB').style.filter = "brightness(100%)"
+      document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < hbDone.length; i++){
+      if (hbDone[i] != num){
+        hbTemp.push(hbDone[i]);
+      }
+    }
+    hbDone = hbTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '9'){
+      document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+    if (num == '28'){
+      document.getElementById('worldHB').style.filter = "brightness(40%)"
+      document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
 }
 function dctrMark(num){
   var dctrTemp = [];
@@ -125,6 +168,7 @@ function dctrMark(num){
       document.getElementById('trKey').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('dctrLeft').innerHTML = (23 - dctrDone.length);
 }
 function tlodMark(num){
   var tlodTemp = [];
@@ -158,6 +202,7 @@ function tlodMark(num){
       document.getElementById('tlod2Key').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
 }
 function bcMark(num){
   var bcTemp = [];
@@ -191,6 +236,7 @@ function bcMark(num){
       document.getElementById('bc2Key').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
 }
 function prMark(num){
   var prTemp = [];
@@ -224,6 +270,7 @@ function prMark(num){
       document.getElementById('pr2Key').setAttribute('src', 'img/keyhole_0.png')
     }
   }
+  document.getElementById('prLeft').innerHTML = (30 - prDone.length);
 }
 
 //Mark Required Items

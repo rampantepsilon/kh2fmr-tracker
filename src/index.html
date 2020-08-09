@@ -3,7 +3,6 @@
     <link rel='stylesheet' href='styles.css'>
     <script src='scripts/checks.js'></script>
     <script src='scripts/worlds.js'></script>
-    <script src='scripts/mark.js'></script>
   </head>
 
   <body onload="list('STT')">
@@ -40,7 +39,7 @@
             <img src='img/Charms/charmukulele_0.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
             <img src='img/Charms/charmfeather_0.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
             <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='list("keyblades")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 40px;'>&nbsp;</span>
+            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='keyNum'>0</span>
           </div>
           <div align='center'>
             <img src='img/Required/ProofNonexistence_0.png' width='80px' height='80px' id='pNonexist' onclick='requiredMark("nonexist")'>
@@ -73,5 +72,8 @@
       </tr>
     </table>
     <div align='center' style='color:#fff;position:relative; bottom: 20px;'>Created by RampantEpsilon. Credit to <a href='https://github.com/Jsmartee/KH2FM-Checklist' style='color:#fff'>Jsmartee's Tracker</a>. (Where the lists and images came from)</div>
+
+
+    <script src='scripts/mark.js'></script>
   </body>
 </html>

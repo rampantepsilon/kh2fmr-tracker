@@ -16,7 +16,7 @@ const keyblade = [
     <li><div id='13' onclick='keybladeMark("13")'>Sweet Memories</div></li>
     <li><div id='14' onclick='keybladeMark("14")'>Guardian Soul</div></li>
     <li><div id='15' onclick='keybladeMark("15")'>Decisive Pumpkin</div></li>
-    <li><div id='16' onclick='keybladeMark("16")'>Gullwing</div></li>
+    <li><div id='16' onclick='keybladeMark("16")'>Gull Wing</div></li>
     <li><div id='17' onclick='keybladeMark("17")'>Sleeping Lion</div></li>
     <li><div id='18' onclick='keybladeMark("18")'>Bond of Flame</div></li>
     <li><div id='19' onclick='keybladeMark("19")'>Two Become One</div></li>
@@ -172,8 +172,8 @@ const tt = [
         <li><div id='39' onclick='ttMark("39")'>Upper Walkway</div></li>
         <li><div id='40' onclick='ttMark("40")'>Dining Room Right Corner</div></li>
         <li><div id='41' onclick='ttMark("41")'>Dining Room Back</div></li>
-        <li><div id='42' onclick='ttMark("42")'></div>Library Chest</li>
-        <li><div id='43' onclick='ttMark("43")'></div>Corridor Chest</li>
+        <li><div id='42' onclick='ttMark("42")'>Library Chest</div></li>
+        <li><div id='43' onclick='ttMark("43")'>Corridor Chest</div></li>
       </ul>
     </li>
     <li><div id='44' onclick='ttMark("44")'>Beam Popup</div></li>
@@ -186,6 +186,69 @@ const tt = [
 //Hollow Bastion
 const hb = [
   `<ul>
+    <li><div id='1' onclick='hbMark("1")'>Marketplace Map Popup</div></li>
+    <li id='group'><div id='groupTitle'>Borough</div>
+      <ul>
+        <li><div id='2' onclick='hbMark("2")'>Top Ledge</div></li>
+        <li><div id='3' onclick='hbMark("3")'>Drive Recovery Chest</div></li>
+        <li><div id='4' onclick='hbMark("4")'>Near Bailey</div></li>
+        <li><div id='5' onclick='hbMark("5")'>Ground</div></li>
+        <li><div id='6' onclick='hbMark("6")'>Merlin's House</div></li>
+      </ul>
+    </li>
+    <li><div id='7' onclick='hbMark("7")'>Merlin's House Popups</div></li>
+    <li id='group'><div id='groupTitle'>Bailey</div>
+      <ul>
+        <li><div id='8' onclick='hbMark("8")'>Bonus</div></li>
+        <li><div id='9' onclick='hbMark("9")'><img src='img/keyhole_0.png' id='hb1Key' width='16px' height='16px'> Popup</div></li>
+      </ul>
+    </li>
+    <li><div id='10' onclick='hbMark("10")'>Chicken Little Popup</div></li>
+    <li id='group'><div id='groupTitle'>Postern</div>
+      <ul>
+        <li><div id='11' onclick='hbMark("11")'>On Yellow Pipe</div></li>
+        <li><div id='12' onclick='hbMark("12")'>Big Chest</div></li>
+        <li><div id='13' onclick='hbMark("13")'>Lower Level</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Corridors</div>
+      <ul>
+        <li><div id='14' onclick='hbMark("14")'>1st Left Path</div></li>
+        <li><div id='15' onclick='hbMark("15")'>2nd Left Path</div></li>
+        <li><div id='16' onclick='hbMark("16")'>Near Middle</div></li>
+        <li><div id='17' onclick='hbMark("17")'>Right Path</div></li>
+      </ul>
+    </li>
+    <li><div id='18' onclick='hbMark("18")'>Ansem's Study Chest</div></li>
+    <li><div id='19' onclick='hbMark("19")'>DTD Popups</div></li>
+    <li><div id='20' onclick='hbMark("20")'>Stitch Big Chest</div></li>
+    <li><div id='21' onclick='hbMark("21")'>Demyx Bonus</div></li>
+    <li><div id='22' onclick='hbMark("22")'>FF Fights Popup</div></li>
+    <li id='group'><div id='groupTitle'>Before 1K</div>
+      <ul>
+        <li><div id='23' onclick='hbMark("23")'>Front Big Chest</div></li>
+        <li><div id='24' onclick='hbMark("24")'>Back Big Chest</div></li>
+        <li><div id='25' onclick='hbMark("25")'>Near Save</div></li>
+        <li><div id='26' onclick='hbMark("26")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>1K Heartless</div>
+      <ul>
+        <li><div id='27' onclick='hbMark("27")'>Bonus</div></li>
+        <li><div id='28' onclick='hbMark("28")'><img src='img/keyhole_0.png' id='hb2Key' width='16px' height='16px'> Popups</div></li>
+      </ul>
+    </li>
+    <li><div id='29' onclick='hbMark("29")'>Gull Wing</div></li>
+    <li><div id='30' onclick='hbMark("30")'>Heartless Manufactory</div></li>
+    <li id='group'><div id='groupTitle'>Near GoA Entrance</div>
+      <ul>
+        <li><div id='31' onclick='hbMark("31")'>1</div></li>
+        <li><div id='32' onclick='hbMark("32")'>2</div></li>
+      </ul>
+    </li>
+    <li><div id='33' onclick='hbMark("33")'>Mushroom XIII</div></li>
+    <li><div id='34' onclick='hbMark("34")'>Sephiroth</div></li>
+    <li><div id='35' onclick='hbMark("35")'>Data Demyx</div></li>
   </ul>`
 ]
 
@@ -364,6 +427,9 @@ const bc = [
   </ul>`
 ]
 
+//Olympus Coliseum
+const oc = []
+
 //Port Royal
 const pr = [
   `<ul>
@@ -423,3 +489,19 @@ const pr = [
     <li><div id='30' onclick='prMark("30")'>Data Luxord</div></li>
   </ul>`
 ]
+
+const agrabah = []
+
+const ht = []
+
+const pl = []
+
+const sp = []
+
+const cor = []
+
+const twtnw = []
+
+const acre = []
+
+const atlantica = []
