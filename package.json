@@ -6,8 +6,8 @@
   "scripts": {
     "start": "electron .",
     "package-mac": "electron-packager ./ --overwrite --platform=darwin --asar --arch=x64 --icon=logo.png --out=build",
-    "package-win64": "electron-packager ./ kh2fmr-tracker --overwrite --asar --platform=win32 --arch=x64 --icon=logo.ico --out=build --version-string.CompanyName=RampantEpsilon --version-string.ProductName=\"RampantDock\"",
-    "package-win32": "electron-packager ./ kh2fmr-tracker --overwrite --asar --platform=win32 --arch=ia32 --icon=logo.ico --out=build --version-string.CompanyName=RampantEpsilon --version-string.ProductName=\"RampantDock\"",
+    "package-win64": "electron-packager ./ kh2fmr-tracker --overwrite --asar --platform=win32 --arch=x64 --icon=logo.ico --out=build --version-string.CompanyName=RampantEpsilon --version-string.ProductName=\"KH2FM Rando Tracker\"",
+    "package-win32": "electron-packager ./ kh2fmr-tracker --overwrite --asar --platform=win32 --arch=ia32 --icon=logo.ico --out=build --version-string.CompanyName=RampantEpsilon --version-string.ProductName=\"KH2FM Rando Tracker\"",
     "package-linux": "electron-packager ./ kh2fmr-tracker --platform=linux --arch=x64 --overwrite --asar  --icon=logo.png --out=build"
   },
   "author": "Tom \"RampantEpsilon\" Ware",
