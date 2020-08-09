@@ -1,0 +1,24 @@
+html, body{
+  height: 99%;
+  background-color: rgba(0,0,0,1);
+}
+li{
+  font-size: 18px;
+}
+#checks{
+  color: rgba(255,255,255,1);
+}
+ul{
+  list-style-type: none;
+}
+#groupTitle{
+  background-color: #333;
+}
+#group{
+  background-color: #111;
+}
+
+/*Darken Images*/
+#worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR{
+  filter: brightness(40%);
+}
