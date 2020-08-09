@@ -428,7 +428,69 @@ const bc = [
 ]
 
 //Olympus Coliseum
-const oc = []
+const oc = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Passage</div>
+      <ul>
+        <li><div id='1' onclick='ocMark("1")'>Under Torch</div></li>
+        <li><div id='2' onclick='ocMark("2")'>Outside Path</div></li>
+        <li><div id='3' onclick='ocMark("3")'>Outside Path Stairs</div></li>
+        <li><div id='4' onclick='ocMark("4")'>Main Path</div></li>
+        <li><div id='5' onclick='ocMark("5")'>Near Inner Chamber</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Inner Chamber</div>
+      <ul>
+        <li><div id='6' onclick='ocMark("6")'>Big Chest</div></li>
+        <li><div id='7' onclick='ocMark("7")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li><div id='8' onclick='ocMark("8")'>Cerberus Bonus</div></li>
+    <li><div id='9' onclick='ocMark("9")'>Coliseum Map Popup</div></li>
+    <li><div id='10' onclick='ocMark("10")'>Urns Bonus</div></li>
+    <li><div id='11' onclick='ocMark("11")'>Underworld Power Boost Chest</div></li>
+    <li id='group'><div id='groupTitle'>Caverns Entrance</div>
+      <ul>
+        <li><div id='12' onclick='ocMark("12")'>First Chest</div></li>
+        <li><div id='13' onclick='ocMark("13")'>Upper Left</div></li>
+        <li><div id='14' onclick='ocMark("14")'>Upper Right</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Lost Road</div>
+      <ul>
+        <li><div id='15' onclick='ocMark("15")'>Ether Chest</div></li>
+        <li><div id='16' onclick='ocMark("16")'>Near Caverns Entrance</div></li>
+        <li><div id='17' onclick='ocMark("17")'>Next To Platform</div></li>
+        <li><div id='18' onclick='ocMark("18")'>Path To Atrium</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Atrium</div>
+      <ul>
+        <li><div id='19' onclick='ocMark("19")'>Lower Level</div></li>
+        <li><div id='20' onclick='ocMark("20")'>Lone Ledge</div></li>
+      </ul>
+    </li>
+    <li><div id='21' onclick='ocMark("21")'>Demyx Popups</div></li>
+    <li id='group'><div id='groupTitle'>The Lock</div>
+      <ul>
+        <li><div id='22' onclick='ocMark("22")'>Big Chest</div></li>
+        <li><div id='23' onclick='ocMark("23")'>Small Right</div></li>
+        <li><div id='24' onclick='ocMark("24")'>Small Left</div></li>
+      </ul>
+    <li>
+    <li><div id='25' onclick='ocMark("25")'>Pete Bonus</div></li>
+    <li><div id='26' onclick='ocMark("26")'>Hydra Bonus</div></li>
+    <li><div id='27' onclick='ocMark("27")'><img src='img/keyhole_0.png' id='oc1Key' width='16px' height='16px'> Hero's Crest Popup</div></li>
+    <li><div id='28' onclick='ocMark("28")'>Auron's Statue Popup</div></li>
+    <li><div id='29' onclick='ocMark("29")'>Hades Bonus</div></li>
+    <li><div id='30' onclick='ocMark("30")'><img src='img/keyhole_0.png' id='oc2Key' width='16px' height='16px'> Guardian Soul Popup</div></li>
+    <li><div id='31' onclick='ocMark("31")'>Pain & Panic Cup</div></li>
+    <li><div id='32' onclick='ocMark("32")'>Cerberus Cup</div></li>
+    <li><div id='33' onclick='ocMark("33")'>Titan Cup</div></li>
+    <li><div id='34' onclick='ocMark("34")'>Goddess of Fate Cup</div></li>
+    <li><div id='35' onclick='ocMark("35")'>Zexion</div></li>
+  </ul>`
+]
 
 //Port Royal
 const pr = [
@@ -490,18 +552,201 @@ const pr = [
   </ul>`
 ]
 
-const agrabah = []
+//Agrabah
+const agrabah = [
+  `<ul>
+    <li><div id='1' onclick='agrMark("1")'>Map Popup</div></li>
+    <li><div id='2' onclick='agrMark("2")'>Near Stairs</div></li>
+    <li><div id='3' onclick='agrMark("3")'>2nd Chest Upper Level</div></li>
+    <li id='group'><div id='groupTitle'>Above Market</div>
+      <ul>
+        <li><div id='4' onclick='agrMark("4")'>Triangle Bottom Right</div></li>
+        <li><div id='5' onclick='agrMark("5")'>Triangle Bottom Left</div></li>
+        <li><div id='6' onclick='agrMark("6")'>Triangle Center</div></li>
+      </ul>
+    </li>
+    <li><div id='7' onclick='agrMark("7")'>Back Corner</div></li>
+    <li><div id='8' onclick='agrMark("8")'>Ledge Across From Corner</div></li>
+    <li id='group'><div id='groupTitle'>Bazaar</div>
+      <ul>
+        <li><div id='9' onclick='agrMark("9")'>On Ledge</div></li>
+        <li><div id='10' onclick='agrMark("10")'>Near Middle</div></li>
+        <li><div id='11' onclick='agrMark("11")'>Near Wall Stalls</div></li>
+        <li><div id='12' onclick='agrMark("12")'>Hidden In Stalls</div></li>
+        <li><div id='13' onclick='agrMark("13")'>Near Exit</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Palace Walls</div>
+      <ul>
+        <li><div id='14' onclick='agrMark("14")'>Big Chest</div></li>
+        <li><div id='15' onclick='agrMark("15")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Cave Entrance</div>
+      <ul>
+        <li><div id='16' onclick='agrMark("16")'>Left</div></li>
+        <li><div id='17' onclick='agrMark("17")'>Right</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Cave</div>
+      <ul>
+        <li><div id='18' onclick='agrMark("18")'>First Middle</div></li>
+        <li><div id='19' onclick='agrMark("19")'>Left</div></li>
+        <li><div id='20' onclick='agrMark("20")'>Right</div></li>
+        <li><div id='21' onclick='agrMark("21")'>Last Left</div></li>
+      </ul>
+    </li>
+    <li><div id='22' onclick='agrMark("22")'>Abu Escort Bonus</div></li>
+    <li id='group'><div id='groupTitle'>Chasm</div>
+      <ul>
+        <li><div id='23' onclick='agrMark("23")'>Big Chest</div></li>
+        <li><div id='24' onclick='agrMark("24")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li><div id='25' onclick='agrMark("25")'>Treasure Room Bonus</div></li>
+    <li><div id='26' onclick='agrMark("26")'>Twin Lords Bonus</div></li>
+    <li><div id='27' onclick='agrMark("27")'><img src='img/keyhole_0.png' id='agr1Key' width='16px' height='16px'> Lamp Charm Popup</div></li>
+    <li id='group'><div id='groupTitle'>Treasure Room</div>
+      <ul>
+        <li><div id='28' onclick='agrMark("28")'>Right</div></li>
+        <li><div id='29' onclick='agrMark("29")'>Left</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Ruined Chamber</div>
+      <ul>
+        <li><div id='30' onclick='agrMark("30")'>Left</div></li>
+        <li><div id='31' onclick='agrMark("31")'>Right</div></li>
+      </ul>
+    </li>
+    <li><div id='32' onclick='agrMark("32")'>Genie Jafar Bonus</div></li>
+    <li><div id='33' onclick='agrMark("33")'><img src='img/keyhole_0.png' id='agr2Key' width='16px' height='16px'> Wishing Lamp Popup</div></li>
+    <li><div id='34' onclick='agrMark("34")'>Lexaeus</div></li>
+  </ul>`
+]
 
-const ht = []
+//Halloween Town
+const ht = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Graveyard</div>
+    	<ul>
+    		<li><div id='1' onclick='htMark("1")'>Near Gate</div></li>
+    		<li><div id='2' onclick='htMark("2")'>Near Graves</div></li>
+    	</ul>
+    </li>
+    <li><div id='3' onclick='htMark("3")'>Lab Big Chest</div></li>
+    <li id='group'><div id='groupTitle'>Town Square</div>
+    	<ul>
+    		<li><div id='4' onclick='htMark("4")'>Near Guillotine</div></li>
+    		<li><div id='5' onclick='htMark("5")'>Near Gate</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Hinterlands</div>
+    	<ul>
+    		<li><div id='6' onclick='htMark("6")'>Front Right</div></li>
+    		<li><div id='7' onclick='htMark("7")'>Back Right</div></li>
+    		<li><div id='8' onclick='htMark("8")'>Left</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Cane Lane</div>
+    	<ul>
+    		<li><div id='9' onclick='htMark("9")'>Left Ledge</div></li>
+    		<li><div id='10' onclick='htMark("10")'>Right Ledge</div></li>
+    		<li><div id='11' onclick='htMark("11")'>Near Gate</div></li>
+    		<li><div id='12' onclick='htMark("12")'>Front Of House</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Santa</div>
+    	<ul>
+    		<li><div id='13' onclick='htMark("13")'>Big Chest</div></li>
+    		<li><div id='14' onclick='htMark("14")'>Small Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='15' onclick='htMark("15")'>Prison Keeper bonus</div></li>
+    <li><div id='16' onclick='htMark("16")'>Oogie bonus</div></li>
+    <li><div id='17' onclick='htMark("17")'><img src='img/keyhole_0.png' id='ht1Key' width='16px' height='16px'> Magnet popup</div></li>
+    <li><div id='18' onclick='htMark("18")'>Present popup</div></li>
+    <li><div id='19' onclick='htMark("19")'>Decoy Presents popup</div></li>
+    <li><div id='20' onclick='htMark("20")'>Experiment bonus</div></li>
+    <li><div id='21' onclick='htMark("21")'><img src='img/keyhole_0.png' id='ht2Key' width='16px' height='16px'> Decisive Pumpkin popup</div></li>
+    <li><div id='22' onclick='htMark("22")'>Vexen</div></li>
+  </ul>`
+]
 
-const pl = []
+//Pride Lands
+const pl = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Gorge</div>
+    	<ul>
+    		<li><div id='1' onclick='plMark("1")'>Big Chest</div></li>
+    		<li><div id='2' onclick='plMark("2")'>Small Right</div></li>
+    		<li><div id='3' onclick='plMark("3")'>Small Left</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Graveyard</div>
+    	<ul>
+    		<li><div id='4' onclick='plMark("4")'>Under Mammoth Tusks</div></li>
+    		<li><div id='5' onclick='plMark("5")'>Leftmost Chest</div></li>
+    		<li><div id='6' onclick='plMark("6")'>Middle Lower</div></li>
+    		<li><div id='7' onclick='plMark("7")'>Middle Upper</div></li>
+    		<li><div id='8' onclick='plMark("8")'>Near Savannah</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Pride Rock</div>
+    	<ul>
+    		<li><div id='9' onclick='plMark("9")'>Big Chest</div></li>
+    		<li><div id='10' onclick='plMark("10")'>Near Wall</div></li>
+    		<li><div id='11' onclick='plMark("11")'>Under Rock</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Valley</div>
+    	<ul>
+    		<li><div id='12' onclick='plMark("12")'>Center Big Rock</div></li>
+    		<li><div id='13' onclick='plMark("13")'>Center Smaller Rock</div></li>
+    		<li><div id='14' onclick='plMark("14")'>Right Wall</div></li>
+    		<li><div id='15' onclick='plMark("15")'>Right Wall Near Tree</div></li>
+    		<li><div id='16' onclick='plMark("16")'>Under Tree</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Wastelands</div>
+    	<ul>
+    		<li><div id='17' onclick='plMark("17")'>1st Chest</div></li>
+    		<li><div id='18' onclick='plMark("18")'>2nd Chest</div></li>
+    		<li><div id='19' onclick='plMark("19")'>3rd Chest</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Jungle</div>
+    	<ul>
+    		<li><div id='20' onclick='plMark("20")'>Under Rree</div></li>
+    		<li><div id='21' onclick='plMark("21")'>Ant Hills</div></li>
+    		<li><div id='22' onclick='plMark("22")'>Enemy Spawn</div></li>
+    	</ul>
+    </li>
+    <li><div id='23' onclick='plMark("23")'>Simba Popup</div></li>
+    <li id='group'><div id='groupTitle'>Oasis</div>
+    	<ul>
+    		<li><div id='24' onclick='plMark("24")'>Near Cliff</div></li>
+    		<li><div id='25' onclick='plMark("25")'>Torn Page Chest</div></li>
+    		<li><div id='26' onclick='plMark("26")'>Waterfall Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='27' onclick='plMark("27")'>Scar Bonus</div></li>
+    <li><div id='28' onclick='plMark("28")'><img src='img/keyhole_0.png' id='pl1Key' width='16px' height='16px'> Fire Popup</div></li>
+    <li><div id='29' onclick='plMark("29")'><img src='img/keyhole_0.png' id='pl2Key' width='16px' height='16px'> Groundshaker Bonus</div></li>
+    <li><div id='30' onclick='plMark("30")'>Data Saix</div></li>
+  </ul>`
+]
 
+//Space Paranoids
 const sp = []
 
+//Cave of Rememberance
 const cor = []
 
+//The World That Never Was
 const twtnw = []
 
+//100 Acre Wood
 const acre = []
 
+//Atlantica
 const atlantica = []

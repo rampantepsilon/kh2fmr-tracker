@@ -9,6 +9,9 @@ var tlodDone = [];
 var bcDone = [];
 var ocDone = [];
 var prDone = [];
+var agrDone = [];
+var htDone = [];
+var plDone = [];
 
 function list(location){
   var checkList = document.getElementById('checks');
@@ -62,10 +65,10 @@ function list(location){
       document.getElementById(hbDone[i]).style.textDecoration = 'line-through';
       document.getElementById(hbDone[i]).style.backgroundColor = '#fff';
       document.getElementById(hbDone[i]).style.color = '#000'
-      if (ttDone[i] == '9'){
+      if (hbDone[i] == '9'){
         document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_1.png')
       }
-      if (ttDone[i] == '28'){
+      if (hbDone[i] == '28'){
         document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
@@ -119,6 +122,22 @@ function list(location){
     }
     document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
   }
+  if (location == 'OC'){
+    checkList.innerHTML = `<h3 align='center'><u>Olympus Coliseum</u><br>
+    Locations Left: <span id='ocLeft'>35</span></h3>` + oc;
+    for (var i = 0; i < ocDone.length; i++){
+      document.getElementById(ocDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(ocDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(ocDone[i]).style.color = '#000'
+      if (ocDone[i] == '27'){
+        document.getElementById('oc1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (ocDone[i] == '30'){
+        document.getElementById('oc2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('ocLeft').innerHTML = (35 - ocDone.length);
+  }
   if (location == 'PR'){
     checkList.innerHTML = `<h3 align='center'><u>Port Royal</u><br>
     Locations Left: <span id='prLeft'>30</span></h3>` + pr;
@@ -134,5 +153,53 @@ function list(location){
       }
     }
     document.getElementById('prLeft').innerHTML = (30 - prDone.length);
+  }
+  if (location == 'AGR'){
+    checkList.innerHTML = `<h3 align='center'><u>Agrabah</u><br>
+    Locations Left: <span id='agrLeft'>34</span></h3>` + agrabah;
+    for (var i = 0; i < agrDone.length; i++){
+      document.getElementById(agrDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(agrDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(agrDone[i]).style.color = '#000'
+      if (agrDone[i] == '27'){
+        document.getElementById('agr1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (agrDone[i] == '30'){
+        document.getElementById('agr2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('agrLeft').innerHTML = (34 - agrDone.length);
+  }
+  if (location == 'HT'){
+    checkList.innerHTML = `<h3 align='center'><u>Halloween Town</u><br>
+    Locations Left: <span id='htLeft'>22</span></h3>` + ht;
+    for (var i = 0; i < htDone.length; i++){
+      document.getElementById(htDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(htDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(htDone[i]).style.color = '#000'
+      if (htDone[i] == '17'){
+        document.getElementById('ht1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (htDone[i] == '21'){
+        document.getElementById('ht2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('htLeft').innerHTML = (22 - htDone.length);
+  }
+  if (location == 'PL'){
+    checkList.innerHTML = `<h3 align='center'><u>Pride Lands</u><br>
+    Locations Left: <span id='plLeft'>30</span></h3>` + pl;
+    for (var i = 0; i < plDone.length; i++){
+      document.getElementById(plDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(plDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(plDone[i]).style.color = '#000'
+      if (plDone[i] == '28'){
+        document.getElementById('pl1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (plDone[i] == '29'){
+        document.getElementById('pl2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('plLeft').innerHTML = (30 - plDone.length);
   }
 }
