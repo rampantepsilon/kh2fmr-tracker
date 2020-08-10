@@ -6,8 +6,8 @@
     <script>
       //Function to track locations Left
       document.addEventListener('click', function(){
-        document.getElementById('totalChecks').innerHTML = (433 - sttDone.length - ttDone.length - hbDone.length - dctrDone.length - tlodDone.length - bcDone.length - ocDone.length - prDone.length - agrDone.length - htDone.length - plDone.length)
-      })
+        document.getElementById('totalChecks').innerHTML = (433 - sttDone.length - ttDone.length - hbDone.length - dctrDone.length - tlodDone.length - bcDone.length - ocDone.length - prDone.length - agrDone.length - htDone.length - plDone.length - spDone.length - corDone.length - twtnwDone.length - acreDone.length - atlDone.length)
+      });
     </script>
   </head>
 
@@ -44,7 +44,7 @@
             <img src='img/Charms/charmlamp_0.png' width='80px' height='80px' id='cLamp' onclick='summonMark("lamp")'>
             <img src='img/Charms/charmukulele_0.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
             <img src='img/Charms/charmfeather_0.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
-            <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='list("keyblades")'>
+            <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
             <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='keyNum'>0</span>
           </div>
           <div align='center'>
@@ -71,7 +71,9 @@
             <h4>Total Locations Left: <span id='totalChecks'>433</span></h4>
             <textarea rows='20' cols='100' placeholder="Notes:"></textarea>
           </div>
-          <div align='center' style='color:#fff;position:relative;'>Created by RampantEpsilon. Credit to <a href='https://github.com/Jsmartee/KH2FM-Checklist' style='color:#fff'>Jsmartee's Tracker</a>. (Where the lists and images came from)</div>
+          <div align='center' style='color:#fff; position:relative;'>
+            Created by RampantEpsilon. Credit to <a href='https://github.com/Jsmartee/KH2FM-Checklist' style='color:#fff'>Jsmartee's Tracker</a>. (Where the lists and images came from)
+          </div>
         </td>
         <!--Location Information-->
         <td align='left' valign='top' width='35%'>

@@ -12,20 +12,20 @@ var prDone = [];
 var agrDone = [];
 var htDone = [];
 var plDone = [];
+var spDone = [];
+var corDone = [];
+var twtnwDone = [];
+var acreDone = [];
+var atlDone = [];
+
+//Call on load
+function init(){
+  list('STT');
+  keybladeMark();
+}
 
 function list(location){
   var checkList = document.getElementById('checks');
-  if (location == 'keyblades'){
-    checkList.innerHTML = "<h3 align='center'><u>Keyblades</u></h3>" + keyblade;
-    for (var i = 0; i < keybladeDone.length; i++){
-      document.getElementById(keybladeDone[i]).style.textDecoration = 'line-through';
-      document.getElementById(keybladeDone[i]).style.backgroundColor = '#fff';
-      document.getElementById(keybladeDone[i]).style.color = '#000'
-      if (keybladeDone[i] == '24'){
-        document.getElementById('keyblade').setAttribute('src', 'img/Required/kingdomkey_1.png')
-      }
-    }
-  }
   if (location == 'STT'){
     checkList.innerHTML = `<h3 align='center'><u>Simulated Twilight Town</u><br>
     Locations Left: <span id='sttLeft'>25</span></h3>` + stt;
@@ -201,5 +201,66 @@ function list(location){
       }
     }
     document.getElementById('plLeft').innerHTML = (30 - plDone.length);
+  }
+  if (location == 'SP'){
+    checkList.innerHTML = `<h3 align='center'><u>Space Paranoids</u><br>
+    Locations Left: <span id='spLeft'>18</span></h3>` + sp;
+    for (var i = 0; i < spDone.length; i++){
+      document.getElementById(spDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(spDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(spDone[i]).style.color = '#000'
+      if (spDone[i] == '12'){
+        document.getElementById('sp1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (spDone[i] == '18'){
+        document.getElementById('sp2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('spLeft').innerHTML = (18 - spDone.length);
+  }
+  if (location == 'COR'){
+    checkList.innerHTML = `<h3 align='center'><u>Cave of Remembrance</u><br>
+    Locations Left: <span id='corLeft'>18</span></h3>` + cor;
+    for (var i = 0; i < corDone.length; i++){
+      document.getElementById(corDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(corDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(corDone[i]).style.color = '#000'
+      if (corDone[i] == '21'){
+        document.getElementById('corKey').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('corLeft').innerHTML = (21 - corDone.length);
+  }
+}
+
+//Mark Pages (Had to move due to bug)
+function pageMark(){
+  var counter = document.getElementById('pageNum');
+  var pages = document.getElementById('pages');
+  var currentCount = document.getElementById('pageNum').innerHTML;
+
+  if (currentCount < 5){
+    currentCount = parseInt(currentCount) + 1;
+    counter.innerHTML = currentCount;
+    pages.setAttribute('src', 'img/pages_1.png')
+  } else {
+    counter.innerHTML = 0;
+    pages.setAttribute('src', 'img/pages_0.png')
+  }
+}
+
+//Mark Keyblades
+function keybladeMark(){
+  var counter = document.getElementById('keyNum');
+  var pages = document.getElementById('keyblade');
+  var currentCount = document.getElementById('keyNum').innerHTML;
+
+  if (currentCount < 24){
+    currentCount = parseInt(currentCount) + 1;
+    counter.innerHTML = currentCount;
+    pages.setAttribute('src', 'img/Required/kingdomkey_1.png')
+  } else {
+    counter.innerHTML = 0;
+    pages.setAttribute('src', 'img/Required/kingdomkey_0.png')
   }
 }

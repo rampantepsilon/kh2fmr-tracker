@@ -1,33 +1,3 @@
-//Keyblades
-const keyblade = [
-  `<ul>
-    <li><div id='1' onclick='keybladeMark("1")'>Kingdom Key</div></li>
-    <li><div id='2' onclick='keybladeMark("2")'>Star Seeker</div></li>
-    <li><div id='3' onclick='keybladeMark("3")'>Hidden Dragon</div></li>
-    <li><div id='4' onclick='keybladeMark("4")'>Hero's Crest</div></li>
-    <li><div id='5' onclick='keybladeMark("5")'>Monochrome</div></li>
-    <li><div id='6' onclick='keybladeMark("6")'>Follow the Wind</div></li>
-    <li><div id='7' onclick='keybladeMark("7")'>Circle of Life</div></li>
-    <li><div id='8' onclick='keybladeMark("8")'>Oathkeeper</div></li>
-    <li><div id='9' onclick='keybladeMark("9")'>Photon Debugger</div></li>
-    <li><div id='10' onclick='keybladeMark("10")'>Rumbling Rose</div></li>
-    <li><div id='11' onclick='keybladeMark("11")'>Mysterious Abyss</div></li>
-    <li><div id='12' onclick='keybladeMark("12")'>Wishing Lamp</div></li>
-    <li><div id='13' onclick='keybladeMark("13")'>Sweet Memories</div></li>
-    <li><div id='14' onclick='keybladeMark("14")'>Guardian Soul</div></li>
-    <li><div id='15' onclick='keybladeMark("15")'>Decisive Pumpkin</div></li>
-    <li><div id='16' onclick='keybladeMark("16")'>Gull Wing</div></li>
-    <li><div id='17' onclick='keybladeMark("17")'>Sleeping Lion</div></li>
-    <li><div id='18' onclick='keybladeMark("18")'>Bond of Flame</div></li>
-    <li><div id='19' onclick='keybladeMark("19")'>Two Become One</div></li>
-    <li><div id='20' onclick='keybladeMark("20")'>Oblivion</div></li>
-    <li><div id='21' onclick='keybladeMark("21")'>Fatal Crest</div></li>
-    <li><div id='22' onclick='keybladeMark("22")'>Winner's Proof</div></li>
-    <li><div id='23' onclick='keybladeMark("23")'>Ultima Weapon</div></li>
-    <li><div id='24' onclick='keybladeMark("24")'>Fenrir</div></li>
-  </ul>`
-]
-
 /*Code to Copy
 <li id='group'><div id='groupTitle'>Awakening</div>
   <ul>
@@ -737,10 +707,91 @@ const pl = [
 ]
 
 //Space Paranoids
-const sp = []
+const sp = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Pit Cell</div>
+    	<ul>
+    		<li><div id='1' onclick='spMark("1")'>Big Chest</div></li>
+    		<li><div id='2' onclick='spMark("2")'>Small Chest</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Canyon</div>
+    	<ul>
+    		<li><div id='3' onclick='spMark("3")'>1st Chest</div></li>
+    		<li><div id='4' onclick='spMark("4")'>Corner Chest</div></li>
+    		<li><div id='5' onclick='spMark("5")'>Before Screens</div></li>
+    		<li><div id='6' onclick='spMark("6")'>Above Cube Game</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Hallway</div>
+    	<ul>
+    		<li><div id='7' onclick='spMark("7")'>Left Chest</div></li>
+    		<li><div id='8' onclick='spMark("8")'>Right Chest</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Before Hostile</div>
+    	<ul>
+    		<li><div id='9' onclick='spMark("9")'>Left Big Chest</div></li>
+    		<li><div id='10' onclick='spMark("10")'>Right Big Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='11' onclick='spMark("11")'>Hostile Program Bonus</div></li>
+    <li><div id='12' onclick='spMark("12")'><img src='img/keyhole_0.png' id='sp1Key' width='16px' height='16px'> Photon Debugger Popup</div></li>
+    <li><div id='13' onclick='spMark("13")'>Solar Sailer Heartless Bonus</div></li>
+    <li id='group'><div id='groupTitle'>Computer Core</div>
+    	<ul>
+    		<li><div id='14' onclick='spMark("14")'>Left Big Chest</div></li>
+    		<li><div id='15' onclick='spMark("15")'>Right Big Chest</div></li>
+    		<li><div id='16' onclick='spMark("16")'>Left Small Chest</div></li>
+    		<li><div id='17' onclick='spMark("17")'>Right Small Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='18' onclick='spMark("18")'><img src='img/keyhole_0.png' id='sp2Key' width='16px' height='16px'> MCP</div></li>
+  </ul>`
+]
 
 //Cave of Rememberance
-const cor = []
+const cor = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Depths</div>
+    	<ul>
+    		<li><div id='1' onclick='corMark("1")'>1st Chest</div></li>
+    		<li><div id='2' onclick='corMark("2")'>Ground Close</div></li>
+    		<li><div id='3' onclick='corMark("3")'>Ground Far</div></li>
+    		<li><div id='4' onclick='corMark("4")'>Ledge Near Door</div></li>
+    		<li><div id='5' onclick='corMark("5")'>Highest</div></li>
+    	</ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Mineshaft</div>
+    	<ul>
+    		<li><div id='6' onclick='corMark("6")'>Lower Big Chest</div></li>
+    		<li><div id='7' onclick='corMark("7")'>Lower Small Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='8' onclick='corMark("8")'>Depths Upper Level</div></li>
+    <li><div id='9' onclick='corMark("9")'>Near Valves Chest</div></li>
+    <li id='group'><div id='groupTitle'>Mining Area</div>
+    	<ul>
+    		<li><div id='10' onclick='corMark("10")'>Lowest Chest</div></li>
+    		<li><div id='11' onclick='corMark("11")'>Mid Height Chest</div></li>
+    		<li><div id='12' onclick='corMark("12")'>Near Door</div></li>
+    		<li><div id='13' onclick='corMark("13")'>Ledge Big Chest</div></li>
+    		<li><div id='14' onclick='corMark("14")'>Ledge Small Chest</div></li>
+    	</ul>
+    </li>
+    <li><div id='15' onclick='corMark("15")'>Mineshaft Big chest</div></li>
+    <li id='group'><div id='groupTitle'>Engine Chamber</div>
+    	<ul>
+    		<li><div id='16' onclick='corMark("16")'>1st Chest</div></li>
+    		<li><div id='17' onclick='corMark("17")'>2nd Chest</div></li>
+    		<li><div id='18' onclick='corMark("18")'>High Ledge</div></li>
+    		<li><div id='19' onclick='corMark("19")'>Middle High Ledge</div></li>
+    	</ul>
+    </li>
+    <li><div id='20' onclick='corMark("20")'>Before Glide Big Chest</div></li>
+    <li><div id='21' onclick='corMark("21")'><img src='img/keyhole_0.png' id='corKey' width='16px' height='16px'> Last Chest</div></li>
+  </ul>`
+]
 
 //The World That Never Was
 const twtnw = []

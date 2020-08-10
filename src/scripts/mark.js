@@ -1,33 +1,3 @@
-function keybladeMark(num){
-  var keybladeTemp = [];
-  if (!keybladeDone.includes(num)){
-    keybladeDone.push(num);
-    document.getElementById('keyNum').innerHTML = keybladeDone.length;
-    document.getElementById(num).style.textDecoration = 'line-through';
-    document.getElementById(num).style.backgroundColor = '#fff';
-    document.getElementById(num).style.color = '#000';
-    if (keybladeDone.length == 24){
-      document.getElementById('keyblade').setAttribute('src', 'img/Required/kingdomkey_1.png')
-    }
-  } else {
-    for (var i = 0; i < keybladeDone.length; i++){
-      if (keybladeDone[i] != num){
-        keybladeTemp.push(keybladeDone[i]);
-      }
-    }
-    keybladeDone = keybladeTemp;
-    document.getElementById('keyNum').innerHTML = keybladeDone.length;
-    document.getElementById(num).style.textDecoration = 'initial';
-    document.getElementById(num).style.backgroundColor = 'initial';
-    document.getElementById(num).style.color = '#fff';
-    if (keybladeDone.length == 24){
-      document.getElementById('keyblade').setAttribute('src', 'img/Required/kingdomkey_0.png')
-    }
-  }
-}
-//Mark Kingdom Key by default
-keybladeMark('1');
-
 function sttMark(num){
   var sttTemp = [];
   if (!sttDone.includes(num)){
@@ -408,6 +378,69 @@ function plMark(num){
   }
   document.getElementById('plLeft').innerHTML = (30 - plDone.length);
 }
+function spMark(num){
+  var spTemp = [];
+  if (!spDone.includes(num)){
+    spDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000'
+    if (num == '12'){
+      document.getElementById('sp1Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+    if (num == '18'){
+      document.getElementById('worldSP').style.filter = "brightness(100%)"
+      document.getElementById('sp2Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < spDone.length; i++){
+      if (spDone[i] != num){
+        spTemp.push(spDone[i]);
+      }
+    }
+    spDone = spTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '12'){
+      document.getElementById('sp1Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+    if (num == '18'){
+      document.getElementById('worldSP').style.filter = "brightness(40%)"
+      document.getElementById('sp2Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('spLeft').innerHTML = (18 - spDone.length);
+}
+function corMark(num){
+  var corTemp = [];
+  if (!corDone.includes(num)){
+    corDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000';
+    if (num == '21'){
+      document.getElementById('worldCoR').style.filter = "brightness(100%)"
+      document.getElementById('corKey').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < corDone.length; i++){
+      if (corDone[i] != num){
+        corTemp.push(corDone[i]);
+      }
+    }
+    corDone = corTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '21'){
+      document.getElementById('worldCoR').style.filter = "brightness(40%)"
+      document.getElementById('corKey').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('corLeft').innerHTML = (21 - corDone.length);
+}
+
 
 //Mark Required Items
 function requiredMark(item){
@@ -604,36 +637,6 @@ function magicMark(item){
     case 'magnet1':
       mMagnet.setAttribute('src', 'img/Magic/magicmagnet_0.png')
       mMagnet.setAttribute('onclick', 'magicMark("magnet")')
-      break;
-  }
-}
-
-//Mark Pages
-function pageMark(){
-  var counter = document.getElementById('pageNum');
-  var pages = document.getElementById('pages');
-  var currentCount = document.getElementById('pageNum').innerHTML;
-
-  switch (currentCount) {
-    case '0':
-      counter.innerHTML = '1';
-      pages.setAttribute('src', 'img/pages_1.png');
-      break;
-    case '1':
-      counter.innerHTML = '2';
-      break;
-    case '2':
-      counter.innerHTML = '3';
-      break;
-    case '3':
-      counter.innerHTML = '4';
-      break;
-    case '4':
-      counter.innerHTML = '5';
-      break;
-    case '5':
-      counter.innerHTML = '0';
-      pages.setAttribute('src', 'img/pages_0.png');
       break;
   }
 }
