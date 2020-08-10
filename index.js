@@ -20,10 +20,13 @@ Checklist
 
 Notes
 - If you need to resize the notes window, click and drag from the bottom right corner.
-- To track keyblades, you will have to mark which ones are obtained. Once all keyblades are obtained, the icon will light up.
+- Resize notes prior to narrowing the window. If you don't this can cause the notes to persist above the lists.
+- 100 Acre Wood isn't split on per page but as overall.
+- If using the tracker for the icon layout, you can mark locations by selecting the last keyhole check for the world.
 
 To Be Added
-- Method to save between instances.`
+- Method to save between instances.
+- Way to show progress on kingdom without selecting it.`
 }
 
 //Global Variables
@@ -69,6 +72,7 @@ function createWindow(){
     width: 1600,
     height: 900,
     title: label,
+    icon: __dirname + "/icon.png",
     webPreferences: {
       nodeIntegration: true
     }

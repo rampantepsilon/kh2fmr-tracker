@@ -231,6 +231,51 @@ function list(location){
     }
     document.getElementById('corLeft').innerHTML = (21 - corDone.length);
   }
+  if (location == 'TWTNW'){
+    checkList.innerHTML = `<h3 align='center'><u>The World That Never Was</u><br>
+    Locations Left: <span id='twtnwLeft'>29</span></h3>` + twtnw;
+    for (var i = 0; i < twtnwDone.length; i++){
+      document.getElementById(twtnwDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(twtnwDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(twtnwDone[i]).style.color = '#000'
+      if (twtnwDone[i] == '28'){
+        document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
+  }
+  if (location == '100'){
+    checkList.innerHTML = `<h3 align='center'><u>100 Acre Wood</u><br>
+    Locations Left: <span id='acreLeft'>22</span></h3>` + acre;
+    for (var i = 0; i < acreDone.length; i++){
+      document.getElementById(acreDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(acreDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(acreDone[i]).style.color = '#000'
+      if (acreDone[i] == '22'){
+        document.getElementById('acreKey').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('acreLeft').innerHTML = (22 - acreDone.length);
+  }
+  if (location == 'ATL'){
+    checkList.innerHTML = `<h3 align='center'><u>Atlantica</u><br>
+    Locations Left: <span id='atlLeft'>4</span></h3>` + atlantica;
+    for (var i = 0; i < atlDone.length; i++){
+      document.getElementById(atlDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(atlDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(atlDone[i]).style.color = '#000'
+      if (atlDone[i] == '1'){
+        document.getElementById('atl1Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (atlDone[i] == '2'){
+        document.getElementById('atl2Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+      if (atlDone[i] == '3'){
+        document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_1.png')
+      }
+    }
+    document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
+  }
 }
 
 //Mark Pages (Had to move due to bug)

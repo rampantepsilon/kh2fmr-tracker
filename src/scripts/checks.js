@@ -794,10 +794,130 @@ const cor = [
 ]
 
 //The World That Never Was
-const twtnw = []
+const twtnw = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Before Roxas</div>
+      <ul>
+    		<li><div id='1' onclick='twtnwMark("1")'>1</div></li>
+    		<li><div id='2' onclick='twtnwMark("2")'>2</div></li>
+    		<li><div id='3' onclick='twtnwMark("3")'>3</div></li>
+    		<li><div id='4' onclick='twtnwMark("4")'>4</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Roxas</div>
+      <ul>
+    		<li><div id='5' onclick='twtnwMark("5")'>Bonus</div></li>
+    		<li><div id='6' onclick='twtnwMark("6")'>Popups</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Skyscraper</div>
+      <ul>
+    		<li><div id='7' onclick='twtnwMark("7")'>Truck</div></li>
+    		<li><div id='8' onclick='twtnwMark("8")'>Left</div></li>
+    		<li><div id='9' onclick='twtnwMark("9")'>Near Castle</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Before Castle</div>
+      <ul>
+    		<li><div id='10' onclick='twtnwMark("10")'>Big Chest</div></li>
+    		<li><div id='11' onclick='twtnwMark("11")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Nothing's Call</div>
+      <ul>
+    		<li><div id='12' onclick='twtnwMark("12")'>1</div></li>
+    		<li><div id='13' onclick='twtnwMark("13")'>2</div></li>
+      </ul>
+    </li>
+    <li><div id='14' onclick='twtnwMark("14")'>Twilight's View Big Chest</div></li>
+    <li><div id='15' onclick='twtnwMark("15")'>Xigbar Popup</div></li>
+    <li id='group'><div id='groupTitle'>Skyway</div>
+      <ul>
+    		<li><div id='16' onclick='twtnwMark("16")'>First Chest</div></li>
+    		<li><div id='17' onclick='twtnwMark("17")'>On Ledge</div></li>
+    		<li><div id='18' onclick='twtnwMark("18")'>Corner Of Path</div></li>
+      </ul>
+    </li>
+    <li><div id='19' onclick='twtnwMark("19")'>Oblivion Popups</div></li>
+    <li id='group'><div id='groupTitle'>Luxord</div>
+      <ul>
+    		<li><div id='20' onclick='twtnwMark("20")'>Bonus</div></li>
+    		<li><div id='21' onclick='twtnwMark("21")'>Popup</div></li>
+      </ul>
+    </li>
+    <li><div id='22' onclick='twtnwMark("22")'>Saix Popup</div></li>
+    <li><div id='23' onclick='twtnwMark("23")'>Riku Popup</div></li>
+    <li id='group'><div id='groupTitle'>Before Xemnas</div>
+      <ul>
+    		<li><div id='24' onclick='twtnwMark("24")'>1st Platform</div></li>
+    		<li><div id='25' onclick='twtnwMark("25")'>2nd Platform</div></li>
+    		<li><div id='26' onclick='twtnwMark("26")'>3rd Platform</div></li>
+    		<li><div id='27' onclick='twtnwMark("27")'>4th Platform</div></li>
+      </ul>
+    </li>
+    <li><div id='28' onclick='twtnwMark("28")'><img src='img/keyhole_0.png' id='twtnwKey' width='16px' height='16px'>Xemnas Popup</div></li>
+    <li><div id='29' onclick='twtnwMark("29")'>Data Xemnas</div></li>
+  </ul>`
+]
 
 //100 Acre Wood
-const acre = []
+const acre = [
+  `<ul>
+    <li id='group'><div id='groupTitle'>Pooh</div>
+      <ul>
+    		<li><div id='1' onclick='acreMark("1")'>Big Chest</div></li>
+    		<li><div id='2' onclick='acreMark("2")'>Right Chest</div></li>
+    		<li><div id='3' onclick='acreMark("3")'>Left Chest</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Piglet</div>
+      <ul>
+    		<li><div id='4' onclick='acreMark("4")'>Big Chest</div></li>
+    		<li><div id='5' onclick='acreMark("5")'>Under Tree</div></li>
+    		<li><div id='6' onclick='acreMark("6")'>Near Stump</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Rabbit</div>
+      <ul>
+    		<li><div id='7' onclick='acreMark("7")'>Big Chest</div></li>
+    		<li><div id='8' onclick='acreMark("8")'>Clothesline</div></li>
+    		<li><div id='9' onclick='acreMark("9")'>Garden</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Kanga</div>
+      <ul>
+    		<li><div id='10' onclick='acreMark("10")'>Big Chest</div></li>
+    		<li><div id='11' onclick='acreMark("11")'>Right</div></li>
+    		<li><div id='12' onclick='acreMark("12")'>Left</div></li>
+      </ul>
+    </li>
+    <li id='group'><div id='groupTitle'>Cave</div>
+      <ul>
+    		<li><div id='13' onclick='acreMark("13")'>1st Chest</div></li>
+    		<li><div id='14' onclick='acreMark("14")'>Right Path Chest</div></li>
+    		<li><div id='15' onclick='acreMark("15")'>Middle Path Front Chest</div></li>
+    		<li><div id='16' onclick='acreMark("16")'>Middle Path Back Chest</div></li>
+    		<li><div id='17' onclick='acreMark("17")'>Left Path Chest</div></li>
+    		<li><div id='18' onclick='acreMark("18")'>Near Pooh Chest</div></li>
+      </ul>
+    </li>
+    <li><div id='19' onclick='acreMark("19")'>Spooky Cave Reward</div></li>
+    <li id='group'><div id='groupTitle'>Starry Hill</div>
+      <ul>
+    		<li><div id='20' onclick='acreMark("20")'>Big Chest</div></li>
+    		<li><div id='21' onclick='acreMark("21")'>Small Chest</div></li>
+      </ul>
+    </li>
+    <li><div id='22' onclick='acreMark("22")'><img src='img/keyhole_0.png' id='acreKey' width='16px' height='16px'> Final Popups</div></li>
+  </ul>`
+]
 
 //Atlantica
-const atlantica = []
+const atlantica = [
+  `<ul>
+    <li><div id='1' onclick='atlMark("1")'><img src='img/keyhole_0.png' id='atl1Key' width='16px' height='16px'> Tutorial Popup</div></li>
+    <li><div id='2' onclick='atlMark("2")'><img src='img/keyhole_0.png' id='atl2Key' width='16px' height='16px'>Ursula Popup</div></li>
+    <li><div id='3' onclick='atlMark("3")'><img src='img/keyhole_0.png' id='atl3Key' width='16px' height='16px'> Final Popups</div></li>
+    <li><div id='4' onclick='atlMark("4")'>Larxene</div></li>
+  </ul>`
+]

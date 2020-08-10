@@ -440,6 +440,102 @@ function corMark(num){
   }
   document.getElementById('corLeft').innerHTML = (21 - corDone.length);
 }
+function twtnwMark(num){
+  var twtnwTemp = [];
+  if (!twtnwDone.includes(num)){
+    twtnwDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000';
+    if (num == '28'){
+      document.getElementById('worldTWTNW').style.filter = "brightness(100%)"
+      document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < twtnwDone.length; i++){
+      if (twtnwDone[i] != num){
+        twtnwTemp.push(twtnwDone[i]);
+      }
+    }
+    twtnwDone = twtnwTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '28'){
+      document.getElementById('worldTWTNW').style.filter = "brightness(40%)"
+      document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
+}
+function acreMark(num){
+  var acreTemp = [];
+  if (!acreDone.includes(num)){
+    acreDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000';
+    if (num == '22'){
+      document.getElementById('world100').style.filter = "brightness(100%)"
+      document.getElementById('acreKey').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < acreDone.length; i++){
+      if (acreDone[i] != num){
+        acreTemp.push(acreDone[i]);
+      }
+    }
+    acreDone = acreTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '22'){
+      document.getElementById('world100').style.filter = "brightness(40%)"
+      document.getElementById('acreKey').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('acreLeft').innerHTML = (22 - acreDone.length);
+}
+function atlMark(num){
+  var atlTemp = [];
+  if (!atlDone.includes(num)){
+    atlDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000';
+    if (num == '1'){
+      document.getElementById('atl1Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+    if (num == '2'){
+      document.getElementById('atl2Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+    if (num == '3'){
+      document.getElementById('worldAtlantica').style.filter = "brightness(100%)"
+      document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_1.png')
+    }
+  } else {
+    for (var i = 0; i < atlDone.length; i++){
+      if (atlDone[i] != num){
+        atlTemp.push(atlDone[i]);
+      }
+    }
+    atlDone = atlTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '1'){
+      document.getElementById('atl1Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+    if (num == '2'){
+      document.getElementById('atl2Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+    if (num == '3'){
+      document.getElementById('worldAtlantica').style.filter = "brightness(40%)"
+      document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_0.png')
+    }
+  }
+  document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
+}
 
 
 //Mark Required Items
