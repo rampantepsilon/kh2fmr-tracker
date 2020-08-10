@@ -583,60 +583,78 @@ function formMark(item){
 //Function to Mark Magic
 function magicMark(item){
   var mFire = document.getElementById('mFire');
+  var fNum = document.getElementById('fireNum');
   var mBlizzard = document.getElementById('mBlizzard');
+  var bNum = document.getElementById('blizzardNum');
   var mThunder = document.getElementById('mThunder');
+  var tNum = document.getElementById('thunderNum');
   var mCure = document.getElementById('mCure');
+  var cNum = document.getElementById('cureNum');
   var mReflect = document.getElementById('mReflect');
+  var rNum = document.getElementById('reflectNum');
   var mMagnet = document.getElementById('mMagnet');
+  var magNum = document.getElementById('magNum');
 
   switch(item) {
     case "fire":
       mFire.setAttribute('src', 'img/Magic/magicfire_1.png')
-      mFire.setAttribute('onclick', 'magicMark("fire1")')
-      break;
-    case "fire1":
-      mFire.setAttribute('src', 'img/Magic/magicfire_0.png')
-      mFire.setAttribute('onclick', 'magicMark("fire")')
+      if (fNum.innerHTML < 3){
+        var num = parseInt(fNum.innerHTML) + 1;
+        fNum.innerHTML = num;
+      } else {
+        fNum.innerHTML = 0;
+        mFire.setAttribute('src', 'img/Magic/magicfire_0.png')
+      }
       break;
     case "blizzard":
       mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_1.png')
-      mBlizzard.setAttribute('onclick', 'magicMark("blizzard1")')
-      break;
-    case "blizzard1":
-      mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_0.png')
-      mBlizzard.setAttribute('onclick', 'magicMark("blizzard")')
+      if (bNum.innerHTML < 3){
+        var num = parseInt(bNum.innerHTML) + 1;
+        bNum.innerHTML = num;
+      } else {
+        bNum.innerHTML = 0;
+        mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_0.png')
+      }
       break;
     case 'thunder':
       mThunder.setAttribute('src', 'img/Magic/magicthunder_1.png')
-      mThunder.setAttribute('onclick', 'magicMark("thunder1")')
-      break;
-    case 'thunder1':
-      mThunder.setAttribute('src', 'img/Magic/magicthunder_0.png')
-      mThunder.setAttribute('onclick', 'magicMark("thunder")')
+      if (tNum.innerHTML < 3){
+        var num = parseInt(tNum.innerHTML) + 1;
+        tNum.innerHTML = num;
+      } else {
+        tNum.innerHTML = 0;
+        mThunder.setAttribute('src', 'img/Magic/magicthunder_0.png')
+      }
       break;
     case 'cure':
       mCure.setAttribute('src', 'img/Magic/magiccure_1.png')
-      mCure.setAttribute('onclick', 'magicMark("cure1")')
-      break;
-    case 'cure1':
-      mCure.setAttribute('src', 'img/Magic/magiccure_0.png')
-      mCure.setAttribute('onclick', 'magicMark("cure")')
+      if (cNum.innerHTML < 3){
+        var num = parseInt(cNum.innerHTML) + 1;
+        cNum.innerHTML = num;
+      } else {
+        cNum.innerHTML = 0;
+        mCure.setAttribute('src', 'img/Magic/magiccure_0.png')
+      }
       break;
     case 'reflect':
       mReflect.setAttribute('src', 'img/Magic/magicreflect_1.png')
-      mReflect.setAttribute('onclick', 'magicMark("reflect1")')
+      if (rNum.innerHTML < 3){
+        var num = parseInt(rNum.innerHTML) + 1;
+        rNum.innerHTML = num;
+      } else {
+        rNum.innerHTML = 0;
+        mReflect.setAttribute('src', 'img/Magic/magicreflect_0.png')
+      }
       break;
-    case 'reflect1':
-      mReflect.setAttribute('src', 'img/Magic/magicreflect_0.png')
-      mReflect.setAttribute('onclick', 'magicMark("reflect")')
-      break;
-    case 'magnet':
+    case "magnet":
       mMagnet.setAttribute('src', 'img/Magic/magicmagnet_1.png')
-      mMagnet.setAttribute('onclick', 'magicMark("magnet1")')
-      break;
-    case 'magnet1':
-      mMagnet.setAttribute('src', 'img/Magic/magicmagnet_0.png')
-      mMagnet.setAttribute('onclick', 'magicMark("magnet")')
+      if (magNum.innerHTML < 3){
+        var num = parseInt(magNum.innerHTML) + 1;
+        magNum.innerHTML = num;
+      } else {
+        magNum.innerHTML = 0;
+        mMagnet.setAttribute('src', 'img/Magic/magicmagnet_0.png')
+      }
       break;
   }
 }
