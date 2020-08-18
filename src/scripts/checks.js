@@ -170,10 +170,10 @@ const hb = [
     <li id='group'><div id='groupTitle'>Bailey</div>
       <ul>
         <li><div id='8' onclick='hbMark("8")'>Bonus</div></li>
-        <li><div id='9' onclick='hbMark("9")'><img src='img/keyhole_0.png' id='hb1Key' width='16px' height='16px'> Popup</div></li>
+        <li><div id='9' onclick='hbMark("9")'>Popup</div></li>
       </ul>
     </li>
-    <li><div id='10' onclick='hbMark("10")'>Chicken Little Popup</div></li>
+    <li><div id='10' onclick='hbMark("10")'><img src='img/keyhole_0.png' id='hb1Key' width='16px' height='16px'> Chicken Little Popup</div></li>
     <li id='group'><div id='groupTitle'>Postern</div>
       <ul>
         <li><div id='11' onclick='hbMark("11")'>On Yellow Pipe</div></li>
@@ -354,7 +354,7 @@ const bc = [
     </li>
     <li id='group'><div id='groupTitle'>West Hall</div>
       <ul>
-        <li><div id='8' onclick='bcMark("8")'>Armor</div></li>
+        <li><div id='8' onclick='bcMark("8")'>Armor (x2)</div></li>
         <li><div id='9' onclick='bcMark("9")'>Right Stairs</div></li>
         <li><div id='10' onclick='bcMark("10")'>Left Stairs</div></li>
         <li><div id='11' onclick='bcMark("11")'>Near Wardrobe</div></li>

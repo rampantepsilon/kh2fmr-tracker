@@ -77,7 +77,7 @@ function hbMark(num){
     document.getElementById(num).style.textDecoration = 'line-through';
     document.getElementById(num).style.backgroundColor = '#fff';
     document.getElementById(num).style.color = '#000'
-    if (num == '9'){
+    if (num == '10'){
       document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_1.png')
     }
     if (num == '28'){
@@ -94,7 +94,7 @@ function hbMark(num){
     document.getElementById(num).style.textDecoration = 'initial';
     document.getElementById(num).style.backgroundColor = 'initial';
     document.getElementById(num).style.color = '#fff';
-    if (num == '9'){
+    if (num == '10'){
       document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_0.png')
     }
     if (num == '28'){
@@ -549,34 +549,42 @@ function requiredMark(item){
     case "charm":
       pCharm.setAttribute('src', 'img/Required/Charm_1.png')
       pCharm.setAttribute('onclick', 'requiredMark("charm1")')
+      requiredDone[0] = '1';
       break;
     case 'peace':
       pPeace.setAttribute('src', 'img/Required/ProofPeace_1.png')
       pPeace.setAttribute('onclick', 'requiredMark("peace1")')
+      requiredDone[1] = '1';
       break;
     case 'nonexist':
       pNonexist.setAttribute('src', 'img/Required/ProofNonexistence_1.png')
       pNonexist.setAttribute('onclick', 'requiredMark("nonexist1")')
+      requiredDone[2] = '1';
       break;
     case "connection":
       pConnection.setAttribute('src', 'img/Required/ProofConnection_1.png')
       pConnection.setAttribute('onclick', 'requiredMark("connection1")')
+      requiredDone[3] = '1';
       break;
     case "charm1":
       pCharm.setAttribute('src', 'img/Required/Charm_0.png')
       pCharm.setAttribute('onclick', 'requiredMark("charm")')
+      requiredDone[0] = '0';
       break;
     case 'peace1':
       pPeace.setAttribute('src', 'img/Required/ProofPeace_0.png')
       pPeace.setAttribute('onclick', 'requiredMark("peace")')
+      requiredDone[1] = '0';
       break;
     case 'nonexist1':
       pNonexist.setAttribute('src', 'img/Required/ProofNonexistence_0.png')
       pNonexist.setAttribute('onclick', 'requiredMark("nonexist")')
+      requiredDone[2] = '0';
       break;
     case "connection1":
       pConnection.setAttribute('src', 'img/Required/ProofConnection_0.png')
       pConnection.setAttribute('onclick', 'requiredMark("connection")')
+      requiredDone[3] = '0';
       break;
   }
 }
@@ -592,34 +600,42 @@ function summonMark(item){
     case "bBall":
       cBBall.setAttribute('src', 'img/Charms/charmbaseball_1.png')
       cBBall.setAttribute('onclick', 'summonMark("bBall1")')
+      summonDone[0] = '1';
       break;
     case "lamp":
       cLamp.setAttribute('src', 'img/Charms/charmlamp_1.png')
       cLamp.setAttribute('onclick', 'summonMark("lamp1")')
+      summonDone[1] = '1';
       break;
     case "ukulele":
       cUkulele.setAttribute('src', 'img/Charms/charmukulele_1.png')
       cUkulele.setAttribute('onclick', 'summonMark("ukulele1")')
+      summonDone[2] = '1';
       break;
     case "feather":
       cFeather.setAttribute('src', 'img/Charms/charmfeather_1.png')
       cFeather.setAttribute('onclick', 'summonMark("feather1")')
+      summonDone[3] = '1';
       break;
     case "bBall1":
       cBBall.setAttribute('src', 'img/Charms/charmbaseball_0.png')
       cBBall.setAttribute('onclick', 'summonMark("bBall")')
+      summonDone[0] = '0';
       break;
     case "lamp1":
       cLamp.setAttribute('src', 'img/Charms/charmlamp_0.png')
       cLamp.setAttribute('onclick', 'summonMark("lamp")')
+      summonDone[1] = '0';
       break;
     case "ukulele1":
       cUkulele.setAttribute('src', 'img/Charms/charmukulele_0.png')
       cUkulele.setAttribute('onclick', 'summonMark("ukulele")')
+      summonDone[2] = '0';
       break;
     case "feather1":
       cFeather.setAttribute('src', 'img/Charms/charmfeather_0.png')
       cFeather.setAttribute('onclick', 'summonMark("feather")')
+      summonDone[3] = '0';
       break;
   }
 }
@@ -636,42 +652,52 @@ function formMark(item){
     case "valor":
       fValor.setAttribute('src', 'img/Forms/formvalor_1.png')
       fValor.setAttribute('onclick', 'formMark("valor1")')
+      formDone[0] = '1';
       break;
     case "valor1":
       fValor.setAttribute('src', 'img/Forms/formvalor_0.png')
       fValor.setAttribute('onclick', 'formMark("valor")')
+      formDone[0] = '0';
       break;
     case "wisdom":
       fWisdom.setAttribute('src', 'img/Forms/formwisdom_1.png')
       fWisdom.setAttribute('onclick', 'formMark("wisdom1")')
+      formDone[1] = '1';
       break;
     case "wisdom1":
       fWisdom.setAttribute('src', 'img/Forms/formwisdom_0.png')
       fWisdom.setAttribute('onclick', 'formMark("wisdom")')
+      formDone[1] = '0';
       break;
     case 'limit':
       fLimit.setAttribute('src', 'img/Forms/formlimit_1.png')
       fLimit.setAttribute('onclick', 'formMark("limit1")')
+      formDone[2] = '1';
       break;
     case 'limit1':
       fLimit.setAttribute('src', 'img/Forms/formlimit_0.png')
       fLimit.setAttribute('onclick', 'formMark("limit")')
+      formDone[2] = '0';
       break;
     case 'master':
       fMaster.setAttribute('src', 'img/Forms/formmaster_1.png')
       fMaster.setAttribute('onclick', 'formMark("master1")')
+      formDone[3] = '1';
       break;
     case 'master1':
       fMaster.setAttribute('src', 'img/Forms/formmaster_0.png')
       fMaster.setAttribute('onclick', 'formMark("master")')
+      formDone[3] = '0';
       break;
     case 'final':
       fFinal.setAttribute('src', 'img/Forms/formfinal_1.png')
       fFinal.setAttribute('onclick', 'formMark("final1")')
+      formDone[4] = '1';
       break;
     case 'final1':
       fFinal.setAttribute('src', 'img/Forms/formfinal_0.png')
       fFinal.setAttribute('onclick', 'formMark("final")')
+      formDone[4] = '0';
       break;
   }
 }

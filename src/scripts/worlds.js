@@ -1,6 +1,4 @@
 //Variable to keep track of completed
-var keybladeDone = [];
-var pages = [];
 var sttDone = [];
 var ttDone = [];
 var hbDone = [];
@@ -17,6 +15,12 @@ var corDone = [];
 var twtnwDone = [];
 var acreDone = [];
 var atlDone = [];
+var requiredDone = ["0","0","0","0"];
+var formDone = ["0","0","0","0","0"];
+var magicDone = ["0","0","0","0","0","0"];
+var summonDone = ["0","0","0","0"];
+var keybladeDone = "0";
+var pageDone = "0";
 
 //Call on load
 function init(){
@@ -65,7 +69,7 @@ function list(location){
       document.getElementById(hbDone[i]).style.textDecoration = 'line-through';
       document.getElementById(hbDone[i]).style.backgroundColor = '#fff';
       document.getElementById(hbDone[i]).style.color = '#000'
-      if (hbDone[i] == '9'){
+      if (hbDone[i] == '10'){
         document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_1.png')
       }
       if (hbDone[i] == '28'){
@@ -286,9 +290,11 @@ function pageMark(){
 
   if (currentCount < 5){
     currentCount = parseInt(currentCount) + 1;
+    pageDone = currentCount;
     counter.innerHTML = currentCount;
     pages.setAttribute('src', 'img/pages_1.png')
   } else {
+    pageDone = "0";
     counter.innerHTML = 0;
     pages.setAttribute('src', 'img/pages_0.png')
   }
@@ -302,10 +308,256 @@ function keybladeMark(){
 
   if (currentCount < 24){
     currentCount = parseInt(currentCount) + 1;
+    keybladeDone = currentCount;
     counter.innerHTML = currentCount;
     pages.setAttribute('src', 'img/Required/kingdomkey_1.png')
   } else {
+    keybladeDone = "0";
     counter.innerHTML = 0;
     pages.setAttribute('src', 'img/Required/kingdomkey_0.png')
+  }
+}
+
+//Save Function Start
+const Store = require('..\\src\\scripts\\store.js');
+var saveT = new Store(
+  {
+    configName: 'tracker',
+    defaults:{
+      sttDone: sttDone,
+      ttDone: ttDone,
+      hbDone: hbDone,
+      dctrDone: dctrDone,
+      tlodDone: tlodDone,
+      bcDone: bcDone,
+      ocDone: ocDone,
+      prDone: prDone,
+      agrDone: agrDone,
+      htDone: htDone,
+      plDone: plDone,
+      spDone: spDone,
+      corDone: corDone,
+      twtnwDone: twtnwDone,
+      acreDone: acreDone,
+      atlDone: atlDone,
+      requiredDone: requiredDone,
+      formDone: formDone,
+      magicDone: magicDone,
+      summonDone: summonDone,
+      keybladeDone: keybladeDone,
+      pageDone: pageDone,
+    }
+  }
+)
+//Set Values if non-existent
+if (!saveT.get('sttDone')){
+  saveT.set('sttDone', sttDone);
+}
+if (!saveT.get('ttDone')){
+  saveT.set('ttDone', ttDone);
+}
+if (!saveT.get('hbDone')){
+  saveT.set('hbDone', hbDone);
+}
+if (!saveT.get('dctrDone')){
+  saveT.set('dctrDone', dctrDone);
+}
+if (!saveT.get('tlodDone')){
+  saveT.set('tlodDone', tlodDone);
+}
+if (!saveT.get('bcDone')){
+  saveT.set('bcDone', bcDone);
+}
+if (!saveT.get('ocDone')){
+  saveT.set('ocDone', ocDone);
+}
+if (!saveT.get('prDone')){
+  saveT.set('prDone', prDone);
+}
+if (!saveT.get('agrDone')){
+  saveT.set('agrDone', agrDone);
+}
+if (!saveT.get('htDone')){
+  saveT.set('htDone', htDone);
+}
+if (!saveT.get('plDone')){
+  saveT.set('plDone', plDone);
+}
+if (!saveT.get('spDone')){
+  saveT.set('spDone', spDone);
+}
+if (!saveT.get('corDone')){
+  saveT.set('corDone', corDone);
+}
+if (!saveT.get('twtnwDone')){
+  saveT.set('twtnwDone', twtnwDone);
+}
+if (!saveT.get('acreDone')){
+  saveT.set('acreDone', acreDone);
+}
+if (!saveT.get('atlDone')){
+  saveT.set('atlDone', atlDone);
+}
+if (!saveT.get('requiredDone')){
+  saveT.set('requiredDone', requiredDone);
+}
+if (!saveT.get('formDone')){
+  saveT.set('formDone', formDone);
+}
+if (!saveT.get('magicDone')){
+  saveT.set('magicDone', magicDone);
+}
+if (!saveT.get('summonDone')){
+  saveT.set('summonDone', summonDone);
+}
+if (!saveT.get('keybladeDone')){
+  saveT.set('keybladeDone', keybladeDone);
+}
+if (!saveT.get('pageDone')){
+  saveT.set('pageDone', pageDone);
+}
+
+function save(){
+  saveT.set('sttDone', sttDone);
+  saveT.set('ttDone', ttDone);
+  saveT.set('hbDone', hbDone);
+  saveT.set('dctrDone', dctrDone);
+  saveT.set('tlodDone', tlodDone);
+  saveT.set('bcDone', bcDone);
+  saveT.set('ocDone', ocDone);
+  saveT.set('prDone', prDone);
+  saveT.set('agrDone', agrDone);
+  saveT.set('htDone', htDone);
+  saveT.set('plDone', plDone);
+  saveT.set('spDone', spDone);
+  saveT.set('corDone', corDone);
+  saveT.set('twtnwDone', twtnwDone);
+  saveT.set('acreDone', acreDone);
+  saveT.set('atlDone', atlDone);
+  saveT.set('requiredDone', requiredDone);
+  saveT.set('formDone', formDone);
+  saveT.set('magicDone', magicDone);
+  saveT.set('summonDone', summonDone);
+  saveT.set('keybladeDone', keybladeDone);
+  saveT.set('pageDone', pageDone);
+}
+
+function load(){
+  sttDone = saveT.get('sttDone');
+  ttDone = saveT.get('ttDone');
+  hbDone = saveT.get('hbDone');
+  dctrDone = saveT.get('dctrDone');
+  tlodDone = saveT.get('tlodDone');
+  bcDone = saveT.get('bcDone');
+  ocDone = saveT.get('ocDone');
+  prDone = saveT.get('prDone');
+  agrDone = saveT.get('agrDone');
+  htDone = saveT.get('htDone');
+  plDone = saveT.get('plDone');
+  spDone = saveT.get('spDone');
+  corDone = saveT.get('corDone');
+  twtnwDone = saveT.get('twtnwDone');
+  acreDone = saveT.get('acreDone');
+  atlDone = saveT.get('atlDone');
+  requiredDone = saveT.get('requiredDone');
+  formDone = saveT.get('formDone');
+  magicDone = saveT.get('magicDone');
+  summonDone = saveT.get('summonDone');
+  keybladeDone = saveT.get('keybladeDone');
+  pageDone = saveT.get('pageDone');
+
+  list('STT');
+
+  //Mark Required Checks
+  if (requiredDone[0] == "1"){
+    requiredMark('charm');
+  }
+  if (requiredDone[1] == '1'){
+    requiredMark('peace');
+  }
+  if (requiredDone[2] == '1'){
+    requiredMark('nonexist');
+  }
+  if (requiredDone[3] == '1'){
+    requiredMark('connection');
+  }
+
+  //Mark Summons
+  if (summonDone[0] == "1"){
+    summonMark('bBall');
+  }
+  if (summonDone[1] == '1'){
+    summonMark('lamp');
+  }
+  if (summonDone[2] == '1'){
+    summonMark('ukulele');
+  }
+  if (summonDone[3] == '1'){
+    summonMark('feather');
+  }
+
+  //Mark Forms
+  if (formDone[0] == "1"){
+    formMark('valor');
+  }
+  if (formDone[1] == '1'){
+    formMark('wisdom');
+  }
+  if (formDone[2] == '1'){
+    formMark('limit');
+  }
+  if (formDone[3] == '1'){
+    formMark('master');
+  }
+  if (formDone[4] == '1'){
+    formMark('final');
+  }
+
+  //Mark Magic
+  if (magicDone[0] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('fire');
+    }
+  }
+  if (magicDone[1] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('blizzard');
+    }
+  }
+  if (magicDone[2] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('thunder');
+    }
+  }
+  if (magicDone[3] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('cure');
+    }
+  }
+  if (magicDone[4] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('reflect');
+    }
+  }
+  if (magicDone[5] != "0"){
+    for (var i = 0; i < parseInt(magicDone[0]); i++){
+      magicMark('magnet');
+    }
+  }
+
+  //Mark Keyblades
+  if (keybladeDone != "0"){
+    var loop = parseInt(keybladeDone);
+    for (var i = 0; i < loop; i++){
+      keybladeMark();
+    }
+  }
+
+  //Mark Pages
+  if (pageDone != "0"){
+    var loop = parseInt(pageDone);
+    for (var i = 0; i < loop; i++){
+      pageMark();
+    }
   }
 }
