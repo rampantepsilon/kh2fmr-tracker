@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.8.10';
+const build = '2020.8.17';
 const version = app.getVersion();
 
 //About Window
@@ -24,8 +24,11 @@ Notes
 - 100 Acre Wood isn't split on per page but as overall.
 - If using the tracker for the icon layout, you can mark locations by selecting the last keyhole check for the world.
 
+Saving Tracker
+- Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'
+- Loading will use the file noted above to return values.
+
 To Be Added
-- Method to save between instances.
 - Way to show progress on kingdom without selecting it.`
 }
 
