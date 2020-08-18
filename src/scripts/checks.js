@@ -1,20 +1,10 @@
-/*Code to Copy
-<li id='group'><div id='groupTitle'>Awakening</div>
-  <ul>
-    <li><div id='' onclick='Mark("")'></div></li>
-    <li><div id='' onclick='Mark("")'></div></li>
-    <li><div id='' onclick='Mark("")'></div></li>
-    <li><div id='' onclick='Mark("")'><img src='img/keyhole_0.png' id='Key' width='16px' height='16px'> </div></li>
-  </ul>
-</li>*/
-
 /* Worlds List */
 //Simulated Twilight Town
 const stt = [
   `<ul>
     <li><div id='1' onclick='sttMark("1")'>Map Popup</div></li>
     <li><div id='2' onclick='sttMark("2")'>Munny Pouch Popup</div></li>
-    <li id='group'><div id='groupTitle'>Awakening</div>
+    <li id='group'><div id='groupTitle' onclick='sttAllMark(1)'>Awakening</div>
       <ul>
         <li><div id='3' onclick='sttMark("3")'>Dusks Bonus</div></li>
         <li><div id='4' onclick='sttMark("4")'>Tutorial Chest</div></li>
@@ -24,14 +14,14 @@ const stt = [
     </li>
     <li><div id='7' onclick='sttMark("7")'>Axel 1 Bonus</div></li>
     <li><div id='8' onclick='sttMark("8")'>Struggle Trophy Bonus</div></li>
-    <li id='group'><div id='groupTitle'>Station</div>
+    <li id='group'><div id='groupTitle' onclick='sttAllMark(2)'>Station</div>
       <ul>
         <li><div id='9' onclick='sttMark("9")'>Corner Near Entrance</div></li>
         <li><div id='10' onclick='sttMark("10")'>Far Corner</div></li>
         <li><div id='11' onclick='sttMark("11")'>Between Tracks</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Sunset</div>
+    <li id='group'><div id='groupTitle' onclick='sttAllMark(3)'>Sunset</div>
       <ul>
         <li><div id='12' onclick='sttMark("12")'>Lower Level</div></li>
         <li><div id='13' onclick='sttMark("13")'>Rooftop</div></li>
@@ -39,7 +29,7 @@ const stt = [
         <li><div id='15' onclick='sttMark("15")'>Before Hill</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Mansion</div>
+    <li id='group'><div id='groupTitle' onclick='sttAllMark(4)'>Mansion</div>
       <ul>
         <li><div id='16' onclick='sttMark("16")'>Center</div></li>
         <li><div id='17' onclick='sttMark("17")'>Left Stairs</div></li>
@@ -59,13 +49,13 @@ const stt = [
 //Twilight Town
 const tt = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Mansion Gate</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(1)'>Mansion Gate</div>
       <ul>
         <li><div id='1' onclick='ttMark("1")'>Corner</div></li>
         <li><div id='2' onclick='ttMark("2")'>Near Door</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Tram Common</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(2)'>Tram Common</div>
       <ul>
         <li><div id='3' onclick='ttMark("3")'>Near Tunnel</div></li>
         <li><div id='4' onclick='ttMark("4")'>Broom</div></li>
@@ -76,14 +66,14 @@ const tt = [
         <li><div id='9' onclick='ttMark("9")'>Rooftop Near Woods</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Woods</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(3)'>Woods</div>
       <ul>
         <li><div id='10' onclick='ttMark("10")'>Near Vivi</div></li>
         <li><div id='11' onclick='ttMark("11")'>Near Mansion</div></li>
         <li><div id='12' onclick='ttMark("12")'>Other Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Station</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(4)'>Station</div>
       <ul>
         <li><div id='13' onclick='ttMark("13")'>Fight Popups</div></li>
         <li><div id='14' onclick='ttMark("14")'>Left Front</div></li>
@@ -91,21 +81,21 @@ const tt = [
         <li><div id='16' onclick='ttMark("16")'>Right Corner</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Tower Outside</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(5)'>Tower Outside</div>
       <ul>
         <li><div id='17' onclick='ttMark("17")'>Right</div></li>
         <li><div id='18' onclick='ttMark("18")'>Left Chest</div></li>
         <li><div id='19' onclick='ttMark("19")'>Left Corner</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Tower Entry</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(6)'>Tower Entry</div>
       <ul>
         <li><div id='20' onclick='ttMark("20")'>Ether Chest</div></li>
         <li><div id='21' onclick='ttMark("21")'>Under Stairs</div></li>
       </ul>
     </li>
     <li><div id='22' onclick='ttMark("22")'>Yen Sid Big Chest</div></li>
-    <li id='group'><div id='groupTitle'>Tower</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(7)'>Tower</div>
       <ul>
         <li><div id='23' onclick='ttMark("23")'>Popups</div></li>
         <li><div id='24' onclick='ttMark("24")'><img src='img/keyhole_0.png' id='tt1Key' width='16px' height='16px'> Small Chest</div></li>
@@ -113,7 +103,7 @@ const tt = [
     </li>
     <li><div id='25' onclick='ttMark("25")'>Sandlot Fight Popup</div></li>
     <li><div id='26' onclick='ttMark("26")'><img src='img/keyhole_0.png' id='tt2Key' width='16px' height='16px'> 2nd Visit Popups</div></li>
-    <li id='group'><div id='groupTitle'>Underground</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(8)'>Underground</div>
       <ul>
         <li><div id='27' onclick='ttMark("27")'>Near 4</div></li>
         <li><div id='28' onclick='ttMark("28")'>Middle Gamblers</div></li>
@@ -121,13 +111,13 @@ const tt = [
         <li><div id='30' onclick='ttMark("30")'>Lower Middle</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Tunnelway</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(9)'>Tunnelway</div>
       <ul>
         <li><div id='31' onclick='ttMark("31")'>Open Area</div></li>
         <li><div id='32' onclick='ttMark("32")'>Near Exit</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Sunset</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(10)'>Sunset</div>
       <ul>
         <li><div id='33' onclick='ttMark("33")'>Near Tram Track</div></li>
         <li><div id='34' onclick='ttMark("34")'>Below Rooftop Chest</div></li>
@@ -135,7 +125,7 @@ const tt = [
         <li><div id='36' onclick='ttMark("36")'>End of Alley</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Mansion</div>
+    <li id='group'><div id='groupTitle' onclick='ttAllMark(11)'>Mansion</div>
       <ul>
         <li><div id='37' onclick='ttMark("37")'>Middle</div></li>
         <li><div id='38' onclick='ttMark("38")'>Right Stairs</div></li>
@@ -157,7 +147,7 @@ const tt = [
 const hb = [
   `<ul>
     <li><div id='1' onclick='hbMark("1")'>Marketplace Map Popup</div></li>
-    <li id='group'><div id='groupTitle'>Borough</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(1)'>Borough</div>
       <ul>
         <li><div id='2' onclick='hbMark("2")'>Top Ledge</div></li>
         <li><div id='3' onclick='hbMark("3")'>Drive Recovery Chest</div></li>
@@ -167,21 +157,21 @@ const hb = [
       </ul>
     </li>
     <li><div id='7' onclick='hbMark("7")'>Merlin's House Popups</div></li>
-    <li id='group'><div id='groupTitle'>Bailey</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(2)'>Bailey</div>
       <ul>
         <li><div id='8' onclick='hbMark("8")'>Bonus</div></li>
         <li><div id='9' onclick='hbMark("9")'>Popup</div></li>
       </ul>
     </li>
     <li><div id='10' onclick='hbMark("10")'><img src='img/keyhole_0.png' id='hb1Key' width='16px' height='16px'> Chicken Little Popup</div></li>
-    <li id='group'><div id='groupTitle'>Postern</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(3)'>Postern</div>
       <ul>
         <li><div id='11' onclick='hbMark("11")'>On Yellow Pipe</div></li>
         <li><div id='12' onclick='hbMark("12")'>Big Chest</div></li>
         <li><div id='13' onclick='hbMark("13")'>Lower Level</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Corridors</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(4)'>Corridors</div>
       <ul>
         <li><div id='14' onclick='hbMark("14")'>1st Left Path</div></li>
         <li><div id='15' onclick='hbMark("15")'>2nd Left Path</div></li>
@@ -194,7 +184,7 @@ const hb = [
     <li><div id='20' onclick='hbMark("20")'>Stitch Big Chest</div></li>
     <li><div id='21' onclick='hbMark("21")'>Demyx Bonus</div></li>
     <li><div id='22' onclick='hbMark("22")'>FF Fights Popup</div></li>
-    <li id='group'><div id='groupTitle'>Before 1K</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(5)'>Before 1K</div>
       <ul>
         <li><div id='23' onclick='hbMark("23")'>Front Big Chest</div></li>
         <li><div id='24' onclick='hbMark("24")'>Back Big Chest</div></li>
@@ -202,7 +192,7 @@ const hb = [
         <li><div id='26' onclick='hbMark("26")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>1K Heartless</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(6)'>1K Heartless</div>
       <ul>
         <li><div id='27' onclick='hbMark("27")'>Bonus</div></li>
         <li><div id='28' onclick='hbMark("28")'><img src='img/keyhole_0.png' id='hb2Key' width='16px' height='16px'> Popups</div></li>
@@ -210,7 +200,7 @@ const hb = [
     </li>
     <li><div id='29' onclick='hbMark("29")'>Gull Wing</div></li>
     <li><div id='30' onclick='hbMark("30")'>Heartless Manufactory</div></li>
-    <li id='group'><div id='groupTitle'>Near GoA Entrance</div>
+    <li id='group'><div id='groupTitle' onclick='hbAllMark(7)'>Near GoA Entrance</div>
       <ul>
         <li><div id='31' onclick='hbMark("31")'>1</div></li>
         <li><div id='32' onclick='hbMark("32")'>2</div></li>

@@ -537,6 +537,145 @@ function atlMark(num){
   document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
 }
 
+/*WIP Mark Sections
+function sttAllMark(num){
+  switch (num) {
+    case 1:
+      sttMark(3);
+      sttMark(4);
+      sttMark(5);
+      sttMark(6);
+      break;
+    case 2:
+      sttMark(9);
+      sttMark(10);
+      sttMark(11);
+      break;
+    case 3:
+      sttMark(12);
+      sttMark(13);
+      sttMark(14);
+      sttMark(15);
+      break;
+    case 4:
+      sttMark(16);
+      sttMark(17);
+      sttMark(18);
+      sttMark(19);
+      sttMark(20);
+      sttMark(21);
+      sttMark(22);
+      sttMark(23);
+      sttMark(24);
+      break;
+  }
+}
+function ttAllMark(num){
+  switch (num) {
+    case 1:
+      ttMark(1);
+      ttMark(2);
+      break;
+    case 2:
+      ttMark(3);
+      ttMark(4);
+      ttMark(5);
+      ttMark(6);
+      ttMark(7);
+      ttMark(8);
+      ttMark(9);
+      break;
+    case 3:
+      ttMark(10);
+      ttMark(11);
+      ttMark(12);
+      break;
+    case 4:
+      ttMark(13);
+      ttMark(14);
+      ttMark(15);
+      ttMark(16);
+      break;
+    case 5:
+      ttMark(17);
+      ttMark(18);
+      ttMark(19);
+      break;
+    case 6:
+      ttMark(20);
+      ttMark(21);
+      break;
+    case 7:
+      ttMark(23);
+      ttMark(24);
+      break;
+    case 8:
+      ttMark(27);
+      ttMark(28);
+      ttMark(29);
+      ttMark(30);
+      break;
+    case 9:
+      ttMark(31);
+      ttMark(32);
+      break;
+    case 10:
+      ttMark(33);
+      ttMark(34);
+      ttMark(35);
+      ttMark(36);
+      break;
+    case 11:
+      ttMark(37);
+      ttMark(38);
+      ttMark(39);
+      ttMark(40);
+      ttMark(41);
+      ttMark(42);
+      ttMark(43);
+      break;
+  }
+}
+function hbAllMark(num){
+  switch (num) {
+    case 1:
+      hbMark(2);
+      hbMark(3);
+      hbMark(4);
+      hbMark(5);
+      hbMark(6);
+      break;
+    case 2:
+      hbMark(8);
+      hbMark(9);
+      break;
+    case 3:
+      hbMark(11);
+      hbMark(12);
+      hbMark(13);
+      break;
+    case 4:
+      hbMark(14);
+      hbMark(15);
+      hbMark(16);
+      hbMark(17);
+      break;
+    case 5:
+      hbMark(23);
+      hbMark(24);
+      hbMark(25);
+      hbMark(26);
+      break;
+    case 6:
+      hbMark(27);
+      hbMark(28);
+      break;
+    case 7:
+      hbMark(31);
+      hbMark(32);
+      break;
+  }
+}*/
 
 //Mark Required Items
 function requiredMark(item){
