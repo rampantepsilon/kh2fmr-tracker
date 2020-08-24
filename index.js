@@ -13,6 +13,7 @@ const aboutOptions = {
   message: 'About This Tracker',
   detail: `Locations
 - Location aren't trackable by clicking on them. Instead they open a list of checks that can be made. The location icon will light up when the second pass of the world is complete. For the most part, this will mean the Data Fights are all that's left.
+- Added ability to mark all checks in a group. NOTE: If you select a single check then the group, the single check will become unmarked. This will be fixed in a future build.
 
 Checklist
 - Checklists will show based off of what is selected for the world.
@@ -27,6 +28,9 @@ Notes
 Saving Tracker
 - Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'
 - Loading will use the file noted above to return values.
+
+Changes
+- Changed Layout for better stream quality
 
 To Be Added
 - Way to show progress on kingdom without selecting it.`

@@ -22,3 +22,12 @@ ul{
 #worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR{
   filter: brightness(40%);
 }
+
+.number{
+  position:relative;
+  top: -10px;
+  right: 25px;
+  color: #fff;
+  font-size: 32px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}

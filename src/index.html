@@ -16,67 +16,148 @@
     <table width='100%' height='100%'>
       <tr>
         <!--Key (Stay Constant)-->
-        <td align='left' valign='top' width='65%' style='position:fixed;'>
-          <div align='center'>
-            <img src='img/Locations/Roxas_1.png' width='80px' height='80px' id='worldRoxas' onclick='list("STT")'>
-            <img src='img/Locations/Twilight Town.png' width='98px' height='60px' id='worldTT' onclick='list("TT")'>
-            <img src='img/Locations/Hollow Bastion.png' width='64px' height='60px' id='worldHB' onclick='list("HB")'>
-            <img src='img/Locations/Disney Castle.png' width='80px' height='60px' id='worldDC' onclick='list("DC")'>
-            <img src='img/Locations/Timeless River.png' width='78px' height='60px' id='worldTR' onclick='list("TR")'>
-            <img src='img/Locations/Atlantica.png' width='114px' height='60px' id='worldAtlantica' onclick='list("ATL")'>
-            <img src='img/Locations/100 Acre Wood.png' width='61px' height='60px' id='world100' onclick='list("100")'>
-            <img src='img/Locations/The World That Never Was.png' width='89px' height='60px' id='worldTWTNW' onclick='list("TWTNW")'>
-            <img src='img/Locations/The Land of Dragons.png' width='154px' height='60px' id='worldTLoD' onclick='list("TLOD")'>
-          </div>
-          <div align='center'>
-            <img src="img/Locations/Beast's Castle.png" width='116px' height='60px' id='worldBC' onclick='list("BC")'>
-            <img src='img/Locations/Olympus Coliseum.png' width='113px' height='60px' id='worldOC' onclick='list("OC")'>
-            <img src='img/Locations/Port Royal.png' width='170px' height='60px' id='worldPR' onclick='list("PR")'>
-            <img src='img/Locations/Agrabah.png' width='103px' height='60px' id='worldAgrabah' onclick='list("AGR")'>
-            <img src='img/Locations/Halloween Town.png' width='89px' height='60px' id='worldHT' onclick='list("HT")'>
-            <img src='img/Locations/Pride Lands.png' width='120px' height='60px' id='worldPL' onclick='list("PL")'>
-            <img src='img/Locations/Space Paranoids.png' width='129px' height='60px' id='worldSP' onclick='list("SP")'>
-            <img src='img/Locations/cor_1.png' width='73px' height='80px' id='worldCoR' onclick='list("COR")'>
-          </div>
-          <div align='center'>
-            <img src='img/Magic/magicfire_0.png' width='80px' height='80px' id='mFire' onclick='magicMark("fire")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='fireNum'>0</span>
-            <img src='img/Magic/magicblizzard_0.png' width='80px' height='80px' id='mBlizzard' onclick='magicMark("blizzard")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='blizzardNum'>0</span>
-            <img src='img/Magic/magicthunder_0.png' width='80px' height='80px'id='mThunder' onclick='magicMark("thunder")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='thunderNum'>0</span>
-            <img src='img/Magic/magiccure_0.png' width='80px' height='80px' id='mCure' onclick='magicMark("cure")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='cureNum'>0</span>
-            <img src='img/Magic/magicreflect_0.png' width='80px' height='80px' id='mReflect' onclick='magicMark("reflect")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='reflectNum'>0</span>
-            <img src='img/Magic/magicmagnet_0.png' width='80px' height='80px' id='mMagnet' onclick='magicMark("magnet")'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='magNum'>0</span>
-            <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='keyNum'>0</span>
-          </div>
-          <div align='center'>
-            <img src='img/Required/Charm_0.png' width='74px' height='80px' id='pCharm' onclick='requiredMark("charm")'>
-            <img src='img/Forms/formvalor_0.png' width='80px' height='80px' id='fValor' onclick='formMark("valor")'>
-            <img src='img/Forms/formwisdom_0.png' width='80px' height='80px' id='fWisdom' onclick='formMark("wisdom")'>
-            <img src='img/Forms/formlimit_0.png' width='80px' height='80px' id='fLimit' onclick='formMark("limit")'>
-            <img src='img/Forms/formmaster_0.png' width='80px' height='80px' id='fMaster' onclick='formMark("master")'>
-            <img src='img/Forms/formfinal_0.png' width='80px' height='80px' id='fFinal' onclick='formMark("final")'>
-            <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>
-            <span style='position:relative; top: -10px; right: 25px; color: #fff; font-size: 32px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;' id='pageNum'>0</span>
-          </div>
-          <div align='center'>
-            <img src='img/Required/ProofConnection_0.png' width='80px' height='80px' id='pConnection' onclick='requiredMark("connection")'>
-            <img src='img/Required/ProofPeace_0.png' width='80px' height='80px' id='pPeace' onclick='requiredMark("peace")'>
-            <img src='img/Required/ProofNonexistence_0.png' width='80px' height='80px' id='pNonexist' onclick='requiredMark("nonexist")'>
-            <img src='img/Charms/charmbaseball_0.png' width='80px' height='80px' id='cBBall' onclick='summonMark("bBall")'>
-            <img src='img/Charms/charmlamp_0.png' width='80px' height='80px' id='cLamp' onclick='summonMark("lamp")'>
-            <img src='img/Charms/charmukulele_0.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
-            <img src='img/Charms/charmfeather_0.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
-          </div>
+        <td align='left' valign='top' style='position:fixed;' width='35%'>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src='img/Locations/Roxas_1.png' width='80px' height='80px' id='worldRoxas' onclick='list("STT")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Twilight Town.png' width='98px' height='60px' id='worldTT' onclick='list("TT")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Hollow Bastion.png' width='64px' height='60px' id='worldHB' onclick='list("HB")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Disney Castle.png' width='80px' height='60px' id='worldDC' onclick='list("DC")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Timeless River.png' width='78px' height='60px' id='worldTR' onclick='list("TR")'>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src='img/Locations/Atlantica.png' width='114px' height='60px' id='worldAtlantica' onclick='list("ATL")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/100 Acre Wood.png' width='61px' height='60px' id='world100' onclick='list("100")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/The World That Never Was.png' width='89px' height='60px' id='worldTWTNW' onclick='list("TWTNW")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/The Land of Dragons.png' width='154px' height='60px' id='worldTLoD' onclick='list("TLOD")'>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src="img/Locations/Beast's Castle.png" width='116px' height='60px' id='worldBC' onclick='list("BC")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Olympus Coliseum.png' width='113px' height='60px' id='worldOC' onclick='list("OC")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Port Royal.png' width='170px' height='60px' id='worldPR' onclick='list("PR")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Agrabah.png' width='103px' height='60px' id='worldAgrabah' onclick='list("AGR")'>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src='img/Locations/Halloween Town.png' width='89px' height='60px' id='worldHT' onclick='list("HT")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Pride Lands.png' width='120px' height='60px' id='worldPL' onclick='list("PL")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/Space Paranoids.png' width='129px' height='60px' id='worldSP' onclick='list("SP")'>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/cor_1.png' width='73px' height='80px' id='worldCoR' onclick='list("COR")'>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td>
+                <img src='img/Magic/magicfire_0.png' width='80px' height='80px' id='mFire' onclick='magicMark("fire")'>
+                <span class='number' id='fireNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Magic/magicblizzard_0.png' width='80px' height='80px' id='mBlizzard' onclick='magicMark("blizzard")'>
+                <span class='number' id='blizzardNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Magic/magicthunder_0.png' width='80px' height='80px'id='mThunder' onclick='magicMark("thunder")'>
+                <span class='number' id='thunderNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Magic/magiccure_0.png' width='80px' height='80px' id='mCure' onclick='magicMark("cure")'>
+                <span class='number' id='cureNum'>0</span>
+              </td>
+            </tr>
+            <tr>
+              <td align='center'>
+                <img src='img/Magic/magicreflect_0.png' width='80px' height='80px' id='mReflect' onclick='magicMark("reflect")'>
+                <span class='number' id='reflectNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Magic/magicmagnet_0.png' width='80px' height='80px' id='mMagnet' onclick='magicMark("magnet")'>
+                <span class='number' id='magNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
+                <span class='number' id='keyNum'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>
+                <span class='number' id='pageNum'>0</span>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src='img/Forms/formvalor_0.png' width='80px' height='80px' id='fValor' onclick='formMark("valor")'>
+                <img src='img/Forms/formwisdom_0.png' width='80px' height='80px' id='fWisdom' onclick='formMark("wisdom")'>
+                <img src='img/Forms/formlimit_0.png' width='80px' height='80px' id='fLimit' onclick='formMark("limit")'>
+                <img src='img/Forms/formmaster_0.png' width='80px' height='80px' id='fMaster' onclick='formMark("master")'>
+                <img src='img/Forms/formfinal_0.png' width='80px' height='80px' id='fFinal' onclick='formMark("final")'>
+              </td>
+            </tr>
+          </table>
+          <table align='center'>
+            <tr>
+              <td align='center'>
+                <img src='img/Required/Charm_0.png' width='74px' height='80px' id='pCharm' onclick='requiredMark("charm")'>
+                <img src='img/Required/ProofConnection_0.png' width='80px' height='80px' id='pConnection' onclick='requiredMark("connection")'>
+                <img src='img/Required/ProofPeace_0.png' width='80px' height='80px' id='pPeace' onclick='requiredMark("peace")'>
+                <img src='img/Required/ProofNonexistence_0.png' width='80px' height='80px' id='pNonexist' onclick='requiredMark("nonexist")'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src='img/Charms/charmbaseball_0.png' width='80px' height='80px' id='cBBall' onclick='summonMark("bBall")'>
+                <img src='img/Charms/charmlamp_0.png' width='80px' height='80px' id='cLamp' onclick='summonMark("lamp")'>
+                <img src='img/Charms/charmukulele_0.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
+                <img src='img/Charms/charmfeather_0.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <!--Notes-->
+        <td align='left' valign='top' width='30%'>
           <div align='center' style='color:#fff'>
             <h4>Total Locations Left: <span id='totalChecks'>433</span></h4>
             <button onclick='save()'>Save Progress</button><button onclick='load()'>Restore from Save</button><br><br>
-            <textarea rows='20' cols='100' placeholder="Notes:"></textarea>
+            <textarea rows='55' cols='55' placeholder="Notes:"></textarea>
           </div>
           <div align='center' style='color:#fff; position:relative;'>
             Created by RampantEpsilon. Credit to <a href='https://github.com/Jsmartee/KH2FM-Checklist' style='color:#fff'>Jsmartee's Tracker</a>. (Where the lists and images came from)

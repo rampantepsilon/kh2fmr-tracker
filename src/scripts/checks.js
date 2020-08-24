@@ -215,7 +215,7 @@ const hb = [
 //Disney Castle & Timeless River
 const dctr = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Courtyard</div>
+    <li id='group'><div id='groupTitle' onclick='dctrAllMark(1)'>Courtyard</div>
       <ul>
         <li><div id='1' onclick='dctrMark("1")'>Flute Cow</div></li>
         <li><div id='2' onclick='dctrMark("2")'>Corner</div></li>
@@ -226,26 +226,26 @@ const dctr = [
         <li><div id='7' onclick='dctrMark("7")'>Near Door</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Library</div>
+    <li id='group'><div id='groupTitle' onclick='dctrAllMark(2)'>Library</div>
       <ul>
         <li><div id='8' onclick='dctrMark("8")'>Big Chest</div></li>
         <li><div id='9' onclick='dctrMark("9")'>Popup</div></li>
       </ul>
     </li>
     <li><div id='10' onclick='dctrMark("10")'><img src='img/keyhole_0.png' id='dcKey' width='16px' height='16px'> Minnie Escort Bonus</li>
-    <li id='group'><div id='groupTitle'>Hill</div>
+    <li id='group'><div id='groupTitle' onclick='dctrAllMark(3)'>Hill</div>
       <ul>
         <li><div id='11' onclick='dctrMark("11")'>Big Chest</div></li>
         <li><div id='12' onclick='dctrMark("12")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Pier</div>
+    <li id='group'><div id='groupTitle' onclick='dctrAllMark(4)'>Pier</div>
       <ul>
         <li><div id='13' onclick='dctrMark("13")'>Under Tree</div></li>
         <li><div id='14' onclick='dctrMark("14")'>Near Waterway</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Waterway</div>
+    <li id='group'><div id='groupTitle' onclick='dctrAllMark(5)'>Waterway</div>
       <ul>
         <li><div id='15' onclick='dctrMark("15")'>Right Chest</div></li>
         <li><div id='16' onclick='dctrMark("16")'>Middle Chest</div></li>
@@ -264,7 +264,7 @@ const dctr = [
 //The Land of Dragons
 const tlod = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Bamboo</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(1)'>Bamboo</div>
       <ul>
         <li><div id='1' onclick='tlodMark("1")'>Ether Chest</div></li>
         <li><div id='2' onclick='tlodMark("2")'>Back Chest</div></li>
@@ -273,13 +273,13 @@ const tlod = [
     </li>
     <li><div id='4' onclick='tlodMark("4")'>Map Popup</div></li>
     <li><div id='5' onclick='tlodMark("5")'>3rd Mission Popup</div></li>
-    <li id='group'><div id='groupTitle'>Checkpoint</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(2)'>Checkpoint</div>
       <ul>
         <li><div id='6' onclick='tlodMark("6")'>Near Gate</div></li>
         <li><div id='7' onclick='tlodMark("7")'>Near Mountain</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Mountain</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(3)'>Mountain</div>
       <ul>
         <li><div id='8' onclick='tlodMark("8")'>Lowest Chest</div></li>
         <li><div id='9' onclick='tlodMark("9")'>Highest Chest</div></li>
@@ -288,14 +288,14 @@ const tlod = [
       </ul>
     </li>
     <li><div id='12' onclick='tlodMark("12")'>Village Map Popup</div></li>
-    <li id='group'><div id='groupTitle'>Cave</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(4)'>Cave</div>
       <ul>
         <li><div id='13' onclick='tlodMark("13")'>1st Chest</div></li>
         <li><div id='14' onclick='tlodMark("14")'>2nd Chest</div></li>
         <li><div id='15' onclick='tlodMark("15")'>Fight Bonus</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Ridge</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(5)'>Ridge</div>
       <ul>
         <li><div id='16' onclick='tlodMark("16")'>Right Chest</div></li>
         <li><div id='17' onclick='tlodMark("17")'>Back Chest</div></li>
@@ -303,7 +303,7 @@ const tlod = [
     </li>
     <li><div id='18' onclick='tlodMark("18")'>Shan Yu Bonus</div></li>
     <li><div id='19' onclick='tlodMark("19")'><img src='img/keyhole_0.png' id='tlod1Key' width='16px' height='16px'> Hidden Dragon Popup</div></li>
-    <li id='group'><div id='groupTitle'>Throne Room</div>
+    <li id='group'><div id='groupTitle' onclick='tlodAllMark(6)'>Throne Room</div>
       <ul>
         <li><div id='20' onclick='tlodMark("20")'>Left Big Chest</div></li>
         <li><div id='21' onclick='tlodMark("21")'>Right Big Chest</div></li>
@@ -323,26 +323,26 @@ const tlod = [
 //Beast's Castle
 const bc = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Courtyard</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(1)'>Courtyard</div>
       <ul>
         <li><div id='1' onclick='bcMark("1")'>Left</div></li>
         <li><div id='2' onclick='bcMark("2")'>Near Bridge</div></li>
         <li><div id='3' onclick='bcMark("3")'>Right</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Belle</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(2)'>Belle</div>
       <ul>
         <li><div id='4' onclick='bcMark("4")'>Big Chest</div></li>
         <li><div id='5' onclick='bcMark("5")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>East Wing</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(3)'>East Wing</div>
       <ul>
         <li><div id='6' onclick='bcMark("6")'>Hallway</div></li>
         <li><div id='7' onclick='bcMark("7")'>Near Stairs</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>West Hall</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(4)'>West Hall</div>
       <ul>
         <li><div id='8' onclick='bcMark("8")'>Armor (x2)</div></li>
         <li><div id='9' onclick='bcMark("9")'>Right Stairs</div></li>
@@ -351,13 +351,13 @@ const bc = [
       </ul>
     </li>
     <li><div id='12' onclick='bcMark("12")'>Thresholder Bonus</div></li>
-    <li id='group'><div id='groupTitle'>Dungeon</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(5)'>Dungeon</div>
       <ul>
         <li><div id='13' onclick='bcMark("13")'>Big Chest</div></li>
         <li><div id='14' onclick='bcMark("14")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cogsworth</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(6)'>Cogsworth</div>
       <ul>
         <li><div id='15' onclick='bcMark("15")'>Upper Left</div></li>
         <li><div id='16' onclick='bcMark("16")'>Upper Right</div></li>
@@ -365,13 +365,13 @@ const bc = [
       </ul>
     </li>
     <li><div id='18' onclick='bcMark("18")'>West Hall Top of Stairs</div></li>
-    <li id='group'><div id='groupTitle'>West Wing</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(7)'>West Wing</div>
       <ul>
         <li><div id='19' onclick='bcMark("19")'>1st Chest</div></li>
         <li><div id='20' onclick='bcMark("20")'>Upstairs</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Beast</div>
+    <li id='group'><div id='groupTitle' onclick='bcAllMark(8)'>Beast</div>
       <ul>
         <li><div id='21' onclick='bcMark("21")'>Bonus</div></li>
         <li><div id='22' onclick='bcMark("22")'>Popup</div></li>
@@ -390,7 +390,7 @@ const bc = [
 //Olympus Coliseum
 const oc = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Passage</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(1)'>Passage</div>
       <ul>
         <li><div id='1' onclick='ocMark("1")'>Under Torch</div></li>
         <li><div id='2' onclick='ocMark("2")'>Outside Path</div></li>
@@ -399,7 +399,7 @@ const oc = [
         <li><div id='5' onclick='ocMark("5")'>Near Inner Chamber</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Inner Chamber</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(2)'>Inner Chamber</div>
       <ul>
         <li><div id='6' onclick='ocMark("6")'>Big Chest</div></li>
         <li><div id='7' onclick='ocMark("7")'>Small Chest</div></li>
@@ -409,14 +409,14 @@ const oc = [
     <li><div id='9' onclick='ocMark("9")'>Coliseum Map Popup</div></li>
     <li><div id='10' onclick='ocMark("10")'>Urns Bonus</div></li>
     <li><div id='11' onclick='ocMark("11")'>Underworld Power Boost Chest</div></li>
-    <li id='group'><div id='groupTitle'>Caverns Entrance</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(3)'>Caverns Entrance</div>
       <ul>
         <li><div id='12' onclick='ocMark("12")'>First Chest</div></li>
         <li><div id='13' onclick='ocMark("13")'>Upper Left</div></li>
         <li><div id='14' onclick='ocMark("14")'>Upper Right</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Lost Road</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(4)'>Lost Road</div>
       <ul>
         <li><div id='15' onclick='ocMark("15")'>Ether Chest</div></li>
         <li><div id='16' onclick='ocMark("16")'>Near Caverns Entrance</div></li>
@@ -424,14 +424,14 @@ const oc = [
         <li><div id='18' onclick='ocMark("18")'>Path To Atrium</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Atrium</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(5)'>Atrium</div>
       <ul>
         <li><div id='19' onclick='ocMark("19")'>Lower Level</div></li>
         <li><div id='20' onclick='ocMark("20")'>Lone Ledge</div></li>
       </ul>
     </li>
     <li><div id='21' onclick='ocMark("21")'>Demyx Popups</div></li>
-    <li id='group'><div id='groupTitle'>The Lock</div>
+    <li id='group'><div id='groupTitle' onclick='ocAllMark(6)'>The Lock</div>
       <ul>
         <li><div id='22' onclick='ocMark("22")'>Big Chest</div></li>
         <li><div id='23' onclick='ocMark("23")'>Small Right</div></li>
@@ -455,14 +455,14 @@ const oc = [
 //Port Royal
 const pr = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Rampart</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(1)'>Rampart</div>
       <ul>
         <li><div id='1' onclick='prMark("1")'>Big Chest</div></li>
         <li><div id='2' onclick='prMark("2")'>Cannon Chest</div></li>
         <li><div id='3' onclick='prMark("3")'>Near Puzzle</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Town</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(2)'>Town</div>
       <ul>
         <li><div id='4' onclick='prMark("4")'>In Boxes 1</div></li>
         <li><div id='5' onclick='prMark("5")'>Next To Boxes 1</div></li>
@@ -470,7 +470,7 @@ const pr = [
         <li><div id='7' onclick='prMark("7")'>Next To Boxes 2</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cave Mouth</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(3)'>Cave Mouth</div>
       <ul>
         <li><div id='8' onclick='prMark("8")'>Chest In Shadows</div></li>
         <li><div id='9' onclick='prMark("9")'>Chest In Light</div></li>
@@ -478,13 +478,13 @@ const pr = [
     </li>
     <li><div id='10' onclick='prMark("10")'>Timed Pirates Popup</div></li>
     <li><div id='11' onclick='prMark("11")'>Boat Fight Bonus</div></li>
-    <li id='group'><div id='groupTitle'>Powder Store</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(4)'>Powder Store</div>
       <ul>
         <li><div id='12' onclick='prMark("12")'>Left Boxes</div></li>
         <li><div id='13' onclick='prMark("13")'>Right Boxes</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Moonlight Nook</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(5)'>Moonlight Nook</div>
       <ul>
         <li><div id='14' onclick='prMark("14")'>Left</div></li>
         <li><div id='15' onclick='prMark("15")'>Front Right</div></li>
@@ -495,7 +495,7 @@ const pr = [
     <li><div id='18' onclick='prMark("18")'><img src='img/keyhole_0.png' id='pr1Key' width='16px' height='16px'> Follow the Wind Popup</div></li>
     <li><div id='19' onclick='prMark("19")'>Grim Reaper 1 Bonus</div></li>
     <li><div id='20' onclick='prMark("20")'>Peter Pan Chest</div></li>
-    <li id='group'><div id='groupTitle'>Seadrift Row</div>
+    <li id='group'><div id='groupTitle' onclick='prAllMark(6)'>Seadrift Row</div>
       <ul>
         <li><div id='21' onclick='prMark("21")'>1st Chest</div></li>
         <li><div id='22' onclick='prMark("22")'>Broken Ship</div></li>
@@ -518,7 +518,7 @@ const agrabah = [
     <li><div id='1' onclick='agrMark("1")'>Map Popup</div></li>
     <li><div id='2' onclick='agrMark("2")'>Near Stairs</div></li>
     <li><div id='3' onclick='agrMark("3")'>2nd Chest Upper Level</div></li>
-    <li id='group'><div id='groupTitle'>Above Market</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(1)'>Above Market</div>
       <ul>
         <li><div id='4' onclick='agrMark("4")'>Triangle Bottom Right</div></li>
         <li><div id='5' onclick='agrMark("5")'>Triangle Bottom Left</div></li>
@@ -527,7 +527,7 @@ const agrabah = [
     </li>
     <li><div id='7' onclick='agrMark("7")'>Back Corner</div></li>
     <li><div id='8' onclick='agrMark("8")'>Ledge Across From Corner</div></li>
-    <li id='group'><div id='groupTitle'>Bazaar</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(2)'>Bazaar</div>
       <ul>
         <li><div id='9' onclick='agrMark("9")'>On Ledge</div></li>
         <li><div id='10' onclick='agrMark("10")'>Near Middle</div></li>
@@ -536,19 +536,19 @@ const agrabah = [
         <li><div id='13' onclick='agrMark("13")'>Near Exit</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Palace Walls</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(3)'>Palace Walls</div>
       <ul>
         <li><div id='14' onclick='agrMark("14")'>Big Chest</div></li>
         <li><div id='15' onclick='agrMark("15")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cave Entrance</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(4)'>Cave Entrance</div>
       <ul>
         <li><div id='16' onclick='agrMark("16")'>Left</div></li>
         <li><div id='17' onclick='agrMark("17")'>Right</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cave</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(5)'>Cave</div>
       <ul>
         <li><div id='18' onclick='agrMark("18")'>First Middle</div></li>
         <li><div id='19' onclick='agrMark("19")'>Left</div></li>
@@ -557,7 +557,7 @@ const agrabah = [
       </ul>
     </li>
     <li><div id='22' onclick='agrMark("22")'>Abu Escort Bonus</div></li>
-    <li id='group'><div id='groupTitle'>Chasm</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(6)'>Chasm</div>
       <ul>
         <li><div id='23' onclick='agrMark("23")'>Big Chest</div></li>
         <li><div id='24' onclick='agrMark("24")'>Small Chest</div></li>
@@ -566,13 +566,13 @@ const agrabah = [
     <li><div id='25' onclick='agrMark("25")'>Treasure Room Bonus</div></li>
     <li><div id='26' onclick='agrMark("26")'>Twin Lords Bonus</div></li>
     <li><div id='27' onclick='agrMark("27")'><img src='img/keyhole_0.png' id='agr1Key' width='16px' height='16px'> Lamp Charm Popup</div></li>
-    <li id='group'><div id='groupTitle'>Treasure Room</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(7)'>Treasure Room</div>
       <ul>
         <li><div id='28' onclick='agrMark("28")'>Right</div></li>
         <li><div id='29' onclick='agrMark("29")'>Left</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Ruined Chamber</div>
+    <li id='group'><div id='groupTitle' onclick='agrAllMark(8)'>Ruined Chamber</div>
       <ul>
         <li><div id='30' onclick='agrMark("30")'>Left</div></li>
         <li><div id='31' onclick='agrMark("31")'>Right</div></li>
@@ -587,27 +587,27 @@ const agrabah = [
 //Halloween Town
 const ht = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Graveyard</div>
+    <li id='group'><div id='groupTitle' onclick='htAllMark(1)'>Graveyard</div>
     	<ul>
     		<li><div id='1' onclick='htMark("1")'>Near Gate</div></li>
     		<li><div id='2' onclick='htMark("2")'>Near Graves</div></li>
     	</ul>
     </li>
     <li><div id='3' onclick='htMark("3")'>Lab Big Chest</div></li>
-    <li id='group'><div id='groupTitle'>Town Square</div>
+    <li id='group'><div id='groupTitle' onclick='htAllMark(2)'>Town Square</div>
     	<ul>
     		<li><div id='4' onclick='htMark("4")'>Near Guillotine</div></li>
     		<li><div id='5' onclick='htMark("5")'>Near Gate</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Hinterlands</div>
+    <li id='group'><div id='groupTitle' onclick='htAllMark(3)'>Hinterlands</div>
     	<ul>
     		<li><div id='6' onclick='htMark("6")'>Front Right</div></li>
     		<li><div id='7' onclick='htMark("7")'>Back Right</div></li>
     		<li><div id='8' onclick='htMark("8")'>Left</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cane Lane</div>
+    <li id='group'><div id='groupTitle' onclick='htAllMark(4)'>Cane Lane</div>
     	<ul>
     		<li><div id='9' onclick='htMark("9")'>Left Ledge</div></li>
     		<li><div id='10' onclick='htMark("10")'>Right Ledge</div></li>
@@ -615,7 +615,7 @@ const ht = [
     		<li><div id='12' onclick='htMark("12")'>Front Of House</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Santa</div>
+    <li id='group'><div id='groupTitle' onclick='htAllMark(5)'>Santa</div>
     	<ul>
     		<li><div id='13' onclick='htMark("13")'>Big Chest</div></li>
     		<li><div id='14' onclick='htMark("14")'>Small Chest</div></li>
@@ -635,14 +635,14 @@ const ht = [
 //Pride Lands
 const pl = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Gorge</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(1)'>Gorge</div>
     	<ul>
     		<li><div id='1' onclick='plMark("1")'>Big Chest</div></li>
     		<li><div id='2' onclick='plMark("2")'>Small Right</div></li>
     		<li><div id='3' onclick='plMark("3")'>Small Left</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Graveyard</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(2)'>Graveyard</div>
     	<ul>
     		<li><div id='4' onclick='plMark("4")'>Under Mammoth Tusks</div></li>
     		<li><div id='5' onclick='plMark("5")'>Leftmost Chest</div></li>
@@ -651,14 +651,14 @@ const pl = [
     		<li><div id='8' onclick='plMark("8")'>Near Savannah</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Pride Rock</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(3)'>Pride Rock</div>
     	<ul>
     		<li><div id='9' onclick='plMark("9")'>Big Chest</div></li>
     		<li><div id='10' onclick='plMark("10")'>Near Wall</div></li>
     		<li><div id='11' onclick='plMark("11")'>Under Rock</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Valley</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(4)'>Valley</div>
     	<ul>
     		<li><div id='12' onclick='plMark("12")'>Center Big Rock</div></li>
     		<li><div id='13' onclick='plMark("13")'>Center Smaller Rock</div></li>
@@ -667,14 +667,14 @@ const pl = [
     		<li><div id='16' onclick='plMark("16")'>Under Tree</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Wastelands</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(5)'>Wastelands</div>
     	<ul>
     		<li><div id='17' onclick='plMark("17")'>1st Chest</div></li>
     		<li><div id='18' onclick='plMark("18")'>2nd Chest</div></li>
     		<li><div id='19' onclick='plMark("19")'>3rd Chest</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Jungle</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(6)'>Jungle</div>
     	<ul>
     		<li><div id='20' onclick='plMark("20")'>Under Rree</div></li>
     		<li><div id='21' onclick='plMark("21")'>Ant Hills</div></li>
@@ -682,7 +682,7 @@ const pl = [
     	</ul>
     </li>
     <li><div id='23' onclick='plMark("23")'>Simba Popup</div></li>
-    <li id='group'><div id='groupTitle'>Oasis</div>
+    <li id='group'><div id='groupTitle' onclick='plAllMark(7)'>Oasis</div>
     	<ul>
     		<li><div id='24' onclick='plMark("24")'>Near Cliff</div></li>
     		<li><div id='25' onclick='plMark("25")'>Torn Page Chest</div></li>
@@ -699,13 +699,13 @@ const pl = [
 //Space Paranoids
 const sp = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Pit Cell</div>
+    <li id='group'><div id='groupTitle' onclick='spAllMark(1)'>Pit Cell</div>
     	<ul>
     		<li><div id='1' onclick='spMark("1")'>Big Chest</div></li>
     		<li><div id='2' onclick='spMark("2")'>Small Chest</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Canyon</div>
+    <li id='group'><div id='groupTitle' onclick='spAllMark(2)'>Canyon</div>
     	<ul>
     		<li><div id='3' onclick='spMark("3")'>1st Chest</div></li>
     		<li><div id='4' onclick='spMark("4")'>Corner Chest</div></li>
@@ -713,13 +713,13 @@ const sp = [
     		<li><div id='6' onclick='spMark("6")'>Above Cube Game</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Hallway</div>
+    <li id='group'><div id='groupTitle' onclick='spAllMark(3)'>Hallway</div>
     	<ul>
     		<li><div id='7' onclick='spMark("7")'>Left Chest</div></li>
     		<li><div id='8' onclick='spMark("8")'>Right Chest</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Before Hostile</div>
+    <li id='group'><div id='groupTitle' onclick='spAllMark(4)'>Before Hostile</div>
     	<ul>
     		<li><div id='9' onclick='spMark("9")'>Left Big Chest</div></li>
     		<li><div id='10' onclick='spMark("10")'>Right Big Chest</div></li>
@@ -728,7 +728,7 @@ const sp = [
     <li><div id='11' onclick='spMark("11")'>Hostile Program Bonus</div></li>
     <li><div id='12' onclick='spMark("12")'><img src='img/keyhole_0.png' id='sp1Key' width='16px' height='16px'> Photon Debugger Popup</div></li>
     <li><div id='13' onclick='spMark("13")'>Solar Sailer Heartless Bonus</div></li>
-    <li id='group'><div id='groupTitle'>Computer Core</div>
+    <li id='group'><div id='groupTitle' onclick='spAllMark(5)'>Computer Core</div>
     	<ul>
     		<li><div id='14' onclick='spMark("14")'>Left Big Chest</div></li>
     		<li><div id='15' onclick='spMark("15")'>Right Big Chest</div></li>
@@ -743,7 +743,7 @@ const sp = [
 //Cave of Rememberance
 const cor = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Depths</div>
+    <li id='group'><div id='groupTitle' onclick='corAllMark(1)'>Depths</div>
     	<ul>
     		<li><div id='1' onclick='corMark("1")'>1st Chest</div></li>
     		<li><div id='2' onclick='corMark("2")'>Ground Close</div></li>
@@ -752,7 +752,7 @@ const cor = [
     		<li><div id='5' onclick='corMark("5")'>Highest</div></li>
     	</ul>
     </li>
-    <li id='group'><div id='groupTitle'>Mineshaft</div>
+    <li id='group'><div id='groupTitle' onclick='corAllMark(2)'>Mineshaft</div>
     	<ul>
     		<li><div id='6' onclick='corMark("6")'>Lower Big Chest</div></li>
     		<li><div id='7' onclick='corMark("7")'>Lower Small Chest</div></li>
@@ -760,7 +760,7 @@ const cor = [
     </li>
     <li><div id='8' onclick='corMark("8")'>Depths Upper Level</div></li>
     <li><div id='9' onclick='corMark("9")'>Near Valves Chest</div></li>
-    <li id='group'><div id='groupTitle'>Mining Area</div>
+    <li id='group'><div id='groupTitle' onclick='corAllMark(3)'>Mining Area</div>
     	<ul>
     		<li><div id='10' onclick='corMark("10")'>Lowest Chest</div></li>
     		<li><div id='11' onclick='corMark("11")'>Mid Height Chest</div></li>
@@ -770,7 +770,7 @@ const cor = [
     	</ul>
     </li>
     <li><div id='15' onclick='corMark("15")'>Mineshaft Big chest</div></li>
-    <li id='group'><div id='groupTitle'>Engine Chamber</div>
+    <li id='group'><div id='groupTitle' onclick='corAllMark(4)'>Engine Chamber</div>
     	<ul>
     		<li><div id='16' onclick='corMark("16")'>1st Chest</div></li>
     		<li><div id='17' onclick='corMark("17")'>2nd Chest</div></li>
@@ -786,7 +786,7 @@ const cor = [
 //The World That Never Was
 const twtnw = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Before Roxas</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(1)'>Before Roxas</div>
       <ul>
     		<li><div id='1' onclick='twtnwMark("1")'>1</div></li>
     		<li><div id='2' onclick='twtnwMark("2")'>2</div></li>
@@ -794,26 +794,26 @@ const twtnw = [
     		<li><div id='4' onclick='twtnwMark("4")'>4</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Roxas</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(2)'>Roxas</div>
       <ul>
     		<li><div id='5' onclick='twtnwMark("5")'>Bonus</div></li>
     		<li><div id='6' onclick='twtnwMark("6")'>Popups</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Skyscraper</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(3)'>Skyscraper</div>
       <ul>
     		<li><div id='7' onclick='twtnwMark("7")'>Truck</div></li>
     		<li><div id='8' onclick='twtnwMark("8")'>Left</div></li>
     		<li><div id='9' onclick='twtnwMark("9")'>Near Castle</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Before Castle</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(4)'>Before Castle</div>
       <ul>
     		<li><div id='10' onclick='twtnwMark("10")'>Big Chest</div></li>
     		<li><div id='11' onclick='twtnwMark("11")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Nothing's Call</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(5)'>Nothing's Call</div>
       <ul>
     		<li><div id='12' onclick='twtnwMark("12")'>1</div></li>
     		<li><div id='13' onclick='twtnwMark("13")'>2</div></li>
@@ -821,7 +821,7 @@ const twtnw = [
     </li>
     <li><div id='14' onclick='twtnwMark("14")'>Twilight's View Big Chest</div></li>
     <li><div id='15' onclick='twtnwMark("15")'>Xigbar Popup</div></li>
-    <li id='group'><div id='groupTitle'>Skyway</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(6)'>Skyway</div>
       <ul>
     		<li><div id='16' onclick='twtnwMark("16")'>First Chest</div></li>
     		<li><div id='17' onclick='twtnwMark("17")'>On Ledge</div></li>
@@ -829,7 +829,7 @@ const twtnw = [
       </ul>
     </li>
     <li><div id='19' onclick='twtnwMark("19")'>Oblivion Popups</div></li>
-    <li id='group'><div id='groupTitle'>Luxord</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(7)'>Luxord</div>
       <ul>
     		<li><div id='20' onclick='twtnwMark("20")'>Bonus</div></li>
     		<li><div id='21' onclick='twtnwMark("21")'>Popup</div></li>
@@ -837,7 +837,7 @@ const twtnw = [
     </li>
     <li><div id='22' onclick='twtnwMark("22")'>Saix Popup</div></li>
     <li><div id='23' onclick='twtnwMark("23")'>Riku Popup</div></li>
-    <li id='group'><div id='groupTitle'>Before Xemnas</div>
+    <li id='group'><div id='groupTitle' onclick='twtnwAllMark(8)'>Before Xemnas</div>
       <ul>
     		<li><div id='24' onclick='twtnwMark("24")'>1st Platform</div></li>
     		<li><div id='25' onclick='twtnwMark("25")'>2nd Platform</div></li>
@@ -853,35 +853,35 @@ const twtnw = [
 //100 Acre Wood
 const acre = [
   `<ul>
-    <li id='group'><div id='groupTitle'>Pooh</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(1)'>Pooh</div>
       <ul>
     		<li><div id='1' onclick='acreMark("1")'>Big Chest</div></li>
     		<li><div id='2' onclick='acreMark("2")'>Right Chest</div></li>
     		<li><div id='3' onclick='acreMark("3")'>Left Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Piglet</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(2)'>Piglet</div>
       <ul>
     		<li><div id='4' onclick='acreMark("4")'>Big Chest</div></li>
     		<li><div id='5' onclick='acreMark("5")'>Under Tree</div></li>
     		<li><div id='6' onclick='acreMark("6")'>Near Stump</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Rabbit</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(3)'>Rabbit</div>
       <ul>
     		<li><div id='7' onclick='acreMark("7")'>Big Chest</div></li>
     		<li><div id='8' onclick='acreMark("8")'>Clothesline</div></li>
     		<li><div id='9' onclick='acreMark("9")'>Garden</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Kanga</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(4)'>Kanga</div>
       <ul>
     		<li><div id='10' onclick='acreMark("10")'>Big Chest</div></li>
     		<li><div id='11' onclick='acreMark("11")'>Right</div></li>
     		<li><div id='12' onclick='acreMark("12")'>Left</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle'>Cave</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(5)'>Cave</div>
       <ul>
     		<li><div id='13' onclick='acreMark("13")'>1st Chest</div></li>
     		<li><div id='14' onclick='acreMark("14")'>Right Path Chest</div></li>
@@ -892,7 +892,7 @@ const acre = [
       </ul>
     </li>
     <li><div id='19' onclick='acreMark("19")'>Spooky Cave Reward</div></li>
-    <li id='group'><div id='groupTitle'>Starry Hill</div>
+    <li id='group'><div id='groupTitle' onclick='acreAllMark(6)'>Starry Hill</div>
       <ul>
     		<li><div id='20' onclick='acreMark("20")'>Big Chest</div></li>
     		<li><div id='21' onclick='acreMark("21")'>Small Chest</div></li>

@@ -537,145 +537,571 @@ function atlMark(num){
   document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
 }
 
-/*WIP Mark Sections
+/*WIP Mark Sections*/
 function sttAllMark(num){
   switch (num) {
     case 1:
-      sttMark(3);
-      sttMark(4);
-      sttMark(5);
-      sttMark(6);
+      sttMark("3");
+      sttMark("4");
+      sttMark("5");
+      sttMark("6");
       break;
     case 2:
-      sttMark(9);
-      sttMark(10);
-      sttMark(11);
+      sttMark("9");
+      sttMark("10");
+      sttMark("11");
       break;
     case 3:
-      sttMark(12);
-      sttMark(13);
-      sttMark(14);
-      sttMark(15);
+      sttMark("12");
+      sttMark("13");
+      sttMark("14");
+      sttMark("15");
       break;
     case 4:
-      sttMark(16);
-      sttMark(17);
-      sttMark(18);
-      sttMark(19);
-      sttMark(20);
-      sttMark(21);
-      sttMark(22);
-      sttMark(23);
-      sttMark(24);
+      sttMark("16");
+      sttMark("17");
+      sttMark("18");
+      sttMark("19");
+      sttMark("20");
+      sttMark("21");
+      sttMark("22");
+      sttMark("23");
+      sttMark("24");
       break;
   }
 }
 function ttAllMark(num){
   switch (num) {
     case 1:
-      ttMark(1);
-      ttMark(2);
+      ttMark("1");
+      ttMark("2");
       break;
     case 2:
-      ttMark(3);
-      ttMark(4);
-      ttMark(5);
-      ttMark(6);
-      ttMark(7);
-      ttMark(8);
-      ttMark(9);
+      ttMark("3");
+      ttMark("4");
+      ttMark("5");
+      ttMark("6");
+      ttMark("7");
+      ttMark("8");
+      ttMark("9");
       break;
     case 3:
-      ttMark(10);
-      ttMark(11);
-      ttMark(12);
+      ttMark("10");
+      ttMark("11");
+      ttMark("12");
       break;
     case 4:
-      ttMark(13);
-      ttMark(14);
-      ttMark(15);
-      ttMark(16);
+      ttMark("13");
+      ttMark("14");
+      ttMark("15");
+      ttMark("16");
       break;
     case 5:
-      ttMark(17);
-      ttMark(18);
-      ttMark(19);
+      ttMark("17");
+      ttMark("18");
+      ttMark("19");
       break;
     case 6:
-      ttMark(20);
-      ttMark(21);
+      ttMark("20");
+      ttMark("21");
       break;
     case 7:
-      ttMark(23);
-      ttMark(24);
+      ttMark("23");
+      ttMark("24");
       break;
     case 8:
-      ttMark(27);
-      ttMark(28);
-      ttMark(29);
-      ttMark(30);
+      ttMark("27");
+      ttMark("28");
+      ttMark("29");
+      ttMark("30");
       break;
     case 9:
-      ttMark(31);
-      ttMark(32);
+      ttMark("31");
+      ttMark("32");
       break;
     case 10:
-      ttMark(33);
-      ttMark(34);
-      ttMark(35);
-      ttMark(36);
+      ttMark("33");
+      ttMark("34");
+      ttMark("35");
+      ttMark("36");
       break;
     case 11:
-      ttMark(37);
-      ttMark(38);
-      ttMark(39);
-      ttMark(40);
-      ttMark(41);
-      ttMark(42);
-      ttMark(43);
+      ttMark("37");
+      ttMark("38");
+      ttMark("39");
+      ttMark("40");
+      ttMark("41");
+      ttMark("42");
+      ttMark("43");
       break;
   }
 }
 function hbAllMark(num){
   switch (num) {
     case 1:
-      hbMark(2);
-      hbMark(3);
-      hbMark(4);
-      hbMark(5);
-      hbMark(6);
+      hbMark("2");
+      hbMark("3");
+      hbMark("4");
+      hbMark("5");
+      hbMark("6");
       break;
     case 2:
-      hbMark(8);
-      hbMark(9);
+      hbMark("8");
+      hbMark("9");
       break;
     case 3:
-      hbMark(11);
-      hbMark(12);
-      hbMark(13);
+      hbMark("11");
+      hbMark("12");
+      hbMark("13");
       break;
     case 4:
-      hbMark(14);
-      hbMark(15);
-      hbMark(16);
-      hbMark(17);
+      hbMark("14");
+      hbMark("15");
+      hbMark("16");
+      hbMark("17");
       break;
     case 5:
-      hbMark(23);
-      hbMark(24);
-      hbMark(25);
-      hbMark(26);
+      hbMark("23");
+      hbMark("24");
+      hbMark("25");
+      hbMark("26");
       break;
     case 6:
-      hbMark(27);
-      hbMark(28);
+      hbMark("27");
+      hbMark("28");
       break;
     case 7:
-      hbMark(31);
-      hbMark(32);
+      hbMark("31");
+      hbMark("32");
       break;
   }
-}*/
+}
+function dctrAllMark(num){
+  switch (num) {
+    case 1:
+      dctrMark("1");
+      dctrMark("2");
+      dctrMark("3");
+      dctrMark("4");
+      dctrMark("5");
+      dctrMark("6");
+      dctrMark("7");
+      break;
+    case 2:
+      dctrMark("8");
+      dctrMark("9");
+      break;
+    case 3:
+      dctrMark("11");
+      dctrMark("12");
+      break;
+    case 4:
+      dctrMark("13");
+      dctrMark("14");
+      break;
+    case 5:
+      dctrMark("15");
+      dctrMark("16");
+      dctrMark("17");
+      break;
+  }
+}
+function tlodAllMark(num){
+  switch (num) {
+    case 1:
+      tlodMark("1");
+      tlodMark("2");
+      tlodMark("3");
+      break;
+    case 2:
+      tlodMark("6");
+      tlodMark("7");
+      break;
+    case 3:
+      tlodMark("8");
+      tlodMark("9");
+      tlodMark("10");
+      tlodMark("11");
+      break;
+    case 4:
+      tlodMark("13");
+      tlodMark("14");
+      tlodMark("15");
+      break;
+    case 5:
+      tlodMark("16");
+      tlodMark("17");
+      break;
+    case 6:
+      tlodMark("20");
+      tlodMark("21");
+      tlodMark("22");
+      tlodMark("23");
+      tlodMark("24");
+      tlodMark("25");
+      tlodMark("26");
+      tlodMark("27");
+      break;
+  }
+}
+function bcAllMark(num){
+  switch (num) {
+    case 1:
+      bcMark("1");
+      bcMark("2");
+      bcMark("3");
+      break;
+    case 2:
+      bcMark("4");
+      bcMark("5");
+      break;
+    case 3:
+      bcMark("6");
+      bcMark("7");
+      break;
+    case 4:
+      bcMark("8");
+      bcMark("9");
+      bcMark("10");
+      bcMark("11");
+      break;
+    case 5:
+      bcMark("13");
+      bcMark("14");
+      break;
+    case 6:
+      bcMark("15");
+      bcMark("16");
+      bcMark("17");
+      break;
+    case 7:
+      bcMark("19");
+      bcMark("20");
+      break;
+    case 8:
+      bcMark("21");
+      bcMark("22");
+      bcMark("23");
+      break;
+  }
+}
+function ocAllMark(num){
+  switch (num) {
+    case 1:
+      ocMark("1");
+      ocMark("2");
+      ocMark("3");
+      ocMark("4");
+      ocMark("5");
+      break;
+    case 2:
+      ocMark("6");
+      ocMark("7");
+      break;
+    case 3:
+      ocMark("12");
+      ocMark("13");
+      ocMark("14");
+      break;
+    case 4:
+      ocMark("15");
+      ocMark("16");
+      ocMark("17");
+      ocMark("18");
+      break;
+    case 5:
+      ocMark("19");
+      ocMark("20");
+      break;
+    case 6:
+      ocMark("22");
+      ocMark("23");
+      ocMark("24");
+      break;
+  }
+}
+function prAllMark(num){
+  switch (num) {
+    case 1:
+      prMark("1");
+      prMark("2");
+      prMark("3");
+      break;
+    case 2:
+      prMark("4");
+      prMark("5");
+      prMark("6");
+      prMark("7");
+      break;
+    case 3:
+      prMark("8");
+      prMark("9");
+      break;
+    case 4:
+      prMark("12");
+      prMark("13");
+      break;
+    case 5:
+      prMark("14");
+      prMark("15");
+      prMark("16");
+      break;
+    case 6:
+      prMark("21");
+      prMark("22");
+      prMark("23");
+      prMark("24");
+      prMark("25");
+      prMark("26");
+      break;
+  }
+}
+function agrAllMark(num){
+  switch (num) {
+    case 1:
+      agrMark("4");
+      agrMark("5");
+      agrMark("6");
+      break;
+    case 2:
+      agrMark("9");
+      agrMark("10");
+      agrMark("11");
+      agrMark("12");
+      agrMark("13");
+      break;
+    case 3:
+      agrMark("14");
+      agrMark("15");
+      break;
+    case 4:
+      agrMark("16");
+      agrMark("17");
+      break;
+    case 5:
+      agrMark("18");
+      agrMark("19");
+      agrMark("20");
+      agrMark("21");
+      break;
+    case 6:
+      agrMark("23");
+      agrMark("24");
+      break;
+    case 7:
+      agrMark("28");
+      agrMark("29");
+      break;
+    case 8:
+      agrMark("30");
+      agrMark("31");
+      break;
+  }
+}
+function htAllMark(num){
+  switch (num) {
+    case 1:
+      htMark("1");
+      htMark("2");
+      break;
+    case 2:
+      htMark("4");
+      htMark("5");
+      break;
+    case 3:
+      htMark("6");
+      htMark("7");
+      htMark("8");
+      break;
+    case 4:
+      htMark("9");
+      htMark("10");
+      htMark("11");
+      htMark("12");
+      break;
+    case 5:
+      htMark("13");
+      htMark("14");
+      break;
+  }
+}
+function plAllMark(num){
+  switch (num) {
+    case 1:
+      plMark("1");
+      plMark("2");
+      plMark("3");
+      break;
+    case 2:
+      plMark("4");
+      plMark("5");
+      plMark("6");
+      plMark("7");
+      plMark("8");
+      break;
+    case 3:
+      plMark("9");
+      plMark("10");
+      plMark("11");
+      break;
+    case 4:
+      plMark("12");
+      plMark("13");
+      plMark("14");
+      plMark("15");
+      plMark("16");
+      break;
+    case 5:
+      plMark("17");
+      plMark("18");
+      plMark("19");
+      break;
+    case 6:
+      plMark("20");
+      plMark("21");
+      plMark("22");
+      break;
+    case 7:
+      plMark("24");
+      plMark("25");
+      plMark("26");
+      break;
+  }
+}
+function spAllMark(num){
+  switch (num) {
+    case 1:
+      spMark("1");
+      spMark("2");
+      break;
+    case 2:
+      spMark("3");
+      spMark("4");
+      spMark("5");
+      spMark("6");
+      break;
+    case 3:
+      spMark("7");
+      spMark("8");
+      break;
+    case 4:
+      spMark("9");
+      spMark("10");
+      break;
+    case 5:
+      spMark("14");
+      spMark("15");
+      spMark("16");
+      spMark("17");
+      break;
+  }
+}
+function corAllMark(num){
+  switch (num) {
+    case 1:
+      corMark("1");
+      corMark("2");
+      corMark("3");
+      corMark("4");
+      corMark("5");
+      break;
+    case 2:
+      corMark("6");
+      corMark("7");
+      break;
+    case 3:
+      corMark("10");
+      corMark("11");
+      corMark("12");
+      corMark("13");
+      corMark("14");
+      break;
+    case 4:
+      corMark("16");
+      corMark("17");
+      corMark("18");
+      corMark("19");
+      break;
+  }
+}
+function twtnwAllMark(num){
+  switch (num) {
+    case 1:
+      twtnwMark("1");
+      twtnwMark("2");
+      twtnwMark("3");
+      twtnwMark("4");
+      break;
+    case 2:
+      twtnwMark("5");
+      twtnwMark("6");
+      break;
+    case 3:
+      twtnwMark("7");
+      twtnwMark("8");
+      twtnwMark("9");
+      break;
+    case 4:
+      twtnwMark("10");
+      twtnwMark("11");
+      break;
+    case 5:
+      twtnwMark("12");
+      twtnwMark("13");
+      break;
+    case 6:
+      twtnwMark("16");
+      twtnwMark("17");
+      twtnwMark("18");
+      break;
+    case 7:
+      twtnwMark("20");
+      twtnwMark("21");
+      break;
+    case 8:
+      twtnwMark("24");
+      twtnwMark("25");
+      twtnwMark("26");
+      twtnwMark("27");
+      break;
+  }
+}
+function acreAllMark(num){
+  switch (num) {
+    case 1:
+      acreMark("1");
+      acreMark("2");
+      acreMark("3");
+      break;
+    case 2:
+      acreMark("4");
+      acreMark("5");
+      acreMark("6");
+      break;
+    case 3:
+      acreMark("7");
+      acreMark("8");
+      acreMark("9");
+      break;
+    case 4:
+      acreMark("10");
+      acreMark("11");
+      acreMark("12");
+      break;
+    case 5:
+      acreMark("13");
+      acreMark("14");
+      acreMark("15");
+      acreMark("16");
+      acreMark("17");
+      acreMark("18");
+      break;
+    case 6:
+      acreMark("20");
+      acreMark("21");
+      break;
+  }
+}
 
 //Mark Required Items
 function requiredMark(item){
