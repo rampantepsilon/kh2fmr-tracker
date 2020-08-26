@@ -9,6 +9,19 @@
       document.addEventListener('click', function(){
         document.getElementById('totalChecks').innerHTML = (433 - sttDone.length - ttDone.length - hbDone.length - dctrDone.length - tlodDone.length - bcDone.length - ocDone.length - prDone.length - agrDone.length - htDone.length - plDone.length - spDone.length - corDone.length - twtnwDone.length - acreDone.length - atlDone.length)
       });
+
+      function addHints(){
+        var hint = document.getElementsByClassName('hintCount');
+        var counter = 0;
+        for (i=0; i < 17; i++){
+          if (hint[i].value != ''){
+            counter += parseInt(hint[i].value);
+          } else {
+            counter += 0;
+          }
+        }
+        document.getElementById('totalHints').innerHTML = counter;
+      }
     </script>
   </head>
 
@@ -185,19 +198,34 @@
         <!--Notes-->
         <td align='left' valign='top' width='30%'>
           <h3 align='center' style='color:white'>Hints/Notes</h3>
+          <span style='color:white'>Hint Boxes are Designed as follows: 1st Box Found Checks 2nd Box Total Checks</span><br><br>
           <table width='100%' style='color:white;'>
+            <tr>
+              <td>
+                Sora's Heart
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
+              </td>
+              <td>
+                Forms
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
+              </td>
+            </tr>
             <tr>
               <td>
                 Simulated TT
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Twilight Town
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -205,13 +233,13 @@
                 Hollow Bastion
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Disney Castle
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -219,13 +247,13 @@
                 Atlantica
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 100 Acre
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -233,13 +261,13 @@
                 TWTNW
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Land of Dragons
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -247,13 +275,13 @@
                 Beast's Castle
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Olympus
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -261,13 +289,13 @@
                 Port Royal
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Agrabah
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -275,13 +303,13 @@
                 Halloween Town
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
               <td>
                 Pride Lands
               </td>
               <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
             <tr>
@@ -289,26 +317,15 @@
                 Space Paranoids
               </td>
               <td colspan="2" align='left'>
-                <input type='text' size='2'><input type='text' size='2'>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Sora's Heart
-              </td>
-              <td>
-                <input type='text' size='2'><input type='text' size='2'>
-              </td>
-              <td>
-                Forms
-              </td>
-              <td>
-                <input type='text' size='2'><input type='text' size='2'>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
           </table>
           <div align='center' style='color:#fff'>
-            <h4>Total Locations Left: <span id='totalChecks'>433</span></h4>
+            <h4>
+              Hints Found: <span id='totalHints'>0</span> / (51/49/44) [Depending on Hint System]
+              <br>Total Locations Left: <span id='totalChecks'>433</span>
+            </h4>
             <button onclick='save()'>Save Progress</button><button onclick='load()'>Restore from Save</button><br><br>
             <textarea rows='25' cols='55' placeholder="Notes:"></textarea>
           </div>
