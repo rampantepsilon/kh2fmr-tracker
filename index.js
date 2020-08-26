@@ -20,8 +20,9 @@ Checklist
 - Checklists will show based off of what is selected for the world.
 - Data will persist between viewing different links so long as you don't refresh the tracker or close the tracker.
 
-Forms
+Magic/Forms
 - Forms are now able to show levels if wanted.
+- Icons are updated to be a bit clear as to what they are. Shoutouts to the KH2FMR tracker on EmoTracker
 
 Notes/Hints
 - If you need to resize the notes window, click and drag from the bottom right corner.
@@ -36,6 +37,7 @@ Saving Tracker
 
 Changes
 - Changed Layout for better stream quality
+- Added support for Jsmartee's Hint System
 
 To Be Added
 - Way to show progress on kingdom without selecting it.`
@@ -43,6 +45,8 @@ To Be Added
 
 //Global Variables
 let mainWindow;
+let h1Window;
+let h2Window;
 
 //App Menu
 let menuT = [
@@ -67,13 +71,58 @@ let menuT = [
       }
     ]
   },{
+    label: 'Generate Hints',
+    submenu: [
+      {
+        label: `Jsmartee's Hint Generator`,
+        click(){
+          hint1Window()
+        }
+      },{
+        label: `TGSN's Hint Generator`,
+        click(){
+          hint2Window()
+        }
+      }
+    ]
+  },{
     label: 'About',
     click(){
       aboutMessage();
     }
   }
 ]
+let menuT1 = [
+  {
+    label: 'App',
+    submenu: [
+      {
+        label: 'Reset Tracker',
+        role: 'reload',
+        accelerator: 'F5'
+      },{
+        label: 'Toggle Dev Tools',
+        role: 'toggledevtools',
+        accelerator: 'CommandOrControl+Alt+I',
+        enabled: true,
+        visible: false
+      },{
+        label: 'Exit',
+        click(){
+          if (h1Window){
+            hint1Window.close();
+          }
+          if (h2Window){
+            hint2Window.close();
+          }
+        }
+      }
+    ]
+  }
+]
 const menu = Menu.buildFromTemplate(menuT);
+const menu2 = Menu.buildFromTemplate(menuT1);
+Menu.setApplicationMenu(menu2);
 
 function aboutMessage(){
   dialog.showMessageBox(null, aboutOptions, (response, checkboxChecked) =>{});
@@ -93,7 +142,40 @@ function createWindow(){
   mainWindow.maximize();
   mainWindow.loadFile('src/index.html');
 
-  Menu.setApplicationMenu(menu)
+  //Menu.setApplicationMenu(menu)
+  mainWindow.setMenu(menu);
+}
+
+function hint1Window(){
+  const h1Window = new BrowserWindow({
+    width: 850,
+    height: 900,
+    title: label,
+    icon: __dirname + "/icon.png",
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  h1Window.loadURL('https://jsmartee.github.io/kh2fm-hints-demo/');
+
+  //Menu.setApplicationMenu(menu)
+}
+
+function hint2Window(){
+  const h2Window = new BrowserWindow({
+    width: 850,
+    height: 900,
+    title: label,
+    icon: __dirname + "/icon.png",
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  h2Window.loadURL('https://tgsnetwork.org/staff/kh2fmr-hints');
+
+  //Menu.setApplicationMenu(menu)
 }
 
 // This method will be called when Electron has finished
