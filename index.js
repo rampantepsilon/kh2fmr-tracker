@@ -14,16 +14,21 @@ const aboutOptions = {
   detail: `Locations
 - Location aren't trackable by clicking on them. Instead they open a list of checks that can be made. The location icon will light up when the second pass of the world is complete. For the most part, this will mean the Data Fights are all that's left.
 - Added ability to mark all checks in a group. NOTE: If you select a single check then the group, the single check will become unmarked. This will be fixed in a future build.
+- Added way to see how many completed visits per world.
 
 Checklist
 - Checklists will show based off of what is selected for the world.
 - Data will persist between viewing different links so long as you don't refresh the tracker or close the tracker.
 
-Notes
+Forms
+- Forms are now able to show levels if wanted.
+
+Notes/Hints
 - If you need to resize the notes window, click and drag from the bottom right corner.
 - Resize notes prior to narrowing the window. If you don't this can cause the notes to persist above the lists.
 - 100 Acre Wood isn't split on per page but as overall.
 - If using the tracker for the icon layout, you can mark locations by selecting the last keyhole check for the world.
+- Added way to track hints if using them.
 
 Saving Tracker
 - Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'

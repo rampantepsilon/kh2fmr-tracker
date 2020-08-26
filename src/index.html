@@ -20,19 +20,24 @@
           <table align='center'>
             <tr>
               <td align='center'>
-                <img src='img/Locations/Roxas_1.png' width='80px' height='80px' id='worldRoxas' onclick='list("STT")'>
+                <img src='img/Locations/Roxas_1.png' width='60px' height='60px' id='worldRoxas' onclick='list("STT")'>
+                <span class='visitNum' id='stt'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Twilight Town.png' width='98px' height='60px' id='worldTT' onclick='list("TT")'>
+                <span class='visitNum' id='tt'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Hollow Bastion.png' width='64px' height='60px' id='worldHB' onclick='list("HB")'>
+                <span class='visitNum' id='hb'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Disney Castle.png' width='80px' height='60px' id='worldDC' onclick='list("DC")'>
+                <span class='visitNum' id='dc'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Timeless River.png' width='78px' height='60px' id='worldTR' onclick='list("TR")'>
+                <span class='visitNum' id='tr'>0</span>
               </td>
             </tr>
           </table>
@@ -40,15 +45,19 @@
             <tr>
               <td align='center'>
                 <img src='img/Locations/Atlantica.png' width='114px' height='60px' id='worldAtlantica' onclick='list("ATL")'>
+                <span class='visitNum' id='atl'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/100 Acre Wood.png' width='61px' height='60px' id='world100' onclick='list("100")'>
+                <span class='visitNum' id='acre'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/The World That Never Was.png' width='89px' height='60px' id='worldTWTNW' onclick='list("TWTNW")'>
+                <span class='visitNum' id='twtnw'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/The Land of Dragons.png' width='154px' height='60px' id='worldTLoD' onclick='list("TLOD")'>
+                <span class='visitNum' id='lod'>0</span>
               </td>
             </tr>
           </table>
@@ -56,15 +65,19 @@
             <tr>
               <td align='center'>
                 <img src="img/Locations/Beast's Castle.png" width='116px' height='60px' id='worldBC' onclick='list("BC")'>
+                <span class='visitNum' id='bc'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Olympus Coliseum.png' width='113px' height='60px' id='worldOC' onclick='list("OC")'>
+                <span class='visitNum' id='oc'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Port Royal.png' width='170px' height='60px' id='worldPR' onclick='list("PR")'>
+                <span class='visitNum' id='pr'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Agrabah.png' width='103px' height='60px' id='worldAgrabah' onclick='list("AGR")'>
+                <span class='visitNum' id='agr'>0</span>
               </td>
             </tr>
           </table>
@@ -72,15 +85,19 @@
             <tr>
               <td align='center'>
                 <img src='img/Locations/Halloween Town.png' width='89px' height='60px' id='worldHT' onclick='list("HT")'>
+                <span class='visitNum' id='ht'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Pride Lands.png' width='120px' height='60px' id='worldPL' onclick='list("PL")'>
+                <span class='visitNum' id='pl'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Locations/Space Paranoids.png' width='129px' height='60px' id='worldSP' onclick='list("SP")'>
+                <span class='visitNum' id='sp'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/cor_1.png' width='73px' height='80px' id='worldCoR' onclick='list("COR")'>
+                <img src='img/Locations/cor_1.png' width='60px' height='60px' id='worldCoR' onclick='list("COR")'>
+                <span class='visitNum' id='cor'>0</span>
               </td>
             </tr>
           </table>
@@ -126,10 +143,23 @@
             <tr>
               <td align='center'>
                 <img src='img/Forms/formvalor_0.png' width='80px' height='80px' id='fValor' onclick='formMark("valor")'>
+                <span class='number' id='valorNum'>0</span>
+              </td>
+              <td>
                 <img src='img/Forms/formwisdom_0.png' width='80px' height='80px' id='fWisdom' onclick='formMark("wisdom")'>
+                <span class='number' id='wisdomNum'>0</span>
+              </td>
+              <td>
                 <img src='img/Forms/formlimit_0.png' width='80px' height='80px' id='fLimit' onclick='formMark("limit")'>
+                <span class='number' id='limitNum'>0</span>
+              </td>
+              <td>
                 <img src='img/Forms/formmaster_0.png' width='80px' height='80px' id='fMaster' onclick='formMark("master")'>
+                <span class='number' id='masterNum'>0</span>
+              </td>
+              <td>
                 <img src='img/Forms/formfinal_0.png' width='80px' height='80px' id='fFinal' onclick='formMark("final")'>
+                <span class='number' id='finalNum'>0</span>
               </td>
             </tr>
           </table>
@@ -154,10 +184,133 @@
         </td>
         <!--Notes-->
         <td align='left' valign='top' width='30%'>
+          <h3 align='center' style='color:white'>Hints/Notes</h3>
+          <table width='100%' style='color:white;'>
+            <tr>
+              <td>
+                Simulated TT
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Twilight Town
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hollow Bastion
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Disney Castle
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Atlantica
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                100 Acre
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                TWTNW
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Land of Dragons
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Beast's Castle
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Olympus
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Port Royal
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Agrabah
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Halloween Town
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Pride Lands
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align='right'>
+                Space Paranoids
+              </td>
+              <td colspan="2" align='left'>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sora's Heart
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+              <td>
+                Forms
+              </td>
+              <td>
+                <input type='text' size='2'><input type='text' size='2'>
+              </td>
+            </tr>
+          </table>
           <div align='center' style='color:#fff'>
             <h4>Total Locations Left: <span id='totalChecks'>433</span></h4>
             <button onclick='save()'>Save Progress</button><button onclick='load()'>Restore from Save</button><br><br>
-            <textarea rows='55' cols='55' placeholder="Notes:"></textarea>
+            <textarea rows='25' cols='55' placeholder="Notes:"></textarea>
           </div>
           <div align='center' style='color:#fff; position:relative;'>
             Created by RampantEpsilon. Credit to <a href='https://github.com/Jsmartee/KH2FM-Checklist' style='color:#fff'>Jsmartee's Tracker</a>. (Where the lists and images came from)

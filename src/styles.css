@@ -31,3 +31,12 @@ ul{
   font-size: 32px;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
+
+.visitNum{
+  position:relative;
+  bottom: 0px;
+  right: 20px;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}

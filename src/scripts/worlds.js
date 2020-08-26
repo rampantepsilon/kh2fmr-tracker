@@ -497,50 +497,71 @@ function load(){
   }
 
   //Mark Forms
-  if (formDone[0] == "1"){
-    formMark('valor');
+  if (formDone[0] != "0"){
+    var count = formDone[0];
+    for (var i = 0; i < count; i++){
+      formMark('valor');
+    }
   }
-  if (formDone[1] == '1'){
-    formMark('wisdom');
+  if (formDone[1] != "0"){
+    var count = formDone[1];
+    for (var i = 0; i < count; i++){
+      formMark('wisdom');
+    }
   }
-  if (formDone[2] == '1'){
-    formMark('limit');
+  if (formDone[2] != "0"){
+    var count = formDone[2];
+    for (var i = 0; i < count; i++){
+      formMark('limit');
+    }
   }
-  if (formDone[3] == '1'){
-    formMark('master');
+  if (formDone[3] != "0"){
+    var count = formDone[3];
+    for (var i = 0; i < count; i++){
+      formMark('master');
+    }
   }
-  if (formDone[4] == '1'){
-    formMark('final');
+  if (formDone[4] != "0"){
+    var count = formDone[4];
+    for (var i = 0; i < count; i++){
+      formMark('final');
+    }
   }
 
   //Mark Magic
   if (magicDone[0] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[0];
+    for (var i = 0; i < count; i++){
       magicMark('fire');
     }
   }
   if (magicDone[1] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[1];
+    for (var i = 0; i < count; i++){
       magicMark('blizzard');
     }
   }
   if (magicDone[2] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[2];
+    for (var i = 0; i < count; i++){
       magicMark('thunder');
     }
   }
   if (magicDone[3] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[3];
+    for (var i = 0; i < count; i++){
       magicMark('cure');
     }
   }
   if (magicDone[4] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[4];
+    for (var i = 0; i < count; i++){
       magicMark('reflect');
     }
   }
   if (magicDone[5] != "0"){
-    for (var i = 0; i < parseInt(magicDone[0]); i++){
+    var count = magicDone[5];
+    for (var i = 0; i < count; i++){
       magicMark('magnet');
     }
   }

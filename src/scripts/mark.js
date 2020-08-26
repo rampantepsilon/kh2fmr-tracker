@@ -8,6 +8,7 @@ function sttMark(num){
     if (num == '24'){
       document.getElementById('worldRoxas').style.filter = "brightness(100%)"
       document.getElementById('sttKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('stt').innerHTML = 'X';
     }
     //Keeping incase I change courses (Would mean a lot more work)
     /*if (sttDone.length == '25'){
@@ -26,6 +27,7 @@ function sttMark(num){
     if (num == '24'){
       document.getElementById('worldRoxas').style.filter = "brightness(40%)"
       document.getElementById('sttKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('stt').innerHTML = '0';
     }
   }
   document.getElementById('sttLeft').innerHTML = (25 - sttDone.length);
@@ -39,13 +41,16 @@ function ttMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '24'){
       document.getElementById('tt1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('tt').innerHTML = '1';
     }
     if (num == '26'){
       document.getElementById('tt2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('tt').innerHTML = '2';
     }
     if (num == '46'){
       document.getElementById('worldTT').style.filter = "brightness(100%)"
       document.getElementById('tt3Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('tt').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < ttDone.length; i++){
@@ -59,13 +64,26 @@ function ttMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '24'){
       document.getElementById('tt1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('tt').innerHTML = '0';
     }
     if (num == '26'){
       document.getElementById('tt2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (ttDone.includes('24')){
+        document.getElementById('tt').innerHTML = '1';
+      } else {
+        document.getElementById('tt').innerHTML = '0';
+      }
     }
     if (num == '46'){
       document.getElementById('worldTT').style.filter = "brightness(40%)"
       document.getElementById('tt3Key').setAttribute('src', 'img/keyhole_0.png')
+      if (ttDone.includes("26")){
+        document.getElementById('tt').innerHTML = '2';
+      } else if (ttDone.includes('24')){
+        document.getElementById('tt').innerHTML = '1';
+      } else {
+        document.getElementById('tt').innerHTML = '0';
+      }
     }
   }
   document.getElementById('ttLeft').innerHTML = (47 - ttDone.length);
@@ -79,10 +97,12 @@ function hbMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '10'){
       document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('hb').innerHTML = '1';
     }
     if (num == '28'){
       document.getElementById('worldHB').style.filter = "brightness(100%)"
       document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('hb').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < hbDone.length; i++){
@@ -96,10 +116,16 @@ function hbMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '10'){
       document.getElementById('hb1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('hb').innerHTML = '0';
     }
     if (num == '28'){
       document.getElementById('worldHB').style.filter = "brightness(40%)"
       document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (hbDone.includes('10')){
+        document.getElementById('hb').innerHTML = '1';
+      } else {
+        document.getElementById('hb').innerHTML = '0';
+      }
     }
   }
   document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
@@ -114,10 +140,12 @@ function dctrMark(num){
     if (num == '10'){
       document.getElementById('worldDC').style.filter = "brightness(100%)"
       document.getElementById('dcKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('dc').innerHTML = 'X';
     }
     if (num == '21'){
       document.getElementById('worldTR').style.filter = "brightness(100%)"
       document.getElementById('trKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('tr').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < dctrDone.length; i++){
@@ -132,10 +160,12 @@ function dctrMark(num){
     if (num == '10'){
       document.getElementById('worldDC').style.filter = "brightness(40%)"
       document.getElementById('dcKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('dc').innerHTML = '0';
     }
     if (num == '21'){
       document.getElementById('worldTR').style.filter = "brightness(40%)"
       document.getElementById('trKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('tr').innerHTML = '0';
     }
   }
   document.getElementById('dctrLeft').innerHTML = (23 - dctrDone.length);
@@ -149,10 +179,12 @@ function tlodMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '19'){
       document.getElementById('tlod1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('lod').innerHTML = '1';
     }
     if (num == '28'){
       document.getElementById('worldTLoD').style.filter = "brightness(100%)"
       document.getElementById('tlod2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('lod').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < tlodDone.length; i++){
@@ -166,10 +198,16 @@ function tlodMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '19'){
       document.getElementById('tlod1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('lod').innerHTML = '0';
     }
     if (num == '28'){
       document.getElementById('worldTLoD').style.filter = "brightness(40%)"
       document.getElementById('tlod2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (tlodDone.includes('19')){
+        document.getElementById('lod').innerHTML = '1';
+      } else {
+        document.getElementById('lod').innerHTML = '0';
+      }
     }
   }
   document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
@@ -183,10 +221,12 @@ function bcMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '25'){
       document.getElementById('bc1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('bc').innerHTML = '1';
     }
     if (num == '28'){
       document.getElementById('worldBC').style.filter = "brightness(100%)"
       document.getElementById('bc2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('bc').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < bcDone.length; i++){
@@ -200,10 +240,16 @@ function bcMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '25'){
       document.getElementById('bc1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('bc').innerHTML = '0';
     }
     if (num == '28'){
       document.getElementById('worldBC').style.filter = "brightness(40%)"
       document.getElementById('bc2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (bcDone.includes('25')){
+        document.getElementById('bc').innerHTML = '1';
+      } else {
+        document.getElementById('bc').innerHTML = '0';
+      }
     }
   }
   document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
@@ -217,10 +263,12 @@ function ocMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '27'){
       document.getElementById('oc1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('oc').innerHTML = '1';
     }
     if (num == '30'){
       document.getElementById('worldOC').style.filter = "brightness(100%)"
       document.getElementById('oc2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('oc').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < ocDone.length; i++){
@@ -234,10 +282,16 @@ function ocMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '27'){
       document.getElementById('oc1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('oc').innerHTML = '0';
     }
     if (num == '30'){
       document.getElementById('worldOC').style.filter = "brightness(40%)"
       document.getElementById('oc2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (ocDone.includes('27')){
+        document.getElementById('oc').innerHTML = '1';
+      } else {
+        document.getElementById('oc').innerHTML = '0';
+      }
     }
   }
   document.getElementById('ocLeft').innerHTML = (35 - ocDone.length);
@@ -251,10 +305,12 @@ function prMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '18'){
       document.getElementById('pr1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('pr').innerHTML = '1';
     }
     if (num == '29'){
       document.getElementById('worldPR').style.filter = "brightness(100%)"
       document.getElementById('pr2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('pr').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < prDone.length; i++){
@@ -268,10 +324,16 @@ function prMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '18'){
       document.getElementById('pr1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('pr').innerHTML = '0';
     }
     if (num == '29'){
       document.getElementById('worldPR').style.filter = "brightness(40%)"
       document.getElementById('pr2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (prDone.includes('18')){
+        document.getElementById('pr').innerHTML = '1';
+      } else {
+        document.getElementById('pr').innerHTML = '0';
+      }
     }
   }
   document.getElementById('prLeft').innerHTML = (30 - prDone.length);
@@ -285,10 +347,12 @@ function agrMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '27'){
       document.getElementById('agr1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('agr').innerHTML = '1';
     }
     if (num == '33'){
       document.getElementById('worldAgrabah').style.filter = "brightness(100%)"
       document.getElementById('agr2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('agr').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < agrDone.length; i++){
@@ -302,10 +366,16 @@ function agrMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '27'){
       document.getElementById('agr1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('agr').innerHTML = '0';
     }
     if (num == '33'){
       document.getElementById('worldAgrabah').style.filter = "brightness(40%)"
       document.getElementById('agr2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (agrDone.includes('27')){
+        document.getElementById('agr').innerHTML = '1';
+      } else {
+        document.getElementById('agr').innerHTML = '0';
+      }
     }
   }
   document.getElementById('agrLeft').innerHTML = (34 - agrDone.length);
@@ -319,10 +389,12 @@ function htMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '17'){
       document.getElementById('ht1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('ht').innerHTML = '1';
     }
     if (num == '21'){
       document.getElementById('worldHT').style.filter = "brightness(100%)"
       document.getElementById('ht2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('ht').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < htDone.length; i++){
@@ -336,10 +408,16 @@ function htMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '17'){
       document.getElementById('ht1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('ht').innerHTML = '0';
     }
     if (num == '21'){
       document.getElementById('worldHT').style.filter = "brightness(40%)"
       document.getElementById('ht2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (htDone.includes('17')){
+        document.getElementById('ht').innerHTML = '1';
+      } else {
+        document.getElementById('ht').innerHTML = '0';
+      }
     }
   }
   document.getElementById('htLeft').innerHTML = (22 - htDone.length);
@@ -353,10 +431,12 @@ function plMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '28'){
       document.getElementById('pl1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('pl').innerHTML = '1';
     }
     if (num == '29'){
       document.getElementById('worldPL').style.filter = "brightness(100%)"
       document.getElementById('pl2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('pl').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < plDone.length; i++){
@@ -370,10 +450,16 @@ function plMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '28'){
       document.getElementById('pl1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('pl').innerHTML = '0';
     }
     if (num == '29'){
       document.getElementById('worldPL').style.filter = "brightness(40%)"
       document.getElementById('pl2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (plDone.includes('28')){
+        document.getElementById('pl').innerHTML = '1';
+      } else {
+        document.getElementById('pl').innerHTML = '0';
+      }
     }
   }
   document.getElementById('plLeft').innerHTML = (30 - plDone.length);
@@ -387,10 +473,12 @@ function spMark(num){
     document.getElementById(num).style.color = '#000'
     if (num == '12'){
       document.getElementById('sp1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('sp').innerHTML = '1';
     }
     if (num == '18'){
       document.getElementById('worldSP').style.filter = "brightness(100%)"
       document.getElementById('sp2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('sp').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < spDone.length; i++){
@@ -404,10 +492,16 @@ function spMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '12'){
       document.getElementById('sp1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('sp').innerHTML = '0';
     }
     if (num == '18'){
       document.getElementById('worldSP').style.filter = "brightness(40%)"
       document.getElementById('sp2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (spDone.includes('12')){
+        document.getElementById('sp').innerHTML = '1';
+      } else {
+        document.getElementById('sp').innerHTML = '0';
+      }
     }
   }
   document.getElementById('spLeft').innerHTML = (18 - spDone.length);
@@ -422,6 +516,7 @@ function corMark(num){
     if (num == '21'){
       document.getElementById('worldCoR').style.filter = "brightness(100%)"
       document.getElementById('corKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('cor').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < corDone.length; i++){
@@ -436,6 +531,7 @@ function corMark(num){
     if (num == '21'){
       document.getElementById('worldCoR').style.filter = "brightness(40%)"
       document.getElementById('corKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('cor').innerHTML = '0';
     }
   }
   document.getElementById('corLeft').innerHTML = (21 - corDone.length);
@@ -450,6 +546,7 @@ function twtnwMark(num){
     if (num == '28'){
       document.getElementById('worldTWTNW').style.filter = "brightness(100%)"
       document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('twtnw').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < twtnwDone.length; i++){
@@ -464,6 +561,7 @@ function twtnwMark(num){
     if (num == '28'){
       document.getElementById('worldTWTNW').style.filter = "brightness(40%)"
       document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('twtnw').innerHTML = '0';
     }
   }
   document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
@@ -478,6 +576,7 @@ function acreMark(num){
     if (num == '22'){
       document.getElementById('world100').style.filter = "brightness(100%)"
       document.getElementById('acreKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('acre').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < acreDone.length; i++){
@@ -492,6 +591,7 @@ function acreMark(num){
     if (num == '22'){
       document.getElementById('world100').style.filter = "brightness(40%)"
       document.getElementById('acreKey').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('acre').innerHTML = '0';
     }
   }
   document.getElementById('acreLeft').innerHTML = (22 - acreDone.length);
@@ -505,13 +605,16 @@ function atlMark(num){
     document.getElementById(num).style.color = '#000';
     if (num == '1'){
       document.getElementById('atl1Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('atl').innerHTML = '1';
     }
     if (num == '2'){
       document.getElementById('atl2Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('atl').innerHTML = '2';
     }
     if (num == '3'){
       document.getElementById('worldAtlantica').style.filter = "brightness(100%)"
       document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('atl').innerHTML = 'X';
     }
   } else {
     for (var i = 0; i < atlDone.length; i++){
@@ -525,13 +628,26 @@ function atlMark(num){
     document.getElementById(num).style.color = '#fff';
     if (num == '1'){
       document.getElementById('atl1Key').setAttribute('src', 'img/keyhole_0.png')
+      document.getElementById('atl').innerHTML = '0';
     }
     if (num == '2'){
       document.getElementById('atl2Key').setAttribute('src', 'img/keyhole_0.png')
+      if (atlDone.includes('1')){
+        document.getElementById('atl').innerHTML = '1';
+      } else {
+        document.getElementById('atl').innerHTML = '0';
+      }
     }
     if (num == '3'){
       document.getElementById('worldAtlantica').style.filter = "brightness(40%)"
       document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_0.png')
+      if (atlDone.includes('2')){
+        document.getElementById('atl').innerHTML = '2';
+      } else if (atlDone.includes('1')){
+        document.getElementById('atl').innerHTML = '1';
+      } else {
+        document.getElementById('atl').innerHTML = '0';
+      }
     }
   }
   document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
@@ -1208,61 +1324,71 @@ function summonMark(item){
 //Function to Mark Forms
 function formMark(item){
   var fValor = document.getElementById('fValor');
+  var vNum = document.getElementById('valorNum');
   var fWisdom = document.getElementById('fWisdom');
+  var wNum = document.getElementById('wisdomNum');
   var fLimit = document.getElementById('fLimit');
+  var lNum = document.getElementById('limitNum');
   var fMaster = document.getElementById('fMaster');
+  var mNum = document.getElementById('masterNum');
   var fFinal = document.getElementById('fFinal');
+  var fNum = document.getElementById('finalNum');
 
   switch(item) {
     case "valor":
       fValor.setAttribute('src', 'img/Forms/formvalor_1.png')
-      fValor.setAttribute('onclick', 'formMark("valor1")')
-      formDone[0] = '1';
-      break;
-    case "valor1":
-      fValor.setAttribute('src', 'img/Forms/formvalor_0.png')
-      fValor.setAttribute('onclick', 'formMark("valor")')
-      formDone[0] = '0';
+      if (vNum.innerHTML < 7){
+        var num = parseInt(vNum.innerHTML) + 1;
+        vNum.innerHTML = num;
+      } else {
+        vNum.innerHTML = 0;
+        fValor.setAttribute('src', 'img/Forms/formvalor_0.png')
+      }
+      formDone[0] = vNum.innerHTML;
       break;
     case "wisdom":
       fWisdom.setAttribute('src', 'img/Forms/formwisdom_1.png')
-      fWisdom.setAttribute('onclick', 'formMark("wisdom1")')
-      formDone[1] = '1';
-      break;
-    case "wisdom1":
-      fWisdom.setAttribute('src', 'img/Forms/formwisdom_0.png')
-      fWisdom.setAttribute('onclick', 'formMark("wisdom")')
-      formDone[1] = '0';
+      if (wNum.innerHTML < 7){
+        var num = parseInt(wNum.innerHTML) + 1;
+        wNum.innerHTML = num;
+      } else {
+        wNum.innerHTML = 0;
+        fWisdom.setAttribute('src', 'img/Forms/formwisdom_0.png')
+      }
+      formDone[1] = wNum.innerHTML;
       break;
     case 'limit':
       fLimit.setAttribute('src', 'img/Forms/formlimit_1.png')
-      fLimit.setAttribute('onclick', 'formMark("limit1")')
-      formDone[2] = '1';
-      break;
-    case 'limit1':
-      fLimit.setAttribute('src', 'img/Forms/formlimit_0.png')
-      fLimit.setAttribute('onclick', 'formMark("limit")')
-      formDone[2] = '0';
+      if (lNum.innerHTML < 7){
+        var num = parseInt(lNum.innerHTML) + 1;
+        lNum.innerHTML = num;
+      } else {
+        lNum.innerHTML = 0;
+        fLimit.setAttribute('src', 'img/Forms/formlimit_0.png')
+      }
+      formDone[2] = lNum.innerHTML;
       break;
     case 'master':
       fMaster.setAttribute('src', 'img/Forms/formmaster_1.png')
-      fMaster.setAttribute('onclick', 'formMark("master1")')
-      formDone[3] = '1';
-      break;
-    case 'master1':
-      fMaster.setAttribute('src', 'img/Forms/formmaster_0.png')
-      fMaster.setAttribute('onclick', 'formMark("master")')
-      formDone[3] = '0';
+      if (mNum.innerHTML < 7){
+        var num = parseInt(mNum.innerHTML) + 1;
+        mNum.innerHTML = num;
+      } else {
+        mNum.innerHTML = 0;
+        fMaster.setAttribute('src', 'img/Forms/formmaster_0.png')
+      }
+      formDone[3] = mNum.innerHTML;
       break;
     case 'final':
       fFinal.setAttribute('src', 'img/Forms/formfinal_1.png')
-      fFinal.setAttribute('onclick', 'formMark("final1")')
-      formDone[4] = '1';
-      break;
-    case 'final1':
-      fFinal.setAttribute('src', 'img/Forms/formfinal_0.png')
-      fFinal.setAttribute('onclick', 'formMark("final")')
-      formDone[4] = '0';
+      if (fNum.innerHTML < 7){
+        var num = parseInt(fNum.innerHTML) + 1;
+        fNum.innerHTML = num;
+      } else {
+        fNum.innerHTML = 0;
+        fFinal.setAttribute('src', 'img/Forms/formfinal_0.png')
+      }
+      formDone[4] = fNum.innerHTML;
       break;
   }
 }
@@ -1292,6 +1418,7 @@ function magicMark(item){
         fNum.innerHTML = 0;
         mFire.setAttribute('src', 'img/Magic/magicfire_0.png')
       }
+      magicDone[0] = fNum.innerHTML
       break;
     case "blizzard":
       mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_1.png')
