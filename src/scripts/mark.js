@@ -1336,57 +1336,57 @@ function formMark(item){
 
   switch(item) {
     case "valor":
-      fValor.setAttribute('src', 'img/Forms/formvalor_1.png')
       if (vNum.innerHTML < 7){
+        fValor.style.filter = "brightness(100%)";
         var num = parseInt(vNum.innerHTML) + 1;
         vNum.innerHTML = num;
       } else {
+        fValor.style.filter = "brightness(40%)";
         vNum.innerHTML = 0;
-        fValor.setAttribute('src', 'img/Forms/formvalor_0.png')
       }
       formDone[0] = vNum.innerHTML;
       break;
     case "wisdom":
-      fWisdom.setAttribute('src', 'img/Forms/formwisdom_1.png')
       if (wNum.innerHTML < 7){
+        fWisdom.style.filter = "brightness(100%)";
         var num = parseInt(wNum.innerHTML) + 1;
         wNum.innerHTML = num;
       } else {
+        fWisdom.style.filter = "brightness(40%)";
         wNum.innerHTML = 0;
-        fWisdom.setAttribute('src', 'img/Forms/formwisdom_0.png')
       }
       formDone[1] = wNum.innerHTML;
       break;
     case 'limit':
-      fLimit.setAttribute('src', 'img/Forms/formlimit_1.png')
       if (lNum.innerHTML < 7){
+        fLimit.style.filter = "brightness(100%)";
         var num = parseInt(lNum.innerHTML) + 1;
         lNum.innerHTML = num;
       } else {
+        fLimit.style.filter = "brightness(40%)";
         lNum.innerHTML = 0;
-        fLimit.setAttribute('src', 'img/Forms/formlimit_0.png')
       }
       formDone[2] = lNum.innerHTML;
       break;
     case 'master':
-      fMaster.setAttribute('src', 'img/Forms/formmaster_1.png')
       if (mNum.innerHTML < 7){
+        fMaster.style.filter = "brightness(100%)";
         var num = parseInt(mNum.innerHTML) + 1;
         mNum.innerHTML = num;
       } else {
+        fMaster.style.filter = "brightness(40%)";
         mNum.innerHTML = 0;
-        fMaster.setAttribute('src', 'img/Forms/formmaster_0.png')
       }
       formDone[3] = mNum.innerHTML;
       break;
     case 'final':
-      fFinal.setAttribute('src', 'img/Forms/formfinal_1.png')
       if (fNum.innerHTML < 7){
+        fFinal.style.filter = "brightness(100%)";
         var num = parseInt(fNum.innerHTML) + 1;
         fNum.innerHTML = num;
       } else {
+        fFinal.style.filter = "brightness(40%)";
         fNum.innerHTML = 0;
-        fFinal.setAttribute('src', 'img/Forms/formfinal_0.png')
       }
       formDone[4] = fNum.innerHTML;
       break;
@@ -1410,64 +1410,64 @@ function magicMark(item){
 
   switch(item) {
     case "fire":
-      mFire.setAttribute('src', 'img/Magic/magicfire_1.png')
       if (fNum.innerHTML < 3){
+        mFire.style.filter = "brightness(100%)";
         var num = parseInt(fNum.innerHTML) + 1;
         fNum.innerHTML = num;
       } else {
+        mFire.style.filter = "brightness(40%)";
         fNum.innerHTML = 0;
-        mFire.setAttribute('src', 'img/Magic/magicfire_0.png')
       }
       magicDone[0] = fNum.innerHTML
       break;
     case "blizzard":
-      mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_1.png')
       if (bNum.innerHTML < 3){
+        mBlizzard.style.filter = "brightness(100%)";
         var num = parseInt(bNum.innerHTML) + 1;
         bNum.innerHTML = num;
       } else {
+        mBlizzard.style.filter = "brightness(40%)";
         bNum.innerHTML = 0;
-        mBlizzard.setAttribute('src', 'img/Magic/magicblizzard_0.png')
       }
       break;
     case 'thunder':
-      mThunder.setAttribute('src', 'img/Magic/magicthunder_1.png')
       if (tNum.innerHTML < 3){
+        mThunder.style.filter = "brightness(100%)";
         var num = parseInt(tNum.innerHTML) + 1;
         tNum.innerHTML = num;
       } else {
+        mThunder.style.filter = "brightness(40%)";
         tNum.innerHTML = 0;
-        mThunder.setAttribute('src', 'img/Magic/magicthunder_0.png')
       }
       break;
     case 'cure':
-      mCure.setAttribute('src', 'img/Magic/magiccure_1.png')
       if (cNum.innerHTML < 3){
+        mCure.style.filter = "brightness(100%)";
         var num = parseInt(cNum.innerHTML) + 1;
         cNum.innerHTML = num;
       } else {
+        mCure.style.filter = "brightness(40%)";
         cNum.innerHTML = 0;
-        mCure.setAttribute('src', 'img/Magic/magiccure_0.png')
       }
       break;
     case 'reflect':
-      mReflect.setAttribute('src', 'img/Magic/magicreflect_1.png')
       if (rNum.innerHTML < 3){
+        mReflect.style.filter = "brightness(100%)";
         var num = parseInt(rNum.innerHTML) + 1;
         rNum.innerHTML = num;
       } else {
+        mReflect.style.filter = "brightness(40%)";
         rNum.innerHTML = 0;
-        mReflect.setAttribute('src', 'img/Magic/magicreflect_0.png')
       }
       break;
     case "magnet":
-      mMagnet.setAttribute('src', 'img/Magic/magicmagnet_1.png')
       if (magNum.innerHTML < 3){
+        mMagnet.style.filter = "brightness(100%)";
         var num = parseInt(magNum.innerHTML) + 1;
         magNum.innerHTML = num;
       } else {
+        mMagnet.style.filter = "brightness(40%)";
         magNum.innerHTML = 0;
-        mMagnet.setAttribute('src', 'img/Magic/magicmagnet_0.png')
       }
       break;
   }
