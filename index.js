@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.8.17';
+const build = '2020.8.26';
 const version = app.getVersion();
 
 //About Window
