@@ -306,15 +306,15 @@ function keybladeMark(){
   var pages = document.getElementById('keyblade');
   var currentCount = document.getElementById('keyNum').innerHTML;
 
-  if (currentCount < 24){
+  if (currentCount < 13){
     currentCount = parseInt(currentCount) + 1;
     keybladeDone = currentCount;
     counter.innerHTML = currentCount;
-    pages.setAttribute('src', 'img/Required/kingdomkey_1.png')
+    pages.style.filter = "brightness(100%)";
   } else {
     keybladeDone = "0";
     counter.innerHTML = 0;
-    pages.setAttribute('src', 'img/Required/kingdomkey_0.png')
+    pages.style.filter = "brightness(40%)";
   }
 }
 

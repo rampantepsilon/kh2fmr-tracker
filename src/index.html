@@ -2,6 +2,10 @@
   <head>
     <link rel='icon' href="../icon.png" type='image/png'>
     <link rel='stylesheet' href='styles.css'>
+    <!--Require jQuery-->
+    <script>
+      window.$ = window.jQuery = require('jquery')
+    </script>
     <script src='scripts/checks.js'></script>
     <script src='scripts/worlds.js'></script>
     <script>
@@ -135,16 +139,16 @@
             </tr>
             <tr>
               <td align='center'>
+                <img src='img/secret_reports.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
+                <span class='number' id='keyNum'>0</span>
+              </td>
+              <td align='center'>
                 <img src='img/Magic/reflect.png' width='80px' height='80px' id='mReflect' onclick='magicMark("reflect")'>
                 <span class='number' id='reflectNum'>0</span>
               </td>
               <td align='center'>
                 <img src='img/Magic/magnet.png' width='80px' height='80px' id='mMagnet' onclick='magicMark("magnet")'>
                 <span class='number' id='magNum'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/Required/kingdomkey_0.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
-                <span class='number' id='keyNum'>0</span>
               </td>
               <td align='center'>
                 <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>

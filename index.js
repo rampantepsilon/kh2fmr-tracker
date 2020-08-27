@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.8.26';
+const build = '2020.8.27';
 const version = app.getVersion();
 
 //About Window
@@ -38,6 +38,7 @@ Saving Tracker
 Changes
 - Changed Layout for better stream quality
 - Added support for Jsmartee's Hint System
+- Changed Keyblades to Ansem Reports to align with hints.
 
 To Be Added
 - Way to show progress on kingdom without selecting it.`

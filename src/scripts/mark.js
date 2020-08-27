@@ -1472,3 +1472,75 @@ function magicMark(item){
       break;
   }
 }
+
+//Functions to Mark at Auto Only
+var vToggle = '0';
+var wToggle = '0';
+var lToggle = '0';
+var mToggle = '0';
+var fToggle = '0';
+$('#fValor').mousedown(function(event) {
+  switch (event.which) {
+    case 3:
+      if (vToggle == '0'){
+        document.getElementById('fValor').setAttribute('src', 'img/Forms/formvalor_1.png');
+        vToggle = '1';
+      } else {
+        document.getElementById('fValor').setAttribute('src', 'img/Forms/valor.png');
+        vToggle = '0';
+      }
+      break;
+  }
+})
+$('#fWisdom').mousedown(function(event) {
+  switch (event.which) {
+    case 3:
+      if (wToggle == '0'){
+        document.getElementById('fWisdom').setAttribute('src', 'img/Forms/formwisdom_1.png');
+        wToggle = '1';
+      } else {
+        document.getElementById('fWisdom').setAttribute('src', 'img/Forms/wisdom.png');
+        wToggle = '0';
+      }
+      break;
+  }
+})
+$('#fLimit').mousedown(function(event) {
+  switch (event.which) {
+    case 3:
+      if (lToggle == '0'){
+        document.getElementById('fLimit').setAttribute('src', 'img/Forms/formlimit_1.png');
+        lToggle = '1';
+      } else {
+        document.getElementById('fLimit').setAttribute('src', 'img/Forms/limit.png');
+        lToggle = '0';
+      }
+      break;
+  }
+})
+$('#fMaster').mousedown(function(event) {
+  switch (event.which) {
+    case 3:
+      if (mToggle == '0'){
+        document.getElementById('fMaster').setAttribute('src', 'img/Forms/formmaster_1.png');
+        mToggle = '1';
+      } else {
+        document.getElementById('fMaster').setAttribute('src', 'img/Forms/master.png');
+        mToggle = '0';
+      }
+      break;
+  }
+})
+$('#fFinal').mousedown(function(event) {
+  switch (event.which) {
+    case 3:
+      if (fToggle == '0'){
+        document.getElementById('fFinal').setAttribute('src', 'img/Forms/formfinal_1.png');
+        fToggle = '1';
+      } else {
+        document.getElementById('fFinal').setAttribute('src', 'img/Forms/final.png');
+        fToggle = '0';
+      }
+      break;
+  }
+})
