@@ -1279,42 +1279,42 @@ function summonMark(item){
 
   switch(item) {
     case "bBall":
-      cBBall.setAttribute('src', 'img/Charms/charmbaseball_1.png')
+      cBBall.style.filter = "brightness(100%)";
       cBBall.setAttribute('onclick', 'summonMark("bBall1")')
       summonDone[0] = '1';
       break;
     case "lamp":
-      cLamp.setAttribute('src', 'img/Charms/charmlamp_1.png')
+      cLamp.style.filter = "brightness(100%)";
       cLamp.setAttribute('onclick', 'summonMark("lamp1")')
       summonDone[1] = '1';
       break;
     case "ukulele":
-      cUkulele.setAttribute('src', 'img/Charms/charmukulele_1.png')
+      cUkulele.style.filter = "brightness(100%)";
       cUkulele.setAttribute('onclick', 'summonMark("ukulele1")')
       summonDone[2] = '1';
       break;
     case "feather":
-      cFeather.setAttribute('src', 'img/Charms/charmfeather_1.png')
+      cFeather.style.filter = "brightness(100%)";
       cFeather.setAttribute('onclick', 'summonMark("feather1")')
       summonDone[3] = '1';
       break;
     case "bBall1":
-      cBBall.setAttribute('src', 'img/Charms/charmbaseball_0.png')
+      cBBall.style.filter = "brightness(40%)";
       cBBall.setAttribute('onclick', 'summonMark("bBall")')
       summonDone[0] = '0';
       break;
     case "lamp1":
-      cLamp.setAttribute('src', 'img/Charms/charmlamp_0.png')
+      cLamp.style.filter = "brightness(40%)";
       cLamp.setAttribute('onclick', 'summonMark("lamp")')
       summonDone[1] = '0';
       break;
     case "ukulele1":
-      cUkulele.setAttribute('src', 'img/Charms/charmukulele_0.png')
+      cUkulele.style.filter = "brightness(40%)";
       cUkulele.setAttribute('onclick', 'summonMark("ukulele")')
       summonDone[2] = '0';
       break;
     case "feather1":
-      cFeather.setAttribute('src', 'img/Charms/charmfeather_0.png')
+      cFeather.style.filter = "brightness(40%)";
       cFeather.setAttribute('onclick', 'summonMark("feather")')
       summonDone[3] = '0';
       break;

@@ -20,7 +20,7 @@ Checklist
 - Checklists will show based off of what is selected for the world.
 - Data will persist between viewing different links so long as you don't refresh the tracker or close the tracker.
 
-Magic/Forms
+Magic/Forms/Summons
 - Forms are now able to show levels if wanted.
 - Icons are updated to be a bit clear as to what they are. Shoutouts to the KH2FMR tracker on EmoTracker
 
