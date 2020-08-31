@@ -17,7 +17,7 @@
       function addHints(){
         var hint = document.getElementsByClassName('hintCount');
         var counter = 0;
-        for (i=0; i < 17; i++){
+        for (i=0; i < 18; i++){
           if (hint[i].value != ''){
             counter += parseInt(hint[i].value);
           } else {
@@ -33,47 +33,31 @@
     <table width='100%' height='100%'>
       <tr>
         <!--Key (Stay Constant)-->
-        <td align='left' valign='top' style='position:fixed;' width='35%'>
+        <td align='left' valign='top' style='min-width:615px' width='35%'>
           <table align='center'>
             <tr>
               <td align='center'>
-                <img src='img/Locations/Roxas_1.png' width='60px' height='60px' id='worldRoxas' onclick='list("STT")'>
+                <img src='img/Locations/simulated_twilight_town.png' width='80px' height='80px' id='worldRoxas' onclick='list("STT")'>
                 <span class='visitNum' id='stt'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Twilight Town.png' width='98px' height='60px' id='worldTT' onclick='list("TT")'>
+                <img src='img/Locations/twilight_town.png' width='80px' height='80px' id='worldTT' onclick='list("TT")'>
                 <span class='visitNum' id='tt'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Hollow Bastion.png' width='64px' height='60px' id='worldHB' onclick='list("HB")'>
+                <img src='img/Locations/hollow_bastion.png' width='80px' height='80px' id='worldHB' onclick='list("HB")'>
                 <span class='visitNum' id='hb'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Disney Castle.png' width='80px' height='60px' id='worldDC' onclick='list("DC")'>
+                <img src='img/Locations/disney_castle.png' width='80px' height='80px' id='worldDC' onclick='list("DC")'>
                 <span class='visitNum' id='dc'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Timeless River.png' width='78px' height='60px' id='worldTR' onclick='list("TR")'>
+                <img src='img/Locations/timeless_river.png' width='80px' height='80px' id='worldTR' onclick='list("TR")'>
                 <span class='visitNum' id='tr'>0</span>
               </td>
-            </tr>
-          </table>
-          <table align='center'>
-            <tr>
               <td align='center'>
-                <img src='img/Locations/Atlantica.png' width='114px' height='60px' id='worldAtlantica' onclick='list("ATL")'>
-                <span class='visitNum' id='atl'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/Locations/100 Acre Wood.png' width='61px' height='60px' id='world100' onclick='list("100")'>
-                <span class='visitNum' id='acre'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/Locations/The World That Never Was.png' width='89px' height='60px' id='worldTWTNW' onclick='list("TWTNW")'>
-                <span class='visitNum' id='twtnw'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/Locations/The Land of Dragons.png' width='154px' height='60px' id='worldTLoD' onclick='list("TLOD")'>
+                <img src='img/Locations/land_of_dragons.png' width='80px' height='80px' id='worldTLoD' onclick='list("TLOD")'>
                 <span class='visitNum' id='lod'>0</span>
               </td>
             </tr>
@@ -81,40 +65,52 @@
           <table align='center'>
             <tr>
               <td align='center'>
-                <img src="img/Locations/Beast's Castle.png" width='116px' height='60px' id='worldBC' onclick='list("BC")'>
+                <img src="img/Locations/beast's_castle.png" width='80px' height='80px' id='worldBC' onclick='list("BC")'>
                 <span class='visitNum' id='bc'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Olympus Coliseum.png' width='113px' height='60px' id='worldOC' onclick='list("OC")'>
+                <img src='img/Locations/olympus_coliseum.png' width='80px' height='80px' id='worldOC' onclick='list("OC")'>
                 <span class='visitNum' id='oc'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Port Royal.png' width='170px' height='60px' id='worldPR' onclick='list("PR")'>
+                <img src='img/Locations/port_royal.png' width='80px' height='80px' id='worldPR' onclick='list("PR")'>
                 <span class='visitNum' id='pr'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Agrabah.png' width='103px' height='60px' id='worldAgrabah' onclick='list("AGR")'>
+                <img src='img/Locations/agrabah.png' width='80px' height='80px' id='worldAgrabah' onclick='list("AGR")'>
                 <span class='visitNum' id='agr'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/halloween_town.png' width='80px' height='80px' id='worldHT' onclick='list("HT")'>
+                <span class='visitNum' id='ht'>0</span>
               </td>
             </tr>
           </table>
           <table align='center'>
             <tr>
               <td align='center'>
-                <img src='img/Locations/Halloween Town.png' width='89px' height='60px' id='worldHT' onclick='list("HT")'>
-                <span class='visitNum' id='ht'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/Locations/Pride Lands.png' width='120px' height='60px' id='worldPL' onclick='list("PL")'>
+                <img src='img/Locations/pride_land.png' width='80px' height='80px' id='worldPL' onclick='list("PL")'>
                 <span class='visitNum' id='pl'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/Space Paranoids.png' width='129px' height='60px' id='worldSP' onclick='list("SP")'>
+                <img src='img/Locations/space_paranoids.png' width='80px' height='80px' id='worldSP' onclick='list("SP")'>
                 <span class='visitNum' id='sp'>0</span>
               </td>
               <td align='center'>
-                <img src='img/Locations/cor_1.png' width='60px' height='60px' id='worldCoR' onclick='list("COR")'>
+                <img src='img/Locations/cavern_of_remembrance.png' width='80px' height='80px' id='worldCoR' onclick='list("COR")'>
                 <span class='visitNum' id='cor'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/the_world_that_never_was.png' width='89px' height='80px' id='worldTWTNW' onclick='list("TWTNW")'>
+                <span class='visitNum' id='twtnw'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/100_acre_wood.png' width='80px' height='80px' id='world100' onclick='list("100")'>
+                <span class='visitNum' id='acre'>0</span>
+              </td>
+              <td align='center'>
+                <img src='img/Locations/atlantica.png' width='80px' height='80px' id='worldAtlantica' onclick='list("ATL")'>
+                <span class='visitNum' id='atl'>0</span>
               </td>
             </tr>
           </table>
@@ -136,12 +132,6 @@
                 <img src='img/Magic/cure.png' width='80px' height='80px' id='mCure' onclick='magicMark("cure")'>
                 <span class='number' id='cureNum'>0</span>
               </td>
-            </tr>
-            <tr>
-              <td align='center'>
-                <img src='img/secret_reports.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
-                <span class='number' id='keyNum'>0</span>
-              </td>
               <td align='center'>
                 <img src='img/Magic/reflect.png' width='80px' height='80px' id='mReflect' onclick='magicMark("reflect")'>
                 <span class='number' id='reflectNum'>0</span>
@@ -149,10 +139,6 @@
               <td align='center'>
                 <img src='img/Magic/magnet.png' width='80px' height='80px' id='mMagnet' onclick='magicMark("magnet")'>
                 <span class='number' id='magNum'>0</span>
-              </td>
-              <td align='center'>
-                <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>
-                <span class='number' id='pageNum'>0</span>
               </td>
             </tr>
           </table>
@@ -188,6 +174,10 @@
                 <img src='img/Required/ProofPeace_0.png' width='80px' height='80px' id='pPeace' onclick='requiredMark("peace")'>
                 <img src='img/Required/ProofNonexistence_0.png' width='80px' height='80px' id='pNonexist' onclick='requiredMark("nonexist")'>
               </td>
+              <td align='center'>
+                <img src='img/secret_reports.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
+                <span class='number' id='keyNum'>0</span>
+              </td>
             </tr>
             <tr>
               <td>
@@ -195,6 +185,10 @@
                 <img src='img/Charms/lamp.png' width='80px' height='80px' id='cLamp' onclick='summonMark("lamp")'>
                 <img src='img/Charms/ukelele.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
                 <img src='img/Charms/feather.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
+              </td>
+              <td align='center'>
+                <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>
+                <span class='number' id='pageNum'>0</span>
               </td>
             </tr>
           </table>
@@ -317,10 +311,16 @@
               </td>
             </tr>
             <tr>
-              <td colspan="2" align='right'>
+              <td>
                 Space Paranoids
               </td>
-              <td colspan="2" align='left'>
+              <td>
+                <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
+              </td>
+              <td>
+                Cavern of Remembrance
+              </td>
+              <td>
                 <input type='text' size='2'><input type='text' size='2' onchange='addHints()' class='hintCount'>
               </td>
             </tr>
