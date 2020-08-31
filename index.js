@@ -15,6 +15,7 @@ const aboutOptions = {
 - Location aren't trackable by clicking on them. Instead they open a list of checks that can be made. The location icon will light up when the second pass of the world is complete. For the most part, this will mean the Data Fights are all that's left.
 - Added ability to mark all checks in a group. NOTE: If you select a single check then the group, the single check will become unmarked. This will be fixed in a future build.
 - Added way to see how many completed visits per world.
+- Updated location images to match that those found on https://tracker.zaxu.xyz/next
 
 Checklist
 - Checklists will show based off of what is selected for the world.
@@ -30,6 +31,7 @@ Notes/Hints
 - 100 Acre Wood isn't split on per page but as overall.
 - If using the tracker for the icon layout, you can mark locations by selecting the last keyhole check for the world.
 - Added way to track hints if using them.
+- Updated to calculate if you've found all known checks thus far.
 
 Saving Tracker
 - Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'
@@ -39,6 +41,7 @@ Changes
 - Changed Layout for better stream quality
 - Added support for Jsmartee's Hint System
 - Changed Keyblades to Ansem Reports to align with hints.
+- Updated the layout to not break on resizing the tracker
 
 To Be Added
 - Way to show progress on kingdom without selecting it.`
