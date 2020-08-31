@@ -42,6 +42,8 @@ Changes
 - Added support for Jsmartee's Hint System
 - Changed Keyblades to Ansem Reports to align with hints.
 - Updated the layout to not break on resizing the tracker
+- Added tooltips to show name of checks when hovering over them.
+- Fixed list of checks to not scroll the entire page.
 
 To Be Added
 - Way to show progress on kingdom without selecting it.`
