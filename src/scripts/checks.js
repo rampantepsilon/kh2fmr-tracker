@@ -563,15 +563,15 @@ const agrabah = [
         <li><div id='24' onclick='agrMark("24")'>Small Chest</div></li>
       </ul>
     </li>
-    <li><div id='25' onclick='agrMark("25")'>Treasure Room Bonus</div></li>
-    <li><div id='26' onclick='agrMark("26")'>Twin Lords Bonus</div></li>
-    <li><div id='27' onclick='agrMark("27")'><img src='img/keyhole_0.png' id='agr1Key' width='16px' height='16px'> Lamp Charm Popup</div></li>
     <li id='group'><div id='groupTitle' onclick='agrAllMark(7)'>Treasure Room</div>
       <ul>
+        <li><div id='25' onclick='agrMark("25")'>Bonus</div></li>
         <li><div id='28' onclick='agrMark("28")'>Right</div></li>
         <li><div id='29' onclick='agrMark("29")'>Left</div></li>
       </ul>
     </li>
+    <li><div id='26' onclick='agrMark("26")'>Twin Lords Bonus</div></li>
+    <li><div id='27' onclick='agrMark("27")'><img src='img/keyhole_0.png' id='agr1Key' width='16px' height='16px'> Lamp Charm Popup</div></li>
     <li id='group'><div id='groupTitle' onclick='agrAllMark(8)'>Ruined Chamber</div>
       <ul>
         <li><div id='30' onclick='agrMark("30")'>Left</div></li>

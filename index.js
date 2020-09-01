@@ -12,6 +12,7 @@ const aboutOptions = {
   title: label + ' v' + version,
   message: 'About This Tracker',
   detail: `Locations
+- Updated Agrabah checks to match GoA v1.37 update
 - Location aren't trackable by clicking on them. Instead they open a list of checks that can be made. The location icon will light up when the second pass of the world is complete. For the most part, this will mean the Data Fights are all that's left.
 - Added ability to mark all checks in a group. NOTE: If you select a single check then the group, the single check will become unmarked. This will be fixed in a future build.
 - Added way to see how many completed visits per world.

@@ -1005,6 +1005,7 @@ function agrAllMark(num){
       agrMark("24");
       break;
     case 7:
+      agrMark('25');
       agrMark("28");
       agrMark("29");
       break;
