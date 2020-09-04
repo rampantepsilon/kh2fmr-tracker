@@ -108,7 +108,7 @@ function list(location){
         document.getElementById('tlod2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('tlodLeft').innerHTML = (29 - hbDone.length);
+    document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
   }
   if (location == 'BC'){
     checkList.innerHTML = `<h3 align='center'><u>Beast's Castle</u><br>
@@ -467,6 +467,115 @@ function load(){
   pageDone = saveT.get('pageDone');
 
   list('STT');
+
+  //Update Worlds
+  if (sttDone.includes('24')){
+    document.getElementById('worldRoxas').style.filter = "brightness(100%)"
+    document.getElementById('stt').innerHTML = 'X';
+  }
+  if (ttDone.includes('24')){
+    document.getElementById('tt').innerHTML = '1';
+  }
+  if (ttDone.includes('26')){
+    document.getElementById('tt').innerHTML = '2';
+  }
+  if (ttDone.includes('46')){
+    document.getElementById('worldTT').style.filter = 'brightness(100%)';
+    document.getElementById('tt').innerHTML = 'X';
+  }
+  if (hbDone.includes('18')){
+    document.getElementById('hb').innerHTML = '1';
+  }
+  if (hbDone.includes('28')){
+    document.getElementById('worldHB').style.filter = 'brightness(100%)';
+    document.getElementById('hb').innerHTML = 'X';
+  }
+  if (dctrDone.includes('10')){
+    document.getElementById('worldDC').style.filter = 'brightness(100%)';
+    document.getElementById('dc').innerHTML = 'X';
+  }
+  if (dctrDone.includes('21')){
+    document.getElementById('worldTR').style.filter = 'brightness(100%)';
+    document.getElementById('tr').innerHTML = 'X';
+  }
+  if (tlodDone.includes('19')){
+    document.getElementById('lod').innerHTML = '1';
+  }
+  if (tlodDone.includes('28')){
+    document.getElementById('worldTLoD').style.filter = 'brightness(100%)';
+    document.getElementById('lod').innerHTML = 'X';
+  }
+  if (bcDone.includes('25')){
+    document.getElementById('bc').innerHTML = '1';
+  }
+  if (bcDone.includes('28')){
+    document.getElementById('worldBC').style.filter = 'brightness(100%)';
+    document.getElementById('bc').innerHTML = 'X';
+  }
+  if (ocDone.includes('27')){
+    document.getElementById('oc').innerHTML = '1';
+  }
+  if (ocDone.includes('30')){
+    document.getElementById('worldOC').style.filter = 'brightness(100%)';
+    document.getElementById('oc').innerHTML = 'X';
+  }
+  if (prDone.includes('18')){
+    document.getElementById('pr').innerHTML = '1';
+  }
+  if (prDone.includes('29')){
+    document.getElementById('worldPR').style.filter = 'brightness(100%)';
+    document.getElementById('pr').innerHTML = 'X';
+  }
+  if (agrDone.includes('27')){
+    document.getElementById('agr').innerHTML = '1';
+  }
+  if (agrDone.includes('30')){
+    document.getElementById('worldAgrabah').style.filter = 'brightness(100%)';
+    document.getElementById('agr').innerHTML = 'X';
+  }
+  if (htDone.includes('17')){
+    document.getElementById('ht').innerHTML = '1';
+  }
+  if (htDone.includes('21')){
+    document.getElementById('worldHT').style.filter = 'brightness(100%)';
+    document.getElementById('ht').innerHTML = 'X';
+  }
+  if (plDone.includes('28')){
+    document.getElementById('pl').innerHTML = '1';
+  }
+  if (plDone.includes('29')){
+    document.getElementById('worldPL').style.filter = 'brightness(100%)';
+    document.getElementById('pl').innerHTML = 'X';
+  }
+  if (spDone.includes('12')){
+    document.getElementById('sp').innerHTML = '1';
+  }
+  if (spDone.includes('18')){
+    document.getElementById('worldSP').style.filter = 'brightness(100%)';
+    document.getElementById('sp').innerHTML = 'X';
+  }
+  if (corDone.includes('21')){
+    document.getElementById('worldCoR').style.filter = 'brightness(100%)';
+    document.getElementById('cor').innerHTML = 'X';
+  }
+  if (twtnwDone.includes('28')){
+    document.getElementById('worldTWTNW').style.filter = 'brightness(100%)';
+    document.getElementById('twtnw').innerHTML = 'X';
+  }
+  if (acreDone.includes('22')){
+    document.getElementById('world100').style.filter = 'brightness(100%)';
+    document.getElementById('acre').innerHTML = 'X';
+  }
+  if (atlDone.includes('1')){
+    document.getElementById('atl').innerHTML = '1';
+  }
+  if (atlDone.includes('2')){
+    document.getElementById('atl').innerHTML = '2';
+  }
+  if (atlDone.includes('3')){
+    document.getElementById('worldAtlantica').style.filter = 'brightness(100%)';
+    document.getElementById('atl').innerHTML = 'X';
+  }
 
   //Mark Required Checks
   if (requiredDone[0] == "1"){

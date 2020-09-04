@@ -1430,6 +1430,7 @@ function magicMark(item){
         mBlizzard.style.filter = "brightness(40%)";
         bNum.innerHTML = 0;
       }
+      magicDone[1] = bNum.innerHTML;
       break;
     case 'thunder':
       if (tNum.innerHTML < 3){
@@ -1440,6 +1441,7 @@ function magicMark(item){
         mThunder.style.filter = "brightness(40%)";
         tNum.innerHTML = 0;
       }
+      magicDone[2] = tNum.innerHTML
       break;
     case 'cure':
       if (cNum.innerHTML < 3){
@@ -1450,6 +1452,7 @@ function magicMark(item){
         mCure.style.filter = "brightness(40%)";
         cNum.innerHTML = 0;
       }
+      magicDone[3] = cNum.innerHTML
       break;
     case 'reflect':
       if (rNum.innerHTML < 3){
@@ -1460,6 +1463,7 @@ function magicMark(item){
         mReflect.style.filter = "brightness(40%)";
         rNum.innerHTML = 0;
       }
+      magicDone[4] = rNum.innerHTML
       break;
     case "magnet":
       if (magNum.innerHTML < 3){
@@ -1470,6 +1474,7 @@ function magicMark(item){
         mMagnet.style.filter = "brightness(40%)";
         magNum.innerHTML = 0;
       }
+      magicDone[5] = magNum.innerHTML
       break;
   }
 }

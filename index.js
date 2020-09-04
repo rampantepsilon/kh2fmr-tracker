@@ -45,9 +45,14 @@ Changes
 - Updated the layout to not break on resizing the tracker
 - Added tooltips to show name of checks when hovering over them.
 - Fixed list of checks to not scroll the entire page.
+- Fixed issue where tracker would resize when too many worlds was completed.
+- Fixed issue with Land of Dragons Location Count.
+- Fixed issue where magic wouldn't save.
+- Fixed issue where loading saves wouldn't update tracker to show what worlds are completed.
 
 To Be Added
-- Way to show progress on kingdom without selecting it.`
+- Way to show progress on kingdom without selecting it.
+- Way to save if Auto Form or Real Form`
 }
 
 //Global Variables
