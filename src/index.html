@@ -20,28 +20,37 @@
         for (i=0; i < 18; i++){
           if (hint[i].value != ''){
             counter += parseInt(hint[i].value);
+            hintsKnown[i] = hint[i].value;
           } else {
             counter += 0;
+            hintsKnown[i] = "0";
           }
         }
         document.getElementById('totalHints2').innerHTML = counter;
       }
+
       function addHints2(){
         var hint = document.getElementsByClassName('hintCount2');
         var counter = 0;
         for (i=0; i < 18; i++){
           if (hint[i].value != ''){
             counter += parseInt(hint[i].value);
+            hintsFound[i] = hint[i].value;
           } else {
             counter += 0;
+            hintsFound[i] = '0';
           }
         }
         document.getElementById('totalHints').innerHTML = counter;
       }
+
+      function addNotes(){
+        notepad[0] = document.getElementById('notepad').value;
+      }
     </script>
   </head>
 
-  <body onload="list('STT')">
+  <body onload="init()">
     <table width='100%' height='100%'>
       <tr>
         <!--Key (Stay Constant)-->
@@ -392,7 +401,7 @@
               <br>Total Locations Left: <span id='totalChecks'>433</span>
             </h4>
             <button onclick='save()'>Save Progress</button><button onclick='load()'>Restore from Save</button><br><br>
-            <textarea rows='10' cols='55' placeholder="Notes:"></textarea>
+            <textarea rows='10' cols='55' placeholder="Notes:" id='notepad' onchange='addNotes()'></textarea>
           </div>
         </td>
         <!--Location Information-->

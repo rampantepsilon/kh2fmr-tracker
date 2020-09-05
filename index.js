@@ -49,6 +49,7 @@ Changes
 - Fixed issue with Land of Dragons Location Count.
 - Fixed issue where magic wouldn't save.
 - Fixed issue where loading saves wouldn't update tracker to show what worlds are completed.
+- Fixed issue where notes & hints wouldn't save.
 
 To Be Added
 - Way to show progress on kingdom without selecting it.

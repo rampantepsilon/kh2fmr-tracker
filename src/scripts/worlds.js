@@ -21,11 +21,34 @@ var magicDone = ["0","0","0","0","0","0"];
 var summonDone = ["0","0","0","0"];
 var keybladeDone = "0";
 var pageDone = "0";
+var hintsFound = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
+var hintsKnown = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
+var notepad = ['']
 
 //Call on load
 function init(){
+  hintsLoad();
   list('STT');
-  keybladeMark();
+}
+
+//Load Found Hints
+function hintsLoad(){
+  var hint = document.getElementsByClassName('hintCount2');
+  var hint2 = document.getElementsByClassName('hintCount');
+  for (i = 0; i < 18; i++){
+    var id = 'hf' + i;
+    hint[i].setAttribute('id' , id);
+    var hfBox = document.getElementById(id);
+    hfBox.value = hintsFound[i];
+  }
+  for (i = 0; i < 18; i++){
+    var id2 = 'hk' + i;
+    hint2[i].setAttribute('id' , id2);
+    var hkBox = document.getElementById(id2);
+    hkBox.value = hintsKnown[i];
+  }
+
+  document.getElementById('notepad').value = notepad[0];
 }
 
 function list(location){
@@ -346,6 +369,8 @@ var saveT = new Store(
       summonDone: summonDone,
       keybladeDone: keybladeDone,
       pageDone: pageDone,
+      hintsFound: hintsFound,
+      hintsKnown: hintsKnown
     }
   }
 )
@@ -416,6 +441,15 @@ if (!saveT.get('keybladeDone')){
 if (!saveT.get('pageDone')){
   saveT.set('pageDone', pageDone);
 }
+if (!saveT.get('hintsFound')){
+  saveT.set('hintsFound', hintsFound);
+}
+if (!saveT.get('hintsKnown')){
+  saveT.set('hintsKnown', hintsKnown);
+}
+if (!saveT.get('notepad')){
+
+}
 
 function save(){
   saveT.set('sttDone', sttDone);
@@ -440,6 +474,9 @@ function save(){
   saveT.set('summonDone', summonDone);
   saveT.set('keybladeDone', keybladeDone);
   saveT.set('pageDone', pageDone);
+  saveT.set('hintsFound', hintsFound);
+  saveT.set('hintsKnown', hintsKnown);
+  saveT.set('notepad', notepad);
 }
 
 function load(){
@@ -465,8 +502,12 @@ function load(){
   summonDone = saveT.get('summonDone');
   keybladeDone = saveT.get('keybladeDone');
   pageDone = saveT.get('pageDone');
+  hintsFound = saveT.get('hintsFound');
+  hintsKnown = saveT.get('hintsKnown');
+  notepad = saveT.get('notepad');
 
   list('STT');
+  hintsLoad();
 
   //Update Worlds
   if (sttDone.includes('24')){
