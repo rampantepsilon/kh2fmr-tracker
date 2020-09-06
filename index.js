@@ -35,10 +35,12 @@ Saving Tracker
 Changes
 - Added way to see check left in each world. (Hover over the world and the popup will tell you.)
 - Added way to disable worlds. This will also remove the count from the total locations left number.
+- Fixed issue in v1.4.0 where the disabled worlds wouldn't load properly.
+- Fixed issue causing Auto Forms to not differentiate from obtained forms.
+- Added Dialog to confirm saving and loading.
 
 To Be Added
-- Fix issue where Disney Castle and Timeless River share a list can cause issues if one or the other is disabled then reenabled.
-- Way to save if Auto Form or Real Form`
+- Fix issue where Disney Castle and Timeless River share a list can cause issues if one or the other is disabled then reenabled.`
 }
 
 //Important Message Remove for next build?

@@ -24,6 +24,8 @@ var pageDone = "0";
 var hintsFound = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
 var hintsKnown = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
 var notepad = "";
+var disabledWorlds = [];
+var formToggle = [];
 
 //Call on load
 function init(){
@@ -388,12 +390,43 @@ var saveT = new Store(
       keybladeDone: keybladeDone,
       pageDone: pageDone,
       hintsFound: hintsFound,
-      hintsKnown: hintsKnown
+      hintsKnown: hintsKnown,
+      notepad: notepad,
+      disabled: disabledWorlds,
+      formToggle: formToggle
     }
   }
 )
 
 function save(){
+  //Set Disabled Worlds
+  disabledWorlds = [];
+  disabledWorlds.push(sttVC);
+  disabledWorlds.push(ttVC);
+  disabledWorlds.push(hbVC);
+  disabledWorlds.push(dcVC);
+  disabledWorlds.push(trVC);
+  disabledWorlds.push(lodVC);
+  disabledWorlds.push(bcVC);
+  disabledWorlds.push(ocVC);
+  disabledWorlds.push(prVC);
+  disabledWorlds.push(agrVC);
+  disabledWorlds.push(htVC);
+  disabledWorlds.push(plVC);
+  disabledWorlds.push(spVC);
+  disabledWorlds.push(corVC);
+  disabledWorlds.push(twtnwVC);
+  disabledWorlds.push(acreVC);
+  disabledWorlds.push(atlVC);
+
+  //Set Auto Forms
+  formToggle = [];
+  formToggle.push(vToggle);
+  formToggle.push(wToggle);
+  formToggle.push(lToggle);
+  formToggle.push(mToggle);
+  formToggle.push(fToggle);
+
   saveT.set('sttDone', sttDone);
   saveT.set('ttDone', ttDone);
   saveT.set('hbDone', hbDone);
@@ -419,6 +452,13 @@ function save(){
   saveT.set('hintsFound', hintsFound);
   saveT.set('hintsKnown', hintsKnown);
   saveT.set('notepad', notepad);
+  saveT.set('disabled', disabledWorlds);
+  saveT.set('formToggle', formToggle);
+
+  document.getElementById('saveText').innerHTML = 'Progress Saved';
+  setTimeout(function(){
+    document.getElementById('saveText').innerHTML = '';
+  }, 3000);
 }
 
 function load(){
@@ -447,115 +487,117 @@ function load(){
   hintsFound = saveT.get('hintsFound');
   hintsKnown = saveT.get('hintsKnown');
   notepad = saveT.get('notepad');
+  disabledWorlds = saveT.get('disabled');
+  formToggle = saveT.get('formToggle');
 
   list('STT');
   hintsLoad();
 
   //Update Worlds
-  if (sttDone.includes('24')){
+  if (sttDone.includes('24') || sttDone.includes(24)){
     document.getElementById('worldRoxas').style.filter = "brightness(100%)"
     document.getElementById('stt').innerHTML = 'X';
   }
-  if (ttDone.includes('24')){
+  if (ttDone.includes('24') || ttDone.includes(24)){
     document.getElementById('tt').innerHTML = '1';
   }
-  if (ttDone.includes('26')){
+  if (ttDone.includes('26') || ttDone.includes(26)){
     document.getElementById('tt').innerHTML = '2';
   }
-  if (ttDone.includes('46')){
+  if (ttDone.includes('46') || ttDone.includes(46)){
     document.getElementById('worldTT').style.filter = 'brightness(100%)';
     document.getElementById('tt').innerHTML = 'X';
   }
-  if (hbDone.includes('18')){
+  if (hbDone.includes('18') || hbDone.includes(18)){
     document.getElementById('hb').innerHTML = '1';
   }
-  if (hbDone.includes('28')){
+  if (hbDone.includes('28') || hbDone.includes(28)){
     document.getElementById('worldHB').style.filter = 'brightness(100%)';
     document.getElementById('hb').innerHTML = 'X';
   }
-  if (dctrDone.includes('10')){
+  if (dctrDone.includes('10') || dctrDone.includes(10)){
     document.getElementById('worldDC').style.filter = 'brightness(100%)';
     document.getElementById('dc').innerHTML = 'X';
   }
-  if (dctrDone.includes('21')){
+  if (dctrDone.includes('21') || dctrDone.includes(21)){
     document.getElementById('worldTR').style.filter = 'brightness(100%)';
     document.getElementById('tr').innerHTML = 'X';
   }
-  if (tlodDone.includes('19')){
+  if (tlodDone.includes('19') || tlodDone.includes(19)){
     document.getElementById('lod').innerHTML = '1';
   }
-  if (tlodDone.includes('28')){
+  if (tlodDone.includes('28') || tlodDone.includes(28)){
     document.getElementById('worldTLoD').style.filter = 'brightness(100%)';
     document.getElementById('lod').innerHTML = 'X';
   }
-  if (bcDone.includes('25')){
+  if (bcDone.includes('25') || bcDone.includes(25)){
     document.getElementById('bc').innerHTML = '1';
   }
-  if (bcDone.includes('28')){
+  if (bcDone.includes('28') || bcDone.includes(28)){
     document.getElementById('worldBC').style.filter = 'brightness(100%)';
     document.getElementById('bc').innerHTML = 'X';
   }
-  if (ocDone.includes('27')){
+  if (ocDone.includes('27') || ocDone.includes(27)){
     document.getElementById('oc').innerHTML = '1';
   }
-  if (ocDone.includes('30')){
+  if (ocDone.includes('30') || ocDone.includes(30)){
     document.getElementById('worldOC').style.filter = 'brightness(100%)';
     document.getElementById('oc').innerHTML = 'X';
   }
-  if (prDone.includes('18')){
+  if (prDone.includes('18') || prDone.includes(18)){
     document.getElementById('pr').innerHTML = '1';
   }
-  if (prDone.includes('29')){
+  if (prDone.includes('29') || prDone.includes(29)){
     document.getElementById('worldPR').style.filter = 'brightness(100%)';
     document.getElementById('pr').innerHTML = 'X';
   }
-  if (agrDone.includes('27')){
+  if (agrDone.includes('27') || agrDone.includes(27)){
     document.getElementById('agr').innerHTML = '1';
   }
-  if (agrDone.includes('30')){
+  if (agrDone.includes('30') || agrDone.includes(30)){
     document.getElementById('worldAgrabah').style.filter = 'brightness(100%)';
     document.getElementById('agr').innerHTML = 'X';
   }
-  if (htDone.includes('17')){
+  if (htDone.includes('17') || htDone.includes(17)){
     document.getElementById('ht').innerHTML = '1';
   }
-  if (htDone.includes('21')){
+  if (htDone.includes('21') || htDone.includes(21)){
     document.getElementById('worldHT').style.filter = 'brightness(100%)';
     document.getElementById('ht').innerHTML = 'X';
   }
-  if (plDone.includes('28')){
+  if (plDone.includes('28') || plDone.includes(28)){
     document.getElementById('pl').innerHTML = '1';
   }
-  if (plDone.includes('29')){
+  if (plDone.includes('29') || plDone.includes(29)){
     document.getElementById('worldPL').style.filter = 'brightness(100%)';
     document.getElementById('pl').innerHTML = 'X';
   }
-  if (spDone.includes('12')){
+  if (spDone.includes('12') || spDone.includes(12)){
     document.getElementById('sp').innerHTML = '1';
   }
-  if (spDone.includes('18')){
+  if (spDone.includes('18') || spDone.includes(18)){
     document.getElementById('worldSP').style.filter = 'brightness(100%)';
     document.getElementById('sp').innerHTML = 'X';
   }
-  if (corDone.includes('21')){
+  if (corDone.includes('21') || corDone.includes(21)){
     document.getElementById('worldCoR').style.filter = 'brightness(100%)';
     document.getElementById('cor').innerHTML = 'X';
   }
-  if (twtnwDone.includes('28')){
+  if (twtnwDone.includes('28') || twtnwDone.includes(28)){
     document.getElementById('worldTWTNW').style.filter = 'brightness(100%)';
     document.getElementById('twtnw').innerHTML = 'X';
   }
-  if (acreDone.includes('22')){
+  if (acreDone.includes('22') || acreDone.includes(22)){
     document.getElementById('world100').style.filter = 'brightness(100%)';
     document.getElementById('acre').innerHTML = 'X';
   }
-  if (atlDone.includes('1')){
+  if (atlDone.includes('1') || atlDone.includes(1)){
     document.getElementById('atl').innerHTML = '1';
   }
-  if (atlDone.includes('2')){
+  if (atlDone.includes('2') || atlDone.includes(2)){
     document.getElementById('atl').innerHTML = '2';
   }
-  if (atlDone.includes('3')){
+  if (atlDone.includes('3') || atlDone.includes(3)){
     document.getElementById('worldAtlantica').style.filter = 'brightness(100%)';
     document.getElementById('atl').innerHTML = 'X';
   }
@@ -658,7 +700,7 @@ function load(){
     }
   }
 
-  //Mark Keyblades
+  //Mark Reports (Still need to rename)
   if (keybladeDone != "0"){
     var loop = parseInt(keybladeDone);
     for (var i = 0; i < loop; i++){
@@ -692,4 +734,135 @@ function load(){
   document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
   document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
   document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
+
+  //Restore Disabled Worlds
+  if (disabledWorlds[0] == 1){
+    document.getElementById('stt').innerHTML = 'X';
+    roxasWorld.setAttribute('src','img/Disabled/simulated_twilight_town.png');
+    roxasWorld.style.filter = "brightness(100%)"
+    sttVC = 1;
+  }
+  if (disabledWorlds[1] == 1){
+    document.getElementById('tt').innerHTML = 'X';
+    ttWorld.setAttribute('src','img/Disabled/twilight_town.png');
+    ttWorld.style.filter = "brightness(100%)"
+    ttVC = 1;
+  }
+  if (disabledWorlds[2] == 1){
+    document.getElementById('hb').innerHTML = 'X';
+    hbWorld.setAttribute('src','img/Disabled/hollow_bastion.png');
+    hbWorld.style.filter = "brightness(100%)";
+    hbVC = 1;
+  }
+  if (disabledWorlds[3] == 1){
+    document.getElementById('dc').innerHTML = 'X';
+    dcWorld.setAttribute('src','img/Disabled/disney_castle.png');
+    dcWorld.style.filter = "brightness(100%)"
+    dcVC = 1;
+  }
+  if (disabledWorlds[4] == 1){
+    document.getElementById('tr').innerHTML = 'X';
+    trWorld.setAttribute('src','img/Disabled/timeless_river.png');
+    trWorld.style.filter = "brightness(100%)"
+    trVC = 1;
+  }
+  if (disabledWorlds[5] == 1){
+    document.getElementById('lod').innerHTML = 'X';
+    lodWorld.setAttribute('src','img/Disabled/land_of_dragons.png');
+    lodWorld.style.filter = "brightness(100%)";
+    lodVC = 1;
+  }
+  if (disabledWorlds[6] == 1){
+    document.getElementById('bc').innerHTML = 'X';
+    bcWorld.setAttribute('src',"img/Disabled/beast's_castle.png");
+    bcWorld.style.filter = "brightness(100%)";
+    bcVC = 1;
+  }
+  if (disabledWorlds[7] == 1){
+    document.getElementById('oc').innerHTML = 'X';
+    ocWorld.setAttribute('src','img/Disabled/olympus_coliseum.png');
+    oc.style.filter = 'brightness(100%)'
+    ocVC = 1;
+  }
+  if (disabledWorlds[8] == 1){
+    document.getElementById('pr').innerHTML = 'X';
+    prWorld.setAttribute('src','img/Disabled/port_royal.png');
+    prWorld.style.filter = "brightness(100%)";
+    prVC = 1;
+  }
+  if (disabledWorlds[9] == 1){
+    document.getElementById('agr').innerHTML = 'X';
+    agrWorld.setAttribute('src','img/Disabled/agrabah.png');
+    agrWorld.style.filter = "brightness(100%)";
+    agrVC = 1;
+  }
+  if (disabledWorlds[10] == 1){
+    document.getElementById('ht').innerHTML = 'X';
+    htWorld.setAttribute('src','img/Disabled/halloween_town.png');
+    htWorld.style.filter = "brightness(100%)";
+    htVC = 1;
+  }
+  if (disabledWorlds[11] == 1){
+    document.getElementById('pl').innerHTML = 'X';
+    plWorld.setAttribute('src','img/Disabled/pride_land.png');
+    plWorld.style.filter = "brightness(100%)";
+    plVC = 1;
+  }
+  if (disabledWorlds[12] == 1){
+    document.getElementById('sp').innerHTML = 'X';
+    spWorld.setAttribute('src','img/Disabled/space_paranoids.png');
+    spWorld.style.filter = "brightness(100%)";
+    spVC = 1;
+  }
+  if (disabledWorlds[13] == 1){
+    document.getElementById('cor').innerHTML = 'X';
+    corWorld.setAttribute('src','img/Disabled/cavern_of_remembrance.png');
+    corWorld.style.filter = "brightness(100%)";
+    corVC = 1;
+  }
+  if (disabledWorlds[14] == 1){
+    document.getElementById('twtnw').innerHTML = 'X';
+    twtnwWorld.setAttribute('src','img/Disabled/the_world_that_never_was.png');
+    twtnwWorld.style.filter = "brightness(100%)";
+    twtnwVC = 1;
+  }
+  if (disabledWorlds[15] == 1){
+    document.getElementById('acre').innerHTML = 'X';
+    acreWorld.setAttribute('src','img/Disabled/100_acre_wood.png');
+    acreWorld.style.filter = "brightness(100%)";
+    acreVC = 1;
+  }
+  if (disabledWorlds[16] == 1){
+    document.getElementById('atl').innerHTML = 'X';
+    atlWorld.setAttribute('src','img/Disabled/atlantica.png');
+    atlWorld.style.filter = "brightness(100%)";
+    atlVC = 1;
+  }
+
+  //Restore Auto Forms
+  if (formToggle[0] == 1){
+    document.getElementById('fValor').setAttribute('src', 'img/Forms/formvalor_1.png');
+    vToggle = '1';
+  }
+  if (formToggle[1] == 1){
+    document.getElementById('fWisdom').setAttribute('src', 'img/Forms/formwisdom_1.png');
+    wToggle = '1';
+  }
+  if (formToggle[2] == 1){
+    document.getElementById('fLimit').setAttribute('src', 'img/Forms/formlimit_1.png');
+    lToggle = '1';
+  }
+  if (formToggle[3] == 1){
+    document.getElementById('fMaster').setAttribute('src', 'img/Forms/formmaster_1.png');
+    mToggle = '1';
+  }
+  if (formToggle[4] == 1){
+    document.getElementById('fFinal').setAttribute('src', 'img/Forms/formfinal_1.png');
+    fToggle = '1';
+  }
+
+  document.getElementById('saveText').innerHTML = 'Progress Loaded';
+  setTimeout(function(){
+    document.getElementById('saveText').innerHTML = '';
+  }, 3000);
 }
