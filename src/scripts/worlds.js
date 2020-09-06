@@ -23,7 +23,7 @@ var keybladeDone = "0";
 var pageDone = "0";
 var hintsFound = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
 var hintsKnown = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
-var notepad = ['']
+var notepad = "";
 
 //Call on load
 function init(){
@@ -48,7 +48,7 @@ function hintsLoad(){
     hkBox.value = hintsKnown[i];
   }
 
-  document.getElementById('notepad').value = notepad[0];
+  document.getElementById('notepad').value = notepad;
 }
 
 function list(location){
@@ -323,7 +323,7 @@ function pageMark(){
   }
 }
 
-//Mark Keyblades
+//Mark Keyblades (Repurposed for Reports)
 function keybladeMark(){
   var counter = document.getElementById('keyNum');
   var pages = document.getElementById('keyblade');
@@ -340,6 +340,24 @@ function keybladeMark(){
     pages.style.filter = "brightness(40%)";
   }
 }
+
+//Mark Data Fights WIP
+/*function dataMark(){
+  var counter = document.getElementById('dataNum');
+  var pages = document.getElementById('data');
+  var currentCount = document.getElementById('dataNum').innerHTML;
+
+  if (currentCount < 13){
+    currentCount = parseInt(currentCount) + 1;
+    keybladeDone = currentCount;
+    counter.innerHTML = currentCount;
+    pages.style.filter = "brightness(100%)";
+  } else {
+    keybladeDone = "0";
+    counter.innerHTML = 0;
+    pages.style.filter = "brightness(40%)";
+  }
+}*/
 
 //Save Function Start
 const Store = require('..\\src\\scripts\\store.js');
@@ -374,82 +392,6 @@ var saveT = new Store(
     }
   }
 )
-//Set Values if non-existent
-if (!saveT.get('sttDone')){
-  saveT.set('sttDone', sttDone);
-}
-if (!saveT.get('ttDone')){
-  saveT.set('ttDone', ttDone);
-}
-if (!saveT.get('hbDone')){
-  saveT.set('hbDone', hbDone);
-}
-if (!saveT.get('dctrDone')){
-  saveT.set('dctrDone', dctrDone);
-}
-if (!saveT.get('tlodDone')){
-  saveT.set('tlodDone', tlodDone);
-}
-if (!saveT.get('bcDone')){
-  saveT.set('bcDone', bcDone);
-}
-if (!saveT.get('ocDone')){
-  saveT.set('ocDone', ocDone);
-}
-if (!saveT.get('prDone')){
-  saveT.set('prDone', prDone);
-}
-if (!saveT.get('agrDone')){
-  saveT.set('agrDone', agrDone);
-}
-if (!saveT.get('htDone')){
-  saveT.set('htDone', htDone);
-}
-if (!saveT.get('plDone')){
-  saveT.set('plDone', plDone);
-}
-if (!saveT.get('spDone')){
-  saveT.set('spDone', spDone);
-}
-if (!saveT.get('corDone')){
-  saveT.set('corDone', corDone);
-}
-if (!saveT.get('twtnwDone')){
-  saveT.set('twtnwDone', twtnwDone);
-}
-if (!saveT.get('acreDone')){
-  saveT.set('acreDone', acreDone);
-}
-if (!saveT.get('atlDone')){
-  saveT.set('atlDone', atlDone);
-}
-if (!saveT.get('requiredDone')){
-  saveT.set('requiredDone', requiredDone);
-}
-if (!saveT.get('formDone')){
-  saveT.set('formDone', formDone);
-}
-if (!saveT.get('magicDone')){
-  saveT.set('magicDone', magicDone);
-}
-if (!saveT.get('summonDone')){
-  saveT.set('summonDone', summonDone);
-}
-if (!saveT.get('keybladeDone')){
-  saveT.set('keybladeDone', keybladeDone);
-}
-if (!saveT.get('pageDone')){
-  saveT.set('pageDone', pageDone);
-}
-if (!saveT.get('hintsFound')){
-  saveT.set('hintsFound', hintsFound);
-}
-if (!saveT.get('hintsKnown')){
-  saveT.set('hintsKnown', hintsKnown);
-}
-if (!saveT.get('notepad')){
-
-}
 
 function save(){
   saveT.set('sttDone', sttDone);
@@ -731,4 +673,23 @@ function load(){
       pageMark();
     }
   }
+
+  //Update Hover tooltip
+  document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
+  document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
+  document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
+  document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
+  document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+  document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
+  document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
+  document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
+  document.getElementById('prCC').innerHTML = (30 - prDone.length);
+  document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
+  document.getElementById('htCC').innerHTML = (22 - htDone.length);
+  document.getElementById('plCC').innerHTML = (30 - plDone.length);
+  document.getElementById('spCC').innerHTML = (18 - spDone.length);
+  document.getElementById('corCC').innerHTML = (21 - corDone.length);
+  document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
+  document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
+  document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
 }

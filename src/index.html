@@ -54,37 +54,37 @@
     <table width='100%' height='100%'>
       <tr>
         <!--Key (Stay Constant)-->
-        <td align='left' valign='top' style='min-width:635px' width='35%'>
+        <td align='left' valign='top' style='min-width:655px' width='35%'>
           <table align='center'>
             <tr>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/simulated_twilight_town.png' width='80px' height='80px' id='worldRoxas' onclick='list("STT")'>
-                <span class='tooltiptext'>Roxas World</span>
+                <span class='tooltiptext'>Roxas World<br>Checks Left: <span id='sttCC'>25</span></span>
                 <span class='visitNum' id='stt'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/twilight_town.png' width='80px' height='80px' id='worldTT' onclick='list("TT")'>
-                <span class='tooltiptext'>Twilight Town</span>
+                <span class='tooltiptext'>Twilight Town<br>Checks Left: <span id='ttCC'>47</span></span>
                 <span class='visitNum' id='tt'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/hollow_bastion.png' width='80px' height='80px' id='worldHB' onclick='list("HB")'>
-                <span class='tooltiptext'>Hollow Bastion</span>
+                <span class='tooltiptext'>Hollow Bastion<br>Checks Left: <span id='hbCC'>35</span></span>
                 <span class='visitNum' id='hb'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/disney_castle.png' width='80px' height='80px' id='worldDC' onclick='list("DC")'>
-                <span class='tooltiptext'>Disney Castle</span>
+                <span class='tooltiptext'>Disney Castle<br>Checks Left: <span id='dcCC'>23</span></span>
                 <span class='visitNum' id='dc'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/timeless_river.png' width='80px' height='80px' id='worldTR' onclick='list("TR")'>
-                <span class='tooltiptext'>Timeless River</span>
+                <span class='tooltiptext'>Timeless River<br>Checks Left: <span id='trCC'>23</span></span>
                 <span class='visitNum' id='tr'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/land_of_dragons.png' width='80px' height='80px' id='worldTLoD' onclick='list("TLOD")'>
-                <span class='tooltiptext'>Land of Dragons</span>
+                <span class='tooltiptext'>Land of Dragons<br>Checks Left: <span id='lodCC'>29</span></span>
                 <span class='visitNum' id='lod'>0</span>
               </td>
             </tr>
@@ -93,63 +93,68 @@
             <tr>
               <td align='center' class='tooltip'>
                 <img src="img/Locations/beast's_castle.png" width='80px' height='80px' id='worldBC' onclick='list("BC")'>
-                <span class='tooltiptext'>Beast's Castle</span>
+                <span class='tooltiptext'>Beast's Castle<br>Checks Left: <span id='bcCC'>29</span></span>
                 <span class='visitNum' id='bc'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/olympus_coliseum.png' width='80px' height='80px' id='worldOC' onclick='list("OC")'>
-                <span class='tooltiptext'>Olympus Coliseum</span>
+                <span class='tooltiptext'>Olympus Coliseum<br>Checks Left: <span id='ocCC'>35</span></span>
                 <span class='visitNum' id='oc'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/port_royal.png' width='80px' height='80px' id='worldPR' onclick='list("PR")'>
-                <span class='tooltiptext'>Port Royal</span>
+                <span class='tooltiptext'>Port Royal<br>Checks Left: <span id='prCC'>30</span></span>
                 <span class='visitNum' id='pr'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/agrabah.png' width='80px' height='80px' id='worldAgrabah' onclick='list("AGR")'>
-                <span class='tooltiptext'>Agrabah</span>
+                <span class='tooltiptext'>Agrabah<br>Checks Left: <span id='agrCC'>34</span></span>
                 <span class='visitNum' id='agr'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/halloween_town.png' width='80px' height='80px' id='worldHT' onclick='list("HT")'>
-                <span class='tooltiptext'>Halloween Town</span>
+                <span class='tooltiptext'>Halloween Town<br>Checks Left: <span id='htCC'>22</span></span>
                 <span class='visitNum' id='ht'>0</span>
+              </td>
+              <td align='center' class='tooltip'>
+                <img src='img/Locations/pride_land.png' width='80px' height='80px' id='worldPL' onclick='list("PL")'>
+                <span class='tooltiptext'>Pride Land<br>Checks Left: <span id='plCC'>30</span></span>
+                <span class='visitNum' id='pl'>0</span>
               </td>
             </tr>
           </table>
           <table align='center'>
             <tr>
               <td align='center' class='tooltip'>
-                <img src='img/Locations/pride_land.png' width='80px' height='80px' id='worldPL' onclick='list("PL")'>
-                <span class='tooltiptext'>Pride Land</span>
-                <span class='visitNum' id='pl'>0</span>
-              </td>
-              <td align='center' class='tooltip'>
                 <img src='img/Locations/space_paranoids.png' width='80px' height='80px' id='worldSP' onclick='list("SP")'>
-                <span class='tooltiptext'>Space Paranoids</span>
+                <span class='tooltiptext'>Space Paranoids<br>Checks Left: <span id='spCC'>18</span></span>
                 <span class='visitNum' id='sp'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/cavern_of_remembrance.png' width='80px' height='80px' id='worldCoR' onclick='list("COR")'>
-                <span class='tooltiptext'>Cavern of Remembrance</span>
+                <span class='tooltiptext'>Cavern of Remembrance<br>Checks Left: <span id='corCC'>21</span></span>
                 <span class='visitNum' id='cor'>0</span>
               </td>
               <td align='center' class='tooltip'>
-                <img src='img/Locations/the_world_that_never_was.png' width='89px' height='80px' id='worldTWTNW' onclick='list("TWTNW")'>
-                <span class='tooltiptext'>The World That Never Was</span>
+                <img src='img/Locations/the_world_that_never_was.png' width='80px' height='80px' id='worldTWTNW' onclick='list("TWTNW")'>
+                <span class='tooltiptext'>The World That Never Was<br>Checks Left: <span id='twtnwCC'>29</span></span>
                 <span class='visitNum' id='twtnw'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/100_acre_wood.png' width='80px' height='80px' id='world100' onclick='list("100")'>
-                <span class='tooltiptext'>100 Acre Wood</span>
+                <span class='tooltiptext'>100 Acre Wood<br>Checks Left: <span id='acreCC'>22</span></span>
                 <span class='visitNum' id='acre'>0</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/Locations/atlantica.png' width='80px' height='80px' id='worldAtlantica' onclick='list("ATL")'>
-                <span class='tooltiptext'>Atlantica</span>
+                <span class='tooltiptext'>Atlantica<br>Checks Left: <span id='atlCC'>4</span></span>
                 <span class='visitNum' id='atl'>0</span>
               </td>
+              <!--<td align='center' class='tooltip'>
+                <img src='img/replica_data.png' id='data' width='85px' height='80px' onclick='dataMark()'>
+                <span class='tooltiptext'>Data Fights</span>
+                <span class='number' id='dataNum'>0</span>
+              </td>-->
             </tr>
           </table>
           <table align='center'>
@@ -217,11 +222,21 @@
           </table>
           <table align='center'>
             <tr>
-              <td align='center'>
+              <td align='center' class='tooltip'>
                 <img src='img/Required/Charm_0.png' width='74px' height='80px' id='pCharm' onclick='requiredMark("charm")'>
+                <span class='tooltiptext'>Promise Charm</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Required/ProofConnection_0.png' width='80px' height='80px' id='pConnection' onclick='requiredMark("connection")'>
+                <span class='tooltiptext'>Proof of Connection</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Required/ProofPeace_0.png' width='80px' height='80px' id='pPeace' onclick='requiredMark("peace")'>
+                <span class='tooltiptext'>Proof of Peace</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Required/ProofNonexistence_0.png' width='80px' height='80px' id='pNonexist' onclick='requiredMark("nonexist")'>
+                <span class='tooltiptext'>Proof of Nonexistence</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/secret_reports.png' id='keyblade' width='85px' height='80px' onclick='keybladeMark()'>
@@ -230,11 +245,21 @@
               </td>
             </tr>
             <tr>
-              <td>
+              <td align='center' class='tooltip'>
                 <img src='img/Charms/baseball.png' width='80px' height='80px' id='cBBall' onclick='summonMark("bBall")'>
+                <span class='tooltiptext'>Baseball Charm (Chicken Little)</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Charms/lamp.png' width='80px' height='80px' id='cLamp' onclick='summonMark("lamp")'>
+                <span class='tooltiptext'>Lamp Charm (Genie)</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Charms/ukelele.png' width='80px' height='80px' id='cUkulele' onclick='summonMark("ukulele")'>
+                <span class='tooltiptext'>Ukelele Charm (Stitch)</span>
+              </td>
+              <td align='center' class='tooltip'>
                 <img src='img/Charms/feather.png' width='80px' height='80px' id='cFeather' onclick='summonMark("feather")'>
+                <span class='tooltiptext'>Feather Charm (Peter Pan)</span>
               </td>
               <td align='center' class='tooltip'>
                 <img src='img/pages_0.png' width='80px' height='80px' id='pages' onclick='pageMark()'>
@@ -416,5 +441,7 @@
     </div>
 
     <script src='scripts/mark.js'></script>
+    <!--WIP-->
+    <script src='scripts/void.js'></script>
   </body>
 </html>

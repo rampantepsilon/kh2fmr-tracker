@@ -34,8 +34,15 @@ ul{
 
 .visitNum{
   position:relative;
-  bottom: 0px;
   right: 20px;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.voidImg{
+  position:relative;
+  right: 30px;
   color: #fff;
   font-size: 24px;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
@@ -43,6 +50,8 @@ ul{
 
 /* Tooltip container */
 .tooltip {
+  height: 80px;
+  /*width: 100px;*/
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
@@ -51,7 +60,7 @@ ul{
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 130px;
   background-color: #555;
   color: #fff;
   text-align: center;
@@ -61,7 +70,7 @@ ul{
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  top: 90%;
+  top: 100%;
   left: 50%;
   margin-left: -60px;
 
@@ -70,19 +79,6 @@ ul{
   transition: opacity 0.3s;
 }
 
-/* Tooltip arrow
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}*/
-
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;

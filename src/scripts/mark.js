@@ -31,6 +31,7 @@ function sttMark(num){
     }
   }
   document.getElementById('sttLeft').innerHTML = (25 - sttDone.length);
+  document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
 }
 function ttMark(num){
   var ttTemp = [];
@@ -87,6 +88,7 @@ function ttMark(num){
     }
   }
   document.getElementById('ttLeft').innerHTML = (47 - ttDone.length);
+  document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
 }
 function hbMark(num){
   var hbTemp = [];
@@ -129,6 +131,7 @@ function hbMark(num){
     }
   }
   document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
+  document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
 }
 function dctrMark(num){
   var dctrTemp = [];
@@ -169,6 +172,8 @@ function dctrMark(num){
     }
   }
   document.getElementById('dctrLeft').innerHTML = (23 - dctrDone.length);
+  document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
+  document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
 }
 function tlodMark(num){
   var tlodTemp = [];
@@ -211,6 +216,7 @@ function tlodMark(num){
     }
   }
   document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
+  document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
 }
 function bcMark(num){
   var bcTemp = [];
@@ -253,6 +259,7 @@ function bcMark(num){
     }
   }
   document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
+  document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
 }
 function ocMark(num){
   var ocTemp = [];
@@ -295,6 +302,7 @@ function ocMark(num){
     }
   }
   document.getElementById('ocLeft').innerHTML = (35 - ocDone.length);
+  document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
 }
 function prMark(num){
   var prTemp = [];
@@ -337,6 +345,7 @@ function prMark(num){
     }
   }
   document.getElementById('prLeft').innerHTML = (30 - prDone.length);
+  document.getElementById('prCC').innerHTML = (30 - prDone.length);
 }
 function agrMark(num){
   var agrTemp = [];
@@ -379,6 +388,7 @@ function agrMark(num){
     }
   }
   document.getElementById('agrLeft').innerHTML = (34 - agrDone.length);
+  document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
 }
 function htMark(num){
   var htTemp = [];
@@ -421,6 +431,7 @@ function htMark(num){
     }
   }
   document.getElementById('htLeft').innerHTML = (22 - htDone.length);
+  document.getElementById('htCC').innerHTML = (22 - htDone.length);
 }
 function plMark(num){
   var plTemp = [];
@@ -463,6 +474,7 @@ function plMark(num){
     }
   }
   document.getElementById('plLeft').innerHTML = (30 - plDone.length);
+  document.getElementById('plCC').innerHTML = (30 - plDone.length);
 }
 function spMark(num){
   var spTemp = [];
@@ -505,6 +517,7 @@ function spMark(num){
     }
   }
   document.getElementById('spLeft').innerHTML = (18 - spDone.length);
+  document.getElementById('spCC').innerHTML = (18 - spDone.length);
 }
 function corMark(num){
   var corTemp = [];
@@ -535,6 +548,7 @@ function corMark(num){
     }
   }
   document.getElementById('corLeft').innerHTML = (21 - corDone.length);
+  document.getElementById('corCC').innerHTML = (21 - corDone.length);
 }
 function twtnwMark(num){
   var twtnwTemp = [];
@@ -565,6 +579,7 @@ function twtnwMark(num){
     }
   }
   document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
+  document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
 }
 function acreMark(num){
   var acreTemp = [];
@@ -595,6 +610,7 @@ function acreMark(num){
     }
   }
   document.getElementById('acreLeft').innerHTML = (22 - acreDone.length);
+  document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
 }
 function atlMark(num){
   var atlTemp = [];
@@ -651,6 +667,7 @@ function atlMark(num){
     }
   }
   document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
+  document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
 }
 
 /*WIP Mark Sections*/

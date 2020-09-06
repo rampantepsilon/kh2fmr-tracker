@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.8.27';
+const build = '2020.9.5';
 const version = app.getVersion();
 
 //About Window
@@ -15,15 +15,11 @@ const aboutOptions = {
 - Updated Agrabah checks to match GoA v1.37 update
 - Location aren't trackable by clicking on them. Instead they open a list of checks that can be made. The location icon will light up when the second pass of the world is complete. For the most part, this will mean the Data Fights are all that's left.
 - Added ability to mark all checks in a group. NOTE: If you select a single check then the group, the single check will become unmarked. This will be fixed in a future build.
-- Added way to see how many completed visits per world.
+- Added way to see how many completed visits and how many checks are left per world.
 - Updated location images to match that those found on https://tracker.zaxu.xyz/next
 
-Checklist
-- Checklists will show based off of what is selected for the world.
-- Data will persist between viewing different links so long as you don't refresh the tracker or close the tracker.
-
 Magic/Forms/Summons
-- Forms are now able to show levels if wanted.
+- Forms are now show levels.
 - Icons are updated to be a bit clear as to what they are. Shoutouts to the KH2FMR tracker on EmoTracker
 
 Notes/Hints
@@ -31,29 +27,29 @@ Notes/Hints
 - Resize notes prior to narrowing the window. If you don't this can cause the notes to persist above the lists.
 - 100 Acre Wood isn't split on per page but as overall.
 - If using the tracker for the icon layout, you can mark locations by selecting the last keyhole check for the world.
-- Added way to track hints if using them.
-- Updated to calculate if you've found all known checks thus far.
 
 Saving Tracker
 - Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'
 - Loading will use the file noted above to return values.
 
 Changes
-- Changed Layout for better stream quality
-- Added support for Jsmartee's Hint System
-- Changed Keyblades to Ansem Reports to align with hints.
-- Updated the layout to not break on resizing the tracker
-- Added tooltips to show name of checks when hovering over them.
-- Fixed list of checks to not scroll the entire page.
-- Fixed issue where tracker would resize when too many worlds was completed.
-- Fixed issue with Land of Dragons Location Count.
-- Fixed issue where magic wouldn't save.
-- Fixed issue where loading saves wouldn't update tracker to show what worlds are completed.
-- Fixed issue where notes & hints wouldn't save.
+- Added way to see check left in each world. (Hover over the world and the popup will tell you.)
+- Added way to disable worlds. This will also remove the count from the total locations left number.
 
 To Be Added
-- Way to show progress on kingdom without selecting it.
+- Fix issue where Disney Castle and Timeless River share a list can cause issues if one or the other is disabled then reenabled.
 - Way to save if Auto Form or Real Form`
+}
+
+//Important Message Remove for next build?
+const importantOptions = {
+  type: 'info',
+  buttons: ['Close'],
+  title: label + ' v' + version,
+  message: 'Important information',
+  detail: `Please Read Below:
+
+Old Saved Progress will not work with the new system. If you are experiencing issues, please save the new progress then try again.`
 }
 
 //Global Variables
@@ -103,6 +99,11 @@ let menuT = [
     click(){
       aboutMessage();
     }
+  },{
+    label: '*** README ***',
+    click(){
+      importantMessage();
+    }
   }
 ]
 let menuT1 = [
@@ -139,6 +140,10 @@ Menu.setApplicationMenu(menu2);
 
 function aboutMessage(){
   dialog.showMessageBox(null, aboutOptions, (response, checkboxChecked) =>{});
+}
+
+function importantMessage(){
+  dialog.showMessageBox(null, importantOptions, (response, checkboxChecked) =>{});
 }
 
 function createWindow(){
