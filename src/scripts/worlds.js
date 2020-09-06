@@ -3,6 +3,7 @@ var sttDone = [];
 var ttDone = [];
 var hbDone = [];
 var dctrDone = [];
+var trDone = [];
 var tlodDone = [];
 var bcDone = [];
 var ocDone = [];
@@ -103,9 +104,9 @@ function list(location){
     }
     document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
   }
-  if (location == 'DC' || location == 'TR'){
-    checkList.innerHTML = `<h3 align='center'><u>Disney Castle / Timeless River</u><br>
-    Locations Left: <span id='dctrLeft'>23</span></h3>` + dctr;
+  if (location == 'DC'){
+    checkList.innerHTML = `<h3 align='center'><u>Disney Castle</u><br>
+    Locations Left: <span id='dctrLeft'>10</span></h3>` + dctr;
     for (var i = 0; i < dctrDone.length; i++){
       document.getElementById(dctrDone[i]).style.textDecoration = 'line-through';
       document.getElementById(dctrDone[i]).style.backgroundColor = '#fff';
@@ -113,11 +114,21 @@ function list(location){
       if (dctrDone[i] == '10'){
         document.getElementById('dcKey').setAttribute('src', 'img/keyhole_1.png')
       }
-      if (dctrDone[i] == '21'){
+    }
+    document.getElementById('dctrLeft').innerHTML = (10 - dctrDone.length);
+  }
+  if (location == 'TR'){
+    checkList.innerHTML = `<h3 align='center'><u>Timeless River</u><br>
+    Locations Left: <span id='trLeft'>13</span></h3>` + tr;
+    for (var i = 0; i < trDone.length; i++){
+      document.getElementById(trDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(trDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(trDone[i]).style.color = '#000'
+      if (trDone[i] == '11'){
         document.getElementById('trKey').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('dctrLeft').innerHTML = (23 - dctrDone.length);
+    document.getElementById('trLeft').innerHTML = (13 - trDone.length);
   }
   if (location == 'TLOD'){
     checkList.innerHTML = `<h3 align='center'><u>The Land of Dragons</u><br>
@@ -371,6 +382,7 @@ var saveT = new Store(
       ttDone: ttDone,
       hbDone: hbDone,
       dctrDone: dctrDone,
+      trDone: trDone,
       tlodDone: tlodDone,
       bcDone: bcDone,
       ocDone: ocDone,
@@ -431,6 +443,7 @@ function save(){
   saveT.set('ttDone', ttDone);
   saveT.set('hbDone', hbDone);
   saveT.set('dctrDone', dctrDone);
+  saveT.set('trDone', trDone);
   saveT.set('tlodDone', tlodDone);
   saveT.set('bcDone', bcDone);
   saveT.set('ocDone', ocDone);
@@ -466,6 +479,7 @@ function load(){
   ttDone = saveT.get('ttDone');
   hbDone = saveT.get('hbDone');
   dctrDone = saveT.get('dctrDone');
+  trDone = saveT.get('trDone');
   tlodDone = saveT.get('tlodDone');
   bcDone = saveT.get('bcDone');
   ocDone = saveT.get('ocDone');
@@ -519,7 +533,7 @@ function load(){
     document.getElementById('worldDC').style.filter = 'brightness(100%)';
     document.getElementById('dc').innerHTML = 'X';
   }
-  if (dctrDone.includes('21') || dctrDone.includes(21)){
+  if (trDone.includes('11') || trDone.includes(11)){
     document.getElementById('worldTR').style.filter = 'brightness(100%)';
     document.getElementById('tr').innerHTML = 'X';
   }
@@ -720,8 +734,8 @@ function load(){
   document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
   document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
   document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
-  document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-  document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+  document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
+  document.getElementById('trCC').innerHTML = (13 - trDone.length);
   document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
   document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
   document.getElementById('ocCC').innerHTML = (35 - ocDone.length);

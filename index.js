@@ -38,9 +38,10 @@ Changes
 - Fixed issue in v1.4.0 where the disabled worlds wouldn't load properly.
 - Fixed issue causing Auto Forms to not differentiate from obtained forms.
 - Added Dialog to confirm saving and loading.
+- Fixed issue where disabling Disney Castle or Timeless River would cause issues when reenabling them.
 
 To Be Added
-- Fix issue where Disney Castle and Timeless River share a list can cause issues if one or the other is disabled then reenabled.`
+- Adding Support For Tracking Misc Fights (Data Fights, Sephiroth, etc.)`
 }
 
 //Important Message Remove for next build?

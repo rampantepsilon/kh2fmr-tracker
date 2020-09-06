@@ -145,11 +145,6 @@ function dctrMark(num){
       document.getElementById('dcKey').setAttribute('src', 'img/keyhole_1.png')
       document.getElementById('dc').innerHTML = 'X';
     }
-    if (num == '21'){
-      document.getElementById('worldTR').style.filter = "brightness(100%)"
-      document.getElementById('trKey').setAttribute('src', 'img/keyhole_1.png')
-      document.getElementById('tr').innerHTML = 'X';
-    }
   } else {
     for (var i = 0; i < dctrDone.length; i++){
       if (dctrDone[i] != num){
@@ -165,15 +160,40 @@ function dctrMark(num){
       document.getElementById('dcKey').setAttribute('src', 'img/keyhole_0.png')
       document.getElementById('dc').innerHTML = '0';
     }
-    if (num == '21'){
+  }
+  document.getElementById('dctrLeft').innerHTML = (10 - dctrDone.length);
+  document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
+}
+function trMark(num){
+  var trTemp = [];
+  if (!trDone.includes(num)){
+    trDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000'
+    if (num == '11'){
+      document.getElementById('worldTR').style.filter = "brightness(100%)"
+      document.getElementById('trKey').setAttribute('src', 'img/keyhole_1.png')
+      document.getElementById('tr').innerHTML = 'X';
+    }
+  } else {
+    for (var i = 0; i < trDone.length; i++){
+      if (trDone[i] != num){
+        trTemp.push(trDone[i]);
+      }
+    }
+    trDone = trTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    if (num == '11'){
       document.getElementById('worldTR').style.filter = "brightness(40%)"
       document.getElementById('trKey').setAttribute('src', 'img/keyhole_0.png')
       document.getElementById('tr').innerHTML = '0';
     }
   }
-  document.getElementById('dctrLeft').innerHTML = (23 - dctrDone.length);
-  document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-  document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+  document.getElementById('trLeft').innerHTML = (13 - trDone.length);
+  document.getElementById('trCC').innerHTML = (13 - trDone.length);
 }
 function tlodMark(num){
   var tlodTemp = [];
@@ -824,18 +844,22 @@ function dctrAllMark(num){
       dctrMark("8");
       dctrMark("9");
       break;
+  }
+}
+function trAllMark(num){
+  switch (num) {
     case 3:
-      dctrMark("11");
-      dctrMark("12");
+      trMark("1");
+      trMark("2");
       break;
     case 4:
-      dctrMark("13");
-      dctrMark("14");
+      trMark("3");
+      trMark("4");
       break;
     case 5:
-      dctrMark("15");
-      dctrMark("16");
-      dctrMark("17");
+      trMark("5");
+      trMark("6");
+      trMark("7");
       break;
   }
 }

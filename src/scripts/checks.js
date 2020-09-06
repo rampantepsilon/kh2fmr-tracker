@@ -233,31 +233,35 @@ const dctr = [
       </ul>
     </li>
     <li><div id='10' onclick='dctrMark("10")'><img src='img/keyhole_0.png' id='dcKey' width='16px' height='16px'> Minnie Escort Bonus</li>
-    <li id='group'><div id='groupTitle' onclick='dctrAllMark(3)'>Hill</div>
+  </ul>`
+]
+const tr = [
+  `<ul>
+    <li id='group'><div id='groupTitle' onclick='trAllMark(3)'>Hill</div>
       <ul>
-        <li><div id='11' onclick='dctrMark("11")'>Big Chest</div></li>
-        <li><div id='12' onclick='dctrMark("12")'>Small Chest</div></li>
+        <li><div id='1' onclick='trMark("1")'>Big Chest</div></li>
+        <li><div id='2' onclick='trMark("2")'>Small Chest</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle' onclick='dctrAllMark(4)'>Pier</div>
+    <li id='group'><div id='groupTitle' onclick='trAllMark(4)'>Pier</div>
       <ul>
-        <li><div id='13' onclick='dctrMark("13")'>Under Tree</div></li>
-        <li><div id='14' onclick='dctrMark("14")'>Near Waterway</div></li>
+        <li><div id='3' onclick='trMark("3")'>Under Tree</div></li>
+        <li><div id='4' onclick='trMark("4")'>Near Waterway</div></li>
       </ul>
     </li>
-    <li id='group'><div id='groupTitle' onclick='dctrAllMark(5)'>Waterway</div>
+    <li id='group'><div id='groupTitle' onclick='trAllMark(5)'>Waterway</div>
       <ul>
-        <li><div id='15' onclick='dctrMark("15")'>Right Chest</div></li>
-        <li><div id='16' onclick='dctrMark("16")'>Middle Chest</div></li>
-        <li><div id='17' onclick='dctrMark("17")'>End Chest</div></li>
+        <li><div id='5' onclick='trMark("5")'>Right Chest</div></li>
+        <li><div id='6' onclick='trMark("6")'>Middle Chest</div></li>
+        <li><div id='7' onclick='trMark("7")'>End Chest</div></li>
       </ul>
     </li>
-    <li><div id='18' onclick='dctrMark("18")'>Windows Popup</div></li>
-    <li><div id='19' onclick='dctrMark("19")'>Steamboat Bonus</div></li>
-    <li><div id='20' onclick='dctrMark("20")'>Pete Bonus</div></li>
-    <li><div id='21' onclick='dctrMark("21")'><img src='img/keyhole_0.png' id='trKey' width='16px' height='16px'> Final TR Popups</div></li>
-    <li><div id='22' onclick='dctrMark("22")'>Marluxia</div></li>
-    <li><div id='23' onclick='dctrMark("23")'>Terra</div></li>
+    <li><div id='8' onclick='trMark("8")'>Windows Popup</div></li>
+    <li><div id='9' onclick='trMark("9")'>Steamboat Bonus</div></li>
+    <li><div id='10' onclick='trMark("10")'>Pete Bonus</div></li>
+    <li><div id='11' onclick='trMark("11")'><img src='img/keyhole_0.png' id='trKey' width='16px' height='16px'> Final TR Popups</div></li>
+    <li><div id='12' onclick='trMark("12")'>Marluxia</div></li>
+    <li><div id='13' onclick='trMark("13")'>Terra</div></li>
   </ul>`
 ]
 

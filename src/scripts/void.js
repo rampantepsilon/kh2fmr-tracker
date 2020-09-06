@@ -99,16 +99,14 @@ dcWorld.addEventListener('contextmenu', function(){
     for (var i = 0; i < 10; i++){
       dctrDone.push(i+1);
     }
-    document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-    document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+    document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
     dcVC = 1;
   } else {
     dcWorld.setAttribute('src','img/Locations/disney_castle.png')
     dcWorld.style.filter = "brightness(40%)"
     document.getElementById('dc').innerHTML = '0'
     dctrDone = [];
-    document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-    document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+    document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
     dcVC = 0;
   }
 })
@@ -118,18 +116,16 @@ trWorld.addEventListener('contextmenu', function(){
     trWorld.setAttribute('src','img/Disabled/timeless_river.png');
     trWorld.style.filter = "brightness(100%)"
     for (var i = 0; i < 13; i++){
-      dctrDone.push(i+11);
+      trDone.push(i+1);
     }
-    document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-    document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+    document.getElementById('trCC').innerHTML = (13 - trDone.length);
     trVC = 1;
   } else {
     trWorld.setAttribute('src','img/Locations/timeless_river.png')
     trWorld.style.filter = "brightness(40%)"
     document.getElementById('tr').innerHTML = '0'
-    dctrDone = [];
-    document.getElementById('dcCC').innerHTML = (23 - dctrDone.length);
-    document.getElementById('trCC').innerHTML = (23 - dctrDone.length);
+    trDone = [];
+    document.getElementById('trCC').innerHTML = (13 - trDone.length);
     trVC = 0;
   }
 })
