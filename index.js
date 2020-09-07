@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.9.5';
+const build = '2020.9.7';
 const version = app.getVersion();
 
 //About Window
@@ -39,9 +39,10 @@ Changes
 - Fixed issue causing Auto Forms to not differentiate from obtained forms.
 - Added Dialog to confirm saving and loading.
 - Fixed issue where disabling Disney Castle or Timeless River would cause issues when reenabling them.
+- Moved Data Fights to separate location. Data fights can be disabled just like any world.
 
 To Be Added
-- Adding Support For Tracking Misc Fights (Data Fights, Sephiroth, etc.)`
+- Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`
 }
 
 //Important Message Remove for next build?
