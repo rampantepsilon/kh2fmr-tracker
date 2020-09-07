@@ -19,7 +19,7 @@ ul{
 }
 
 /*Darken Images*/
-#worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR, #fValor, #fWisdom, #fLimit, #fMaster, #fFinal, #mFire, #mBlizzard, #mThunder, #mCure, #mReflect, #mMagnet, #keyblade, #cBBall, #cLamp, #cUkulele, #cFeather {
+#worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR, #worldData, #fValor, #fWisdom, #fLimit, #fMaster, #fFinal, #mFire, #mBlizzard, #mThunder, #mCure, #mReflect, #mMagnet, #keyblade, #cBBall, #cLamp, #cUkulele, #cFeather {
   filter: brightness(40%);
 }
 

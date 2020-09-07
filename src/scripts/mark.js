@@ -10,10 +10,6 @@ function sttMark(num){
       document.getElementById('sttKey').setAttribute('src', 'img/keyhole_1.png')
       document.getElementById('stt').innerHTML = 'X';
     }
-    //Keeping incase I change courses (Would mean a lot more work)
-    /*if (sttDone.length == '25'){
-      document.getElementById('worldRoxas').setAttribute('src', 'img/Locations/Roxas_2.png');
-    }*/
   } else {
     for (var i = 0; i < sttDone.length; i++){
       if (sttDone[i] != num){
@@ -30,8 +26,8 @@ function sttMark(num){
       document.getElementById('stt').innerHTML = '0';
     }
   }
-  document.getElementById('sttLeft').innerHTML = (25 - sttDone.length);
-  document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
+  document.getElementById('sttLeft').innerHTML = (24 - sttDone.length);
+  document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
 }
 function ttMark(num){
   var ttTemp = [];
@@ -87,8 +83,8 @@ function ttMark(num){
       }
     }
   }
-  document.getElementById('ttLeft').innerHTML = (47 - ttDone.length);
-  document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
+  document.getElementById('ttLeft').innerHTML = (46 - ttDone.length);
+  document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
 }
 function hbMark(num){
   var hbTemp = [];
@@ -130,8 +126,8 @@ function hbMark(num){
       }
     }
   }
-  document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
-  document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
+  document.getElementById('hbLeft').innerHTML = (34 - hbDone.length);
+  document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
 }
 function dctrMark(num){
   var dctrTemp = [];
@@ -192,8 +188,8 @@ function trMark(num){
       document.getElementById('tr').innerHTML = '0';
     }
   }
-  document.getElementById('trLeft').innerHTML = (13 - trDone.length);
-  document.getElementById('trCC').innerHTML = (13 - trDone.length);
+  document.getElementById('trLeft').innerHTML = (12 - trDone.length);
+  document.getElementById('trCC').innerHTML = (12 - trDone.length);
 }
 function tlodMark(num){
   var tlodTemp = [];
@@ -235,8 +231,8 @@ function tlodMark(num){
       }
     }
   }
-  document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
-  document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
+  document.getElementById('tlodLeft').innerHTML = (28 - tlodDone.length);
+  document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
 }
 function bcMark(num){
   var bcTemp = [];
@@ -278,8 +274,8 @@ function bcMark(num){
       }
     }
   }
-  document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
-  document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
+  document.getElementById('bcLeft').innerHTML = (28 - bcDone.length);
+  document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
 }
 function ocMark(num){
   var ocTemp = [];
@@ -321,8 +317,8 @@ function ocMark(num){
       }
     }
   }
-  document.getElementById('ocLeft').innerHTML = (35 - ocDone.length);
-  document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
+  document.getElementById('ocLeft').innerHTML = (34 - ocDone.length);
+  document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
 }
 function prMark(num){
   var prTemp = [];
@@ -364,8 +360,8 @@ function prMark(num){
       }
     }
   }
-  document.getElementById('prLeft').innerHTML = (30 - prDone.length);
-  document.getElementById('prCC').innerHTML = (30 - prDone.length);
+  document.getElementById('prLeft').innerHTML = (29 - prDone.length);
+  document.getElementById('prCC').innerHTML = (29 - prDone.length);
 }
 function agrMark(num){
   var agrTemp = [];
@@ -407,8 +403,8 @@ function agrMark(num){
       }
     }
   }
-  document.getElementById('agrLeft').innerHTML = (34 - agrDone.length);
-  document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
+  document.getElementById('agrLeft').innerHTML = (33 - agrDone.length);
+  document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
 }
 function htMark(num){
   var htTemp = [];
@@ -450,8 +446,8 @@ function htMark(num){
       }
     }
   }
-  document.getElementById('htLeft').innerHTML = (22 - htDone.length);
-  document.getElementById('htCC').innerHTML = (22 - htDone.length);
+  document.getElementById('htLeft').innerHTML = (21 - htDone.length);
+  document.getElementById('htCC').innerHTML = (21 - htDone.length);
 }
 function plMark(num){
   var plTemp = [];
@@ -493,8 +489,8 @@ function plMark(num){
       }
     }
   }
-  document.getElementById('plLeft').innerHTML = (30 - plDone.length);
-  document.getElementById('plCC').innerHTML = (30 - plDone.length);
+  document.getElementById('plLeft').innerHTML = (29 - plDone.length);
+  document.getElementById('plCC').innerHTML = (29 - plDone.length);
 }
 function spMark(num){
   var spTemp = [];
@@ -598,8 +594,8 @@ function twtnwMark(num){
       document.getElementById('twtnw').innerHTML = '0';
     }
   }
-  document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
-  document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
+  document.getElementById('twtnwLeft').innerHTML = (28 - twtnwDone.length);
+  document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
 }
 function acreMark(num){
   var acreTemp = [];
@@ -686,8 +682,36 @@ function atlMark(num){
       }
     }
   }
-  document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
-  document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
+  document.getElementById('atlLeft').innerHTML = (3 - atlDone.length);
+  document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
+}
+function dataMark(num){
+  var dataTemp = [];
+  if (!dataDone.includes(num)){
+    dataDone.push(num);
+    document.getElementById(num).style.textDecoration = 'line-through';
+    document.getElementById(num).style.backgroundColor = '#fff';
+    document.getElementById(num).style.color = '#000';
+    document.getElementById('dataNum').innerHTML = dataDone.length;
+  } else {
+    for (var i = 0; i < dataDone.length; i++){
+      if (dataDone[i] != num){
+        dataTemp.push(dataDone[i]);
+      }
+    }
+    dataDone = dataTemp;
+    document.getElementById(num).style.textDecoration = 'initial';
+    document.getElementById(num).style.backgroundColor = 'initial';
+    document.getElementById(num).style.color = '#fff';
+    document.getElementById('dataNum').innerHTML = dataDone.length;
+  }
+  if (dataDone.length == 13){
+    document.getElementById('worldData').style.filter = "brightness(100%)"
+  } else {
+    document.getElementById('worldData').style.filter = "brightness(40%)"
+  }
+  document.getElementById('dataLeft').innerHTML = (13 - dataDone.length);
+  document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
 }
 
 /*WIP Mark Sections*/

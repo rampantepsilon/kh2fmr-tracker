@@ -15,6 +15,7 @@ var corVC = 0;
 var twtnwVC = 0;
 var acreVC = 0;
 var atlVC = 0;
+var dataVC = 0;
 
 var roxasWorld = document.getElementById('worldRoxas');
 var ttWorld = document.getElementById('worldTT');
@@ -33,23 +34,24 @@ var corWorld = document.getElementById('worldCoR');
 var twtnwWorld = document.getElementById('worldTWTNW');
 var acreWorld = document.getElementById('world100');
 var atlWorld = document.getElementById('worldAtlantica');
+var dataWorld = document.getElementById('worldData');
 
 roxasWorld.addEventListener('contextmenu', function(){
   if (sttVC == 0){
     document.getElementById('stt').innerHTML = 'X';
     roxasWorld.setAttribute('src','img/Disabled/simulated_twilight_town.png');
     roxasWorld.style.filter = "brightness(100%)"
-    for (var i = 0; i < 25; i++){
+    for (var i = 0; i < 24; i++){
       sttDone[i] = i+1;
     }
-    document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
+    document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
     sttVC = 1;
   } else {
     roxasWorld.setAttribute('src','img/Locations/simulated_twilight_town.png')
     roxasWorld.style.filter = "brightness(40%)"
     document.getElementById('stt').innerHTML = '0'
     sttDone = [];
-    document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
+    document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
     sttVC = 0;
   }
 })
@@ -58,17 +60,17 @@ ttWorld.addEventListener('contextmenu', function(){
     document.getElementById('tt').innerHTML = 'X';
     ttWorld.setAttribute('src','img/Disabled/twilight_town.png');
     ttWorld.style.filter = "brightness(100%)"
-    for (var i = 0; i < 47; i++){
+    for (var i = 0; i < 46; i++){
       ttDone[i] = i+1;
     }
-    document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
+    document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
     ttVC = 1;
   } else {
     ttWorld.setAttribute('src','img/Locations/twilight_town.png')
     ttWorld.style.filter = "brightness(40%)"
     document.getElementById('tt').innerHTML = '0'
     ttDone = [];
-    document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
+    document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
     ttVC = 0;
   }
 })
@@ -77,17 +79,17 @@ hbWorld.addEventListener('contextmenu', function(){
     document.getElementById('hb').innerHTML = 'X';
     hbWorld.setAttribute('src','img/Disabled/hollow_bastion.png');
     hbWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 35; i++){
+    for (var i = 0; i < 34; i++){
       hbDone[i] = i+1;
     }
-    document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
+    document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
     hbVC = 1;
   } else {
     hbWorld.setAttribute('src','img/Locations/hollow_bastion.png')
     hbWorld.style.filter = "brightness(40%)"
     document.getElementById('hb').innerHTML = '0'
     hbDone = [];
-    document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
+    document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
     hbVC = 0;
   }
 })
@@ -96,6 +98,7 @@ dcWorld.addEventListener('contextmenu', function(){
     document.getElementById('dc').innerHTML = 'X';
     dcWorld.setAttribute('src','img/Disabled/disney_castle.png');
     dcWorld.style.filter = "brightness(100%)"
+    dctrDone = [];
     for (var i = 0; i < 10; i++){
       dctrDone.push(i+1);
     }
@@ -115,17 +118,18 @@ trWorld.addEventListener('contextmenu', function(){
     document.getElementById('tr').innerHTML = 'X';
     trWorld.setAttribute('src','img/Disabled/timeless_river.png');
     trWorld.style.filter = "brightness(100%)"
-    for (var i = 0; i < 13; i++){
+    trDone = [];
+    for (var i = 0; i < 12; i++){
       trDone.push(i+1);
     }
-    document.getElementById('trCC').innerHTML = (13 - trDone.length);
+    document.getElementById('trCC').innerHTML = (12 - trDone.length);
     trVC = 1;
   } else {
     trWorld.setAttribute('src','img/Locations/timeless_river.png')
     trWorld.style.filter = "brightness(40%)"
     document.getElementById('tr').innerHTML = '0'
     trDone = [];
-    document.getElementById('trCC').innerHTML = (13 - trDone.length);
+    document.getElementById('trCC').innerHTML = (12 - trDone.length);
     trVC = 0;
   }
 })
@@ -134,17 +138,17 @@ lodWorld.addEventListener('contextmenu', function(){
     document.getElementById('lod').innerHTML = 'X';
     lodWorld.setAttribute('src','img/Disabled/land_of_dragons.png');
     lodWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 29; i++){
+    for (var i = 0; i < 28; i++){
       tlodDone[i] = i+1;
     }
-    document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
+    document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
     lodVC = 1;
   } else {
     lodWorld.setAttribute('src','img/Locations/land_of_dragons.png')
     lodWorld.style.filter = "brightness(40%)"
     document.getElementById('lod').innerHTML = '0'
     tlodDone = [];
-    document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
+    document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
     lodVC = 0;
   }
 })
@@ -153,17 +157,17 @@ bcWorld.addEventListener('contextmenu', function(){
     document.getElementById('bc').innerHTML = 'X';
     bcWorld.setAttribute('src',"img/Disabled/beast's_castle.png");
     bcWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 29; i++){
+    for (var i = 0; i < 28; i++){
       bcDone[i] = i+1;
     }
-    document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
+    document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
     bcVC = 1;
   } else {
     bcWorld.setAttribute('src',"img/Locations/beast's_castle.png")
     bcWorld.style.filter = "brightness(40%)"
     document.getElementById('bc').innerHTML = '0'
     bcDone = [];
-    document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
+    document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
     bcVC = 0;
   }
 })
@@ -172,17 +176,17 @@ ocWorld.addEventListener('contextmenu', function(){
     document.getElementById('oc').innerHTML = 'X';
     ocWorld.setAttribute('src','img/Disabled/olympus_coliseum.png');
     ocWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 35; i++){
+    for (var i = 0; i < 34; i++){
       ocDone[i] = i+1;
     }
-    document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
+    document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
     ocVC = 1;
   } else {
     ocWorld.setAttribute('src','img/Locations/olympus_coliseum.png')
     ocWorld.style.filter = "brightness(40%)"
     document.getElementById('oc').innerHTML = '0'
     ocDone = [];
-    document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
+    document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
     ocVC = 0;
   }
 })
@@ -191,17 +195,17 @@ prWorld.addEventListener('contextmenu', function(){
     document.getElementById('pr').innerHTML = 'X';
     prWorld.setAttribute('src','img/Disabled/port_royal.png');
     prWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 30; i++){
+    for (var i = 0; i < 29; i++){
       prDone[i] = i+1;
     }
-    document.getElementById('prCC').innerHTML = (30 - prDone.length);
+    document.getElementById('prCC').innerHTML = (29 - prDone.length);
     prVC = 1;
   } else {
     prWorld.setAttribute('src','img/Locations/port_royal.png')
     prWorld.style.filter = "brightness(40%)"
     document.getElementById('pr').innerHTML = '0'
     prDone = [];
-    document.getElementById('prCC').innerHTML = (30 - prDone.length);
+    document.getElementById('prCC').innerHTML = (29 - prDone.length);
     prVC = 0;
   }
 })
@@ -210,17 +214,17 @@ agrWorld.addEventListener('contextmenu', function(){
     document.getElementById('agr').innerHTML = 'X';
     agrWorld.setAttribute('src','img/Disabled/agrabah.png');
     agrWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 34; i++){
+    for (var i = 0; i < 33; i++){
       agrDone[i] = i+1;
     }
-    document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
+    document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
     agrVC = 1;
   } else {
     agrWorld.setAttribute('src','img/Locations/agrabah.png')
     agrWorld.style.filter = "brightness(40%)"
     document.getElementById('agr').innerHTML = '0'
     agrDone = [];
-    document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
+    document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
     agrVC = 0;
   }
 })
@@ -229,17 +233,17 @@ htWorld.addEventListener('contextmenu', function(){
     document.getElementById('ht').innerHTML = 'X';
     htWorld.setAttribute('src','img/Disabled/halloween_town.png');
     htWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 22; i++){
+    for (var i = 0; i < 21; i++){
       htDone[i] = i+1;
     }
-    document.getElementById('htCC').innerHTML = (22 - htDone.length);
+    document.getElementById('htCC').innerHTML = (21 - htDone.length);
     htVC = 1;
   } else {
     htWorld.setAttribute('src','img/Locations/halloween_town.png')
     htWorld.style.filter = "brightness(40%)"
     document.getElementById('ht').innerHTML = '0'
     htDone = [];
-    document.getElementById('htCC').innerHTML = (22 - htDone.length);
+    document.getElementById('htCC').innerHTML = (21 - htDone.length);
     htVC = 0;
   }
 })
@@ -248,17 +252,17 @@ plWorld.addEventListener('contextmenu', function(){
     document.getElementById('pl').innerHTML = 'X';
     plWorld.setAttribute('src','img/Disabled/pride_land.png');
     plWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 30; i++){
+    for (var i = 0; i < 29; i++){
       plDone[i] = i+1;
     }
-    document.getElementById('plCC').innerHTML = (30 - plDone.length);
+    document.getElementById('plCC').innerHTML = (29 - plDone.length);
     plVC = 1;
   } else {
     plWorld.setAttribute('src','img/Locations/pride_land.png')
     plWorld.style.filter = "brightness(40%)"
     document.getElementById('pl').innerHTML = '0'
     plDone = [];
-    document.getElementById('plCC').innerHTML = (30 - plDone.length);
+    document.getElementById('plCC').innerHTML = (29 - plDone.length);
     plVC = 0;
   }
 })
@@ -305,17 +309,17 @@ twtnwWorld.addEventListener('contextmenu', function(){
     document.getElementById('twtnw').innerHTML = 'X';
     twtnwWorld.setAttribute('src','img/Disabled/the_world_that_never_was.png');
     twtnwWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 29; i++){
+    for (var i = 0; i < 28; i++){
       twtnwDone[i] = i+1;
     }
-    document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
+    document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
     twtnwVC = 1;
   } else {
     twtnwWorld.setAttribute('src','img/Locations/the_world_that_never_was.png')
     twtnwWorld.style.filter = "brightness(40%)"
     document.getElementById('twtnw').innerHTML = '0'
     twtnwDone = [];
-    document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
+    document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
     twtnwVC = 0;
   }
 })
@@ -343,17 +347,36 @@ atlWorld.addEventListener('contextmenu', function(){
     document.getElementById('atl').innerHTML = 'X';
     atlWorld.setAttribute('src','img/Disabled/atlantica.png');
     atlWorld.style.filter = "brightness(100%)";
-    for (var i = 0; i < 4; i++){
+    for (var i = 0; i < 3; i++){
       atlDone[i] = i+1;
     }
-    document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
+    document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
     atlVC = 1;
   } else {
     atlWorld.setAttribute('src','img/Locations/atlantica.png')
     atlWorld.style.filter = "brightness(40%)"
     document.getElementById('atl').innerHTML = '0'
     atlDone = [];
-    document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
+    document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
     atlVC = 0;
+  }
+})
+dataWorld.addEventListener('contextmenu', function(){
+  if (dataVC == 0){
+    document.getElementById('dataNum').innerHTML = 'X';
+    dataWorld.setAttribute('src','img/Disabled/replica_data.png');
+    dataWorld.style.filter = "brightness(100%)";
+    for (var i = 0; i < 13; i++){
+      dataDone[i] = i+1;
+    }
+    document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
+    dataVC = 1;
+  } else {
+    dataWorld.setAttribute('src','img/Locations/replica_data.png')
+    dataWorld.style.filter = "brightness(40%)"
+    document.getElementById('dataNum').innerHTML = '0'
+    dataDone = [];
+    document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
+    dataVC = 0;
   }
 })

@@ -42,7 +42,6 @@ const stt = [
         <li><div id='24' onclick='sttMark("24")'><img src='img/keyhole_0.png' id='sttKey' width='16px' height='16px'> Basement Last Chest</div></li>
       </ul>
     </li>
-    <li><div id='25' onclick='sttMark("25")'>Data Roxas</div></li>
   </ul>`
 ]
 
@@ -139,7 +138,6 @@ const tt = [
     <li><div id='44' onclick='ttMark("44")'>Beam Popup</div></li>
     <li><div id='45' onclick='ttMark("45")'>Axel Fight Bonus</div></li>
     <li><div id='46' onclick='ttMark("46")'><img src='img/keyhole_0.png' id='tt3Key' width='16px' height='16px'> Axel Fight Popup</div></li>
-    <li><div id='47' onclick='ttMark("47")'>Data Axel</div></li>
   </ul>`
 ]
 
@@ -208,7 +206,6 @@ const hb = [
     </li>
     <li><div id='33' onclick='hbMark("33")'>Mushroom XIII</div></li>
     <li><div id='34' onclick='hbMark("34")'>Sephiroth</div></li>
-    <li><div id='35' onclick='hbMark("35")'>Data Demyx</div></li>
   </ul>`
 ]
 
@@ -260,8 +257,7 @@ const tr = [
     <li><div id='9' onclick='trMark("9")'>Steamboat Bonus</div></li>
     <li><div id='10' onclick='trMark("10")'>Pete Bonus</div></li>
     <li><div id='11' onclick='trMark("11")'><img src='img/keyhole_0.png' id='trKey' width='16px' height='16px'> Final TR Popups</div></li>
-    <li><div id='12' onclick='trMark("12")'>Marluxia</div></li>
-    <li><div id='13' onclick='trMark("13")'>Terra</div></li>
+    <li><div id='12' onclick='trMark("12")'>Terra</div></li>
   </ul>`
 ]
 
@@ -320,7 +316,6 @@ const tlod = [
       </ul>
     </li>
     <li><div id='28' onclick='tlodMark("28")'><img src='img/keyhole_0.png' id='tlod2Key' width='16px' height='16px'> Storm Rider Bonus</div></li>
-    <li><div id='29' onclick='tlodMark("29")'>Data Xigbar</div></li>
   </ul>`
 ]
 
@@ -387,7 +382,6 @@ const bc = [
     <li><div id='26' onclick='bcMark("26")'>Rumbling Rose Popup</div></li>
     <li><div id='27' onclick='bcMark("27")'>Xaldin Bonus</div></li>
     <li><div id='28' onclick='bcMark("28")'><img src='img/keyhole_0.png' id='bc2Key' width='16px' height='16px'> Report 4 Popup</div></li>
-    <li><div id='29' onclick='bcMark("29")'>Data Xaldin</div></li>
   </ul>`
 ]
 
@@ -452,7 +446,6 @@ const oc = [
     <li><div id='32' onclick='ocMark("32")'>Cerberus Cup</div></li>
     <li><div id='33' onclick='ocMark("33")'>Titan Cup</div></li>
     <li><div id='34' onclick='ocMark("34")'>Goddess of Fate Cup</div></li>
-    <li><div id='35' onclick='ocMark("35")'>Zexion</div></li>
   </ul>`
 ]
 
@@ -512,7 +505,6 @@ const pr = [
     <li><div id='27' onclick='prMark("27")'>Medallion Popups</div></li>
     <li><div id='28' onclick='prMark("28")'>Grim Reaper 2 Bonus</div></li>
     <li><div id='29' onclick='prMark("29")'><img src='img/keyhole_0.png' id='pr2Key' width='16px' height='16px'> Report 6 Popup</div></li>
-    <li><div id='30' onclick='prMark("30")'>Data Luxord</div></li>
   </ul>`
 ]
 
@@ -584,7 +576,6 @@ const agrabah = [
     </li>
     <li><div id='32' onclick='agrMark("32")'>Genie Jafar Bonus</div></li>
     <li><div id='33' onclick='agrMark("33")'><img src='img/keyhole_0.png' id='agr2Key' width='16px' height='16px'> Wishing Lamp Popup</div></li>
-    <li><div id='34' onclick='agrMark("34")'>Lexaeus</div></li>
   </ul>`
 ]
 
@@ -632,7 +623,6 @@ const ht = [
     <li><div id='19' onclick='htMark("19")'>Decoy Presents popup</div></li>
     <li><div id='20' onclick='htMark("20")'>Experiment bonus</div></li>
     <li><div id='21' onclick='htMark("21")'><img src='img/keyhole_0.png' id='ht2Key' width='16px' height='16px'> Decisive Pumpkin popup</div></li>
-    <li><div id='22' onclick='htMark("22")'>Vexen</div></li>
   </ul>`
 ]
 
@@ -696,7 +686,6 @@ const pl = [
     <li><div id='27' onclick='plMark("27")'>Scar Bonus</div></li>
     <li><div id='28' onclick='plMark("28")'><img src='img/keyhole_0.png' id='pl1Key' width='16px' height='16px'> Fire Popup</div></li>
     <li><div id='29' onclick='plMark("29")'><img src='img/keyhole_0.png' id='pl2Key' width='16px' height='16px'> Groundshaker Bonus</div></li>
-    <li><div id='30' onclick='plMark("30")'>Data Saix</div></li>
   </ul>`
 ]
 
@@ -850,7 +839,6 @@ const twtnw = [
       </ul>
     </li>
     <li><div id='28' onclick='twtnwMark("28")'><img src='img/keyhole_0.png' id='twtnwKey' width='16px' height='16px'>Xemnas Popup</div></li>
-    <li><div id='29' onclick='twtnwMark("29")'>Data Xemnas</div></li>
   </ul>`
 ]
 
@@ -912,6 +900,24 @@ const atlantica = [
     <li><div id='1' onclick='atlMark("1")'><img src='img/keyhole_0.png' id='atl1Key' width='16px' height='16px'> Tutorial Popup</div></li>
     <li><div id='2' onclick='atlMark("2")'><img src='img/keyhole_0.png' id='atl2Key' width='16px' height='16px'>Ursula Popup</div></li>
     <li><div id='3' onclick='atlMark("3")'><img src='img/keyhole_0.png' id='atl3Key' width='16px' height='16px'> Final Popups</div></li>
-    <li><div id='4' onclick='atlMark("4")'>Larxene</div></li>
+  </ul>`
+]
+
+//Data Fights
+const dataFights = [
+  `<ul>
+    <li><div id='1' onclick='dataMark("1")'>Larxene</div></li>
+    <li><div id='2' onclick='dataMark("2")'>Luxord</div></li>
+    <li><div id='3' onclick='dataMark("3")'>Axel</div></li>
+    <li><div id='4' onclick='dataMark("4")'>Zexion</div></li>
+    <li><div id='5' onclick='dataMark("5")'>Vexen</div></li>
+    <li><div id='6' onclick='dataMark("6")'>Xigbar</div></li>
+    <li><div id='7' onclick='dataMark("7")'>Xemnas</div></li>
+    <li><div id='8' onclick='dataMark("8")'>Xaldin</div></li>
+    <li><div id='9' onclick='dataMark("9")'>Lexaeus</div></li>
+    <li><div id='10' onclick='dataMark("10")'>Saix</div></li>
+    <li><div id='11' onclick='dataMark("11")'>Demyx</div></li>
+    <li><div id='12' onclick='dataMark("12")'>Marluxia</div></li>
+    <li><div id='13' onclick='dataMark("13")'>Roxas</div></li>
   </ul>`
 ]

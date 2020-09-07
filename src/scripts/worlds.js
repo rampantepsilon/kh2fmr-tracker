@@ -16,6 +16,7 @@ var corDone = [];
 var twtnwDone = [];
 var acreDone = [];
 var atlDone = [];
+var dataDone = [];
 var requiredDone = ["0","0","0","0"];
 var formDone = ["0","0","0","0","0"];
 var magicDone = ["0","0","0","0","0","0"];
@@ -58,7 +59,7 @@ function list(location){
   var checkList = document.getElementById('checks');
   if (location == 'STT'){
     checkList.innerHTML = `<h3 align='center'><u>Simulated Twilight Town</u><br>
-    Locations Left: <span id='sttLeft'>25</span></h3>` + stt;
+    Locations Left: <span id='sttLeft'>24</span></h3>` + stt;
     for (var i = 0; i < sttDone.length; i++){
       document.getElementById(sttDone[i]).style.textDecoration = 'line-through';
       document.getElementById(sttDone[i]).style.backgroundColor = '#fff';
@@ -67,11 +68,11 @@ function list(location){
         document.getElementById('sttKey').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('sttLeft').innerHTML = (25 - sttDone.length);
+    document.getElementById('sttLeft').innerHTML = (24 - sttDone.length);
   }
   if (location == 'TT'){
     checkList.innerHTML = `<h3 align='center'><u>Twilight Town</u><br>
-    Locations Left: <span id='ttLeft'>47</span></h3>` + tt;
+    Locations Left: <span id='ttLeft'>46</span></h3>` + tt;
     for (var i = 0; i < ttDone.length; i++){
       document.getElementById(ttDone[i]).style.textDecoration = 'line-through';
       document.getElementById(ttDone[i]).style.backgroundColor = '#fff';
@@ -86,11 +87,11 @@ function list(location){
         document.getElementById('tt3Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('ttLeft').innerHTML = (47 - ttDone.length);
+    document.getElementById('ttLeft').innerHTML = (46 - ttDone.length);
   }
   if (location == 'HB'){
     checkList.innerHTML = `<h3 align='center'><u>Hollow Bastion</u><br>
-    Locations Left: <span id='hbLeft'>35</span></h3>` + hb;
+    Locations Left: <span id='hbLeft'>34</span></h3>` + hb;
     for (var i = 0; i < hbDone.length; i++){
       document.getElementById(hbDone[i]).style.textDecoration = 'line-through';
       document.getElementById(hbDone[i]).style.backgroundColor = '#fff';
@@ -102,7 +103,7 @@ function list(location){
         document.getElementById('hb2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('hbLeft').innerHTML = (35 - hbDone.length);
+    document.getElementById('hbLeft').innerHTML = (34 - hbDone.length);
   }
   if (location == 'DC'){
     checkList.innerHTML = `<h3 align='center'><u>Disney Castle</u><br>
@@ -119,7 +120,7 @@ function list(location){
   }
   if (location == 'TR'){
     checkList.innerHTML = `<h3 align='center'><u>Timeless River</u><br>
-    Locations Left: <span id='trLeft'>13</span></h3>` + tr;
+    Locations Left: <span id='trLeft'>12</span></h3>` + tr;
     for (var i = 0; i < trDone.length; i++){
       document.getElementById(trDone[i]).style.textDecoration = 'line-through';
       document.getElementById(trDone[i]).style.backgroundColor = '#fff';
@@ -128,11 +129,11 @@ function list(location){
         document.getElementById('trKey').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('trLeft').innerHTML = (13 - trDone.length);
+    document.getElementById('trLeft').innerHTML = (12 - trDone.length);
   }
   if (location == 'TLOD'){
     checkList.innerHTML = `<h3 align='center'><u>The Land of Dragons</u><br>
-    Locations Left: <span id='tlodLeft'>29</span></h3>` + tlod;
+    Locations Left: <span id='tlodLeft'>28</span></h3>` + tlod;
     for (var i = 0; i < tlodDone.length; i++){
       document.getElementById(tlodDone[i]).style.textDecoration = 'line-through';
       document.getElementById(tlodDone[i]).style.backgroundColor = '#fff';
@@ -144,11 +145,11 @@ function list(location){
         document.getElementById('tlod2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('tlodLeft').innerHTML = (29 - tlodDone.length);
+    document.getElementById('tlodLeft').innerHTML = (28 - tlodDone.length);
   }
   if (location == 'BC'){
     checkList.innerHTML = `<h3 align='center'><u>Beast's Castle</u><br>
-    Locations Left: <span id='bcLeft'>29</span></h3>` + bc;
+    Locations Left: <span id='bcLeft'>28</span></h3>` + bc;
     for (var i = 0; i < bcDone.length; i++){
       document.getElementById(bcDone[i]).style.textDecoration = 'line-through';
       document.getElementById(bcDone[i]).style.backgroundColor = '#fff';
@@ -160,11 +161,11 @@ function list(location){
         document.getElementById('bc2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('bcLeft').innerHTML = (29 - bcDone.length);
+    document.getElementById('bcLeft').innerHTML = (28 - bcDone.length);
   }
   if (location == 'OC'){
     checkList.innerHTML = `<h3 align='center'><u>Olympus Coliseum</u><br>
-    Locations Left: <span id='ocLeft'>35</span></h3>` + oc;
+    Locations Left: <span id='ocLeft'>34</span></h3>` + oc;
     for (var i = 0; i < ocDone.length; i++){
       document.getElementById(ocDone[i]).style.textDecoration = 'line-through';
       document.getElementById(ocDone[i]).style.backgroundColor = '#fff';
@@ -176,11 +177,11 @@ function list(location){
         document.getElementById('oc2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('ocLeft').innerHTML = (35 - ocDone.length);
+    document.getElementById('ocLeft').innerHTML = (34 - ocDone.length);
   }
   if (location == 'PR'){
     checkList.innerHTML = `<h3 align='center'><u>Port Royal</u><br>
-    Locations Left: <span id='prLeft'>30</span></h3>` + pr;
+    Locations Left: <span id='prLeft'>29</span></h3>` + pr;
     for (var i = 0; i < prDone.length; i++){
       document.getElementById(prDone[i]).style.textDecoration = 'line-through';
       document.getElementById(prDone[i]).style.backgroundColor = '#fff';
@@ -192,11 +193,11 @@ function list(location){
         document.getElementById('pr2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('prLeft').innerHTML = (30 - prDone.length);
+    document.getElementById('prLeft').innerHTML = (29 - prDone.length);
   }
   if (location == 'AGR'){
     checkList.innerHTML = `<h3 align='center'><u>Agrabah</u><br>
-    Locations Left: <span id='agrLeft'>34</span></h3>` + agrabah;
+    Locations Left: <span id='agrLeft'>33</span></h3>` + agrabah;
     for (var i = 0; i < agrDone.length; i++){
       document.getElementById(agrDone[i]).style.textDecoration = 'line-through';
       document.getElementById(agrDone[i]).style.backgroundColor = '#fff';
@@ -208,11 +209,11 @@ function list(location){
         document.getElementById('agr2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('agrLeft').innerHTML = (34 - agrDone.length);
+    document.getElementById('agrLeft').innerHTML = (33 - agrDone.length);
   }
   if (location == 'HT'){
     checkList.innerHTML = `<h3 align='center'><u>Halloween Town</u><br>
-    Locations Left: <span id='htLeft'>22</span></h3>` + ht;
+    Locations Left: <span id='htLeft'>21</span></h3>` + ht;
     for (var i = 0; i < htDone.length; i++){
       document.getElementById(htDone[i]).style.textDecoration = 'line-through';
       document.getElementById(htDone[i]).style.backgroundColor = '#fff';
@@ -224,11 +225,11 @@ function list(location){
         document.getElementById('ht2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('htLeft').innerHTML = (22 - htDone.length);
+    document.getElementById('htLeft').innerHTML = (21 - htDone.length);
   }
   if (location == 'PL'){
     checkList.innerHTML = `<h3 align='center'><u>Pride Lands</u><br>
-    Locations Left: <span id='plLeft'>30</span></h3>` + pl;
+    Locations Left: <span id='plLeft'>29</span></h3>` + pl;
     for (var i = 0; i < plDone.length; i++){
       document.getElementById(plDone[i]).style.textDecoration = 'line-through';
       document.getElementById(plDone[i]).style.backgroundColor = '#fff';
@@ -240,7 +241,7 @@ function list(location){
         document.getElementById('pl2Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('plLeft').innerHTML = (30 - plDone.length);
+    document.getElementById('plLeft').innerHTML = (29 - plDone.length);
   }
   if (location == 'SP'){
     checkList.innerHTML = `<h3 align='center'><u>Space Paranoids</u><br>
@@ -273,7 +274,7 @@ function list(location){
   }
   if (location == 'TWTNW'){
     checkList.innerHTML = `<h3 align='center'><u>The World That Never Was</u><br>
-    Locations Left: <span id='twtnwLeft'>29</span></h3>` + twtnw;
+    Locations Left: <span id='twtnwLeft'>28</span></h3>` + twtnw;
     for (var i = 0; i < twtnwDone.length; i++){
       document.getElementById(twtnwDone[i]).style.textDecoration = 'line-through';
       document.getElementById(twtnwDone[i]).style.backgroundColor = '#fff';
@@ -282,7 +283,7 @@ function list(location){
         document.getElementById('twtnwKey').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('twtnwLeft').innerHTML = (29 - twtnwDone.length);
+    document.getElementById('twtnwLeft').innerHTML = (28 - twtnwDone.length);
   }
   if (location == '100'){
     checkList.innerHTML = `<h3 align='center'><u>100 Acre Wood</u><br>
@@ -299,7 +300,7 @@ function list(location){
   }
   if (location == 'ATL'){
     checkList.innerHTML = `<h3 align='center'><u>Atlantica</u><br>
-    Locations Left: <span id='atlLeft'>4</span></h3>` + atlantica;
+    Locations Left: <span id='atlLeft'>3</span></h3>` + atlantica;
     for (var i = 0; i < atlDone.length; i++){
       document.getElementById(atlDone[i]).style.textDecoration = 'line-through';
       document.getElementById(atlDone[i]).style.backgroundColor = '#fff';
@@ -314,7 +315,17 @@ function list(location){
         document.getElementById('atl3Key').setAttribute('src', 'img/keyhole_1.png')
       }
     }
-    document.getElementById('atlLeft').innerHTML = (4 - atlDone.length);
+    document.getElementById('atlLeft').innerHTML = (3 - atlDone.length);
+  }
+  if (location == 'DATA'){
+    checkList.innerHTML = `<h3 align='center'><u>Data Fights</u><br>
+    Locations Left: <span id='dataLeft'>13</span></h3>` + dataFights;
+    for (var i = 0; i < dataDone.length; i++){
+      document.getElementById(dataDone[i]).style.textDecoration = 'line-through';
+      document.getElementById(dataDone[i]).style.backgroundColor = '#fff';
+      document.getElementById(dataDone[i]).style.color = '#000'
+    }
+    document.getElementById('dataLeft').innerHTML = (13 - dataDone.length);
   }
 }
 
@@ -353,24 +364,6 @@ function keybladeMark(){
     pages.style.filter = "brightness(40%)";
   }
 }
-
-//Mark Data Fights WIP
-/*function dataMark(){
-  var counter = document.getElementById('dataNum');
-  var pages = document.getElementById('data');
-  var currentCount = document.getElementById('dataNum').innerHTML;
-
-  if (currentCount < 13){
-    currentCount = parseInt(currentCount) + 1;
-    keybladeDone = currentCount;
-    counter.innerHTML = currentCount;
-    pages.style.filter = "brightness(100%)";
-  } else {
-    keybladeDone = "0";
-    counter.innerHTML = 0;
-    pages.style.filter = "brightness(40%)";
-  }
-}*/
 
 //Save Function Start
 const Store = require('..\\src\\scripts\\store.js');
@@ -430,6 +423,7 @@ function save(){
   disabledWorlds.push(twtnwVC);
   disabledWorlds.push(acreVC);
   disabledWorlds.push(atlVC);
+  disabledWorlds.push(dataVC);
 
   //Set Auto Forms
   formToggle = [];
@@ -456,6 +450,7 @@ function save(){
   saveT.set('twtnwDone', twtnwDone);
   saveT.set('acreDone', acreDone);
   saveT.set('atlDone', atlDone);
+  saveT.set('dataDone', dataDone);
   saveT.set('requiredDone', requiredDone);
   saveT.set('formDone', formDone);
   saveT.set('magicDone', magicDone);
@@ -492,6 +487,7 @@ function load(){
   twtnwDone = saveT.get('twtnwDone');
   acreDone = saveT.get('acreDone');
   atlDone = saveT.get('atlDone');
+  dataDone = saveT.get('dataDone');
   requiredDone = saveT.get('requiredDone');
   formDone = saveT.get('formDone');
   magicDone = saveT.get('magicDone');
@@ -615,6 +611,10 @@ function load(){
     document.getElementById('worldAtlantica').style.filter = 'brightness(100%)';
     document.getElementById('atl').innerHTML = 'X';
   }
+  if (dataDone.length == 13){
+    document.getElementById('worldData').style.filter = 'brightness(100%)';
+  }
+  document.getElementById('dataNum').innerHTML = dataDone.length;
 
   //Mark Required Checks
   if (requiredDone[0] == "1"){
@@ -731,23 +731,24 @@ function load(){
   }
 
   //Update Hover tooltip
-  document.getElementById('sttCC').innerHTML = (25 - sttDone.length);
-  document.getElementById('ttCC').innerHTML = (47 - ttDone.length);
-  document.getElementById('hbCC').innerHTML = (35 - hbDone.length);
+  document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
+  document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
+  document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
   document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
-  document.getElementById('trCC').innerHTML = (13 - trDone.length);
-  document.getElementById('lodCC').innerHTML = (29 - tlodDone.length);
-  document.getElementById('bcCC').innerHTML = (29 - bcDone.length);
-  document.getElementById('ocCC').innerHTML = (35 - ocDone.length);
-  document.getElementById('prCC').innerHTML = (30 - prDone.length);
-  document.getElementById('agrCC').innerHTML = (34 - agrDone.length);
-  document.getElementById('htCC').innerHTML = (22 - htDone.length);
-  document.getElementById('plCC').innerHTML = (30 - plDone.length);
+  document.getElementById('trCC').innerHTML = (12 - trDone.length);
+  document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
+  document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
+  document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
+  document.getElementById('prCC').innerHTML = (29 - prDone.length);
+  document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
+  document.getElementById('htCC').innerHTML = (21 - htDone.length);
+  document.getElementById('plCC').innerHTML = (29 - plDone.length);
   document.getElementById('spCC').innerHTML = (18 - spDone.length);
   document.getElementById('corCC').innerHTML = (21 - corDone.length);
-  document.getElementById('twtnwCC').innerHTML = (29 - twtnwDone.length);
+  document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
   document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
-  document.getElementById('atlCC').innerHTML = (4 - atlDone.length);
+  document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
+  document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
 
   //Restore Disabled Worlds
   if (disabledWorlds[0] == 1){
@@ -795,7 +796,7 @@ function load(){
   if (disabledWorlds[7] == 1){
     document.getElementById('oc').innerHTML = 'X';
     ocWorld.setAttribute('src','img/Disabled/olympus_coliseum.png');
-    oc.style.filter = 'brightness(100%)'
+    document.getElementById('oc').style.filter = 'brightness(100%)'
     ocVC = 1;
   }
   if (disabledWorlds[8] == 1){
@@ -851,6 +852,12 @@ function load(){
     atlWorld.setAttribute('src','img/Disabled/atlantica.png');
     atlWorld.style.filter = "brightness(100%)";
     atlVC = 1;
+  }
+  if (disabledWorlds[17] == 1){
+    document.getElementById('dataNum').innerHTML = 'X';
+    dataWorld.setAttribute('src','img/Disabled/replica_data.png');
+    dataWorld.style.filter = "brightness(100%)";
+    dataVC = 1;
   }
 
   //Restore Auto Forms
