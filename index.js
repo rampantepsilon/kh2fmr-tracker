@@ -40,6 +40,7 @@ Changes
 - Added Dialog to confirm saving and loading.
 - Fixed issue where disabling Disney Castle or Timeless River would cause issues when reenabling them.
 - Moved Data Fights to separate location. Data fights can be disabled just like any world.
+- Updated to allow for disabling Promise Charm, Reports, and Torn Pages.
 
 To Be Added
 - Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`

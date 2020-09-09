@@ -424,6 +424,9 @@ function save(){
   disabledWorlds.push(acreVC);
   disabledWorlds.push(atlVC);
   disabledWorlds.push(dataVC);
+  disabledWorlds.push(pCharmVC);
+  disabledWorlds.push(reportVC);
+  disabledWorlds.push(tpVC);
 
   //Set Auto Forms
   formToggle = [];
@@ -858,6 +861,21 @@ function load(){
     dataWorld.setAttribute('src','img/Disabled/replica_data.png');
     dataWorld.style.filter = "brightness(100%)";
     dataVC = 1;
+  }
+  if (disabledWorlds[18] == 1){
+    pCharm.setAttribute('src','img/Required/Charm_2.png');
+    pCharmVC = 1;
+  }
+  if (disabledWorlds[18] == 1){
+    document.getElementById('keyNum').innerHTML = 'X';
+    reports.setAttribute('src','img/secret_reports_1.png');
+    reports.style.filter = "brightness(100%)";
+    reportVC = 1;
+  }
+  if (disabledWorlds[19] == 1){
+    document.getElementById('pageNum').innerHTML = 'X';
+    pages.setAttribute('src','img/pages_2.png');
+    tpVC = 1;
   }
 
   //Restore Auto Forms
