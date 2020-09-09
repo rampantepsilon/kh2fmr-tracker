@@ -16,6 +16,9 @@ var twtnwVC = 0;
 var acreVC = 0;
 var atlVC = 0;
 var dataVC = 0;
+var pCharmVC = 0;
+var reportVC = 0;
+var tpVC = 0;
 
 var roxasWorld = document.getElementById('worldRoxas');
 var ttWorld = document.getElementById('worldTT');
@@ -35,6 +38,9 @@ var twtnwWorld = document.getElementById('worldTWTNW');
 var acreWorld = document.getElementById('world100');
 var atlWorld = document.getElementById('worldAtlantica');
 var dataWorld = document.getElementById('worldData');
+var pCharm = document.getElementById('pCharm');
+var reports = document.getElementById('keyblade');
+var pages = document.getElementById('pages');
 
 roxasWorld.addEventListener('contextmenu', function(){
   if (sttVC == 0){
@@ -378,5 +384,38 @@ dataWorld.addEventListener('contextmenu', function(){
     dataDone = [];
     document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
     dataVC = 0;
+  }
+})
+pCharm.addEventListener('contextmenu', function(){
+  if (pCharmVC == 0){
+    pCharm.setAttribute('src','img/Required/Charm_2.png');
+    pCharmVC = 1;
+  } else {
+    pCharm.setAttribute('src','img/Required/Charm_0.png');
+    pCharmVC = 0;
+  }
+})
+reports.addEventListener('contextmenu', function(){
+  if (reportVC == 0){
+    document.getElementById('keyNum').innerHTML = 'X';
+    reports.setAttribute('src','img/secret_reports_1.png');
+    reports.style.filter = "brightness(100%)";
+    reportVC = 1;
+  } else {
+    document.getElementById('keyNum').innerHTML = '0';
+    reports.setAttribute('src','img/secret_reports.png');
+    reports.style.filter = "brightness(40%)";
+    reportVC = 0;
+  }
+})
+pages.addEventListener('contextmenu', function(){
+  if (tpVC == 0){
+    document.getElementById('pageNum').innerHTML = 'X';
+    pages.setAttribute('src','img/pages_2.png');
+    tpVC = 1;
+  } else {
+    document.getElementById('pageNum').innerHTML = '0';
+    pages.setAttribute('src','img/pages_0.png');
+    tpVC = 0;
   }
 })
