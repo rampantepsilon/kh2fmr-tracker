@@ -19,7 +19,7 @@ ul{
 }
 
 /*Darken Images*/
-#worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR, #worldData, #fValor, #fWisdom, #fLimit, #fMaster, #fFinal, #mFire, #mBlizzard, #mThunder, #mCure, #mReflect, #mMagnet, #keyblade, #cBBall, #cLamp, #cUkulele, #cFeather {
+#worldRoxas, #worldTT, #worldHB, #worldDC, #worldTR, #worldAtlantica, #world100, #worldTWTNW, #worldTLoD, #worldBC, #worldOC, #worldPR, #worldAgrabah, #worldHT, #worldPL, #worldSP, #worldCoR, #worldData, #fValor, #fWisdom, #fLimit, #fMaster, #fFinal, #mFire, #mBlizzard, #mThunder, #mCure, #mReflect, #mMagnet, #keyblade, #cBBall, #cLamp, #cUkulele, #cFeather, #aerial, #dodge, #glide, #jump, #quick {
   filter: brightness(40%);
 }
 
@@ -80,6 +80,42 @@ ul{
 }
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Tooltip container */
+.tooltipG {
+  height: 40px;
+  /*width: 100px;*/
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltipG .tooltiptext {
+  visibility: hidden;
+  width: 130px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipG:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
