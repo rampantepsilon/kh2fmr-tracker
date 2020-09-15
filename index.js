@@ -2,7 +2,7 @@ const { BrowserWindow, Menu, app, dialog } = require('electron')
 
 //App Information
 const label = 'KH2FM Randomizer Tracker';
-const build = '2020.9.7';
+const build = '2020.9.15';
 const version = app.getVersion();
 
 //About Window
@@ -21,6 +21,9 @@ const aboutOptions = {
 Magic/Forms/Summons
 - Forms are now show levels.
 - Icons are updated to be a bit clear as to what they are. Shoutouts to the KH2FMR tracker on EmoTracker
+
+Growth Abilities
+- Added icons from Zaxutic's Tracker
 
 Notes/Hints
 - If you need to resize the notes window, click and drag from the bottom right corner.
@@ -43,9 +46,11 @@ const importantOptions = {
 - Changed Auto Form icons to be less confusing.
 - Added Growth Abilities
 - Performed background work to make it web ready with next version.
+- Added a new font and background to the tracker. (Streamers can capture the solid black area around the locations/items for stream view)
 
 To Be Added
-- Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`
+- Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)
+- Allowing for custom backgrounds`
 }
 
 //Global Variables
@@ -96,7 +101,7 @@ let menuT = [
       aboutMessage();
     }
   },{
-    label: '*** README ***',
+    label: 'Changelog',
     click(){
       importantMessage();
     }
