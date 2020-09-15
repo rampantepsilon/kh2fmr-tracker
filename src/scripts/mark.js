@@ -1559,95 +1559,120 @@ function growthMark(item){
     if (level == "0"){
       aerialImg.style.filter = "brightness(100%)"
       aerialImg.setAttribute('onclick', 'growthMark(["aerial", "1"])');
+      gAbilities[0] = '1';
     } else if (level == '1'){
       aerialImg.setAttribute('src', 'img/Growth/aerial2.png')
       aerialImg.setAttribute('onclick', 'growthMark(["aerial", "2"])');
+      gAbilities[0] = '2';
     } else if (level == '2'){
       aerialImg.setAttribute('src', 'img/Growth/aerial3.png')
       aerialImg.setAttribute('onclick', 'growthMark(["aerial", "3"])');
+      gAbilities[0] = '3';
     } else if (level == '3'){
       aerialImg.setAttribute('src', 'img/Growth/aerial4.png')
       aerialImg.setAttribute('onclick', 'growthMark(["aerial", "4"])');
+      gAbilities[0] = '4';
     } else if (level == '4'){
       aerialImg.style.filter = "brightness(40%)";
       aerialImg.setAttribute('src', 'img/Growth/aerial.png')
       aerialImg.setAttribute('onclick', 'growthMark(["aerial", "0"])');
+      gAbilities[0] = '0';
     }
   }
   if (ability == 'dodge'){
     if (level == "0"){
       dodgeImg.style.filter = "brightness(100%)"
       dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "1"])');
+      gAbilities[1] = '1';
     } else if (level == '1'){
       dodgeImg.setAttribute('src', 'img/Growth/dodge2.png')
       dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "2"])');
+      gAbilities[1] = '2';
     } else if (level == '2'){
       dodgeImg.setAttribute('src', 'img/Growth/dodge3.png')
       dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "3"])');
+      gAbilities[1] = '3';
     } else if (level == '3'){
       dodgeImg.setAttribute('src', 'img/Growth/dodge4.png')
       dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "4"])');
+      gAbilities[1] = '4';
     } else if (level == '4'){
       dodgeImg.style.filter = "brightness(40%)";
       dodgeImg.setAttribute('src', 'img/Growth/dodge.png')
       dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "0"])');
+      gAbilities[1] = '0';
     }
   }
   if (ability == 'glide'){
     if (level == "0"){
       glideImg.style.filter = "brightness(100%)"
       glideImg.setAttribute('onclick', 'growthMark(["glide", "1"])');
+      gAbilities[2] = '1';
     } else if (level == '1'){
       glideImg.setAttribute('src', 'img/Growth/glide2.png')
       glideImg.setAttribute('onclick', 'growthMark(["glide", "2"])');
+      gAbilities[2] = '2';
     } else if (level == '2'){
       glideImg.setAttribute('src', 'img/Growth/glide3.png')
       glideImg.setAttribute('onclick', 'growthMark(["glide", "3"])');
+      gAbilities[2] = '3';
     } else if (level == '3'){
       glideImg.setAttribute('src', 'img/Growth/glide4.png')
       glideImg.setAttribute('onclick', 'growthMark(["glide", "4"])');
+      gAbilities[2] = '4';
     } else if (level == '4'){
       glideImg.style.filter = "brightness(40%)";
       glideImg.setAttribute('src', 'img/Growth/glide.png')
       glideImg.setAttribute('onclick', 'growthMark(["glide", "0"])');
+      gAbilities[2] = '0';
     }
   }
   if (ability == 'jump'){
     if (level == "0"){
       jumpImg.style.filter = "brightness(100%)"
       jumpImg.setAttribute('onclick', 'growthMark(["jump", "1"])');
+      gAbilities[3] = '1';
     } else if (level == '1'){
       jumpImg.setAttribute('src', 'img/Growth/jump2.png')
       jumpImg.setAttribute('onclick', 'growthMark(["jump", "2"])');
+      gAbilities[3] = '2';
     } else if (level == '2'){
       jumpImg.setAttribute('src', 'img/Growth/jump3.png')
       jumpImg.setAttribute('onclick', 'growthMark(["jump", "3"])');
+      gAbilities[3] = '3';
     } else if (level == '3'){
       jumpImg.setAttribute('src', 'img/Growth/jump4.png')
       jumpImg.setAttribute('onclick', 'growthMark(["jump", "4"])');
+      gAbilities[3] = '4';
     } else if (level == '4'){
       jumpImg.style.filter = "brightness(40%)";
       jumpImg.setAttribute('src', 'img/Growth/jump.png')
       jumpImg.setAttribute('onclick', 'growthMark(["jump", "0"])');
+      gAbilities[3] = '0';
     }
   }
   if (ability == 'quick'){
     if (level == "0"){
       quickImg.style.filter = "brightness(100%)"
       quickImg.setAttribute('onclick', 'growthMark(["quick", "1"])');
+      gAbilities[4] = '1';
     } else if (level == '1'){
       quickImg.setAttribute('src', 'img/Growth/quick2.png')
       quickImg.setAttribute('onclick', 'growthMark(["quick", "2"])');
+      gAbilities[4] = '2';
     } else if (level == '2'){
       quickImg.setAttribute('src', 'img/Growth/quick3.png')
       quickImg.setAttribute('onclick', 'growthMark(["quick", "3"])');
+      gAbilities[4] = '3';
     } else if (level == '3'){
       quickImg.setAttribute('src', 'img/Growth/quick4.png')
       quickImg.setAttribute('onclick', 'growthMark(["quick", "4"])');
+      gAbilities[4] = '4';
     } else if (level == '4'){
       quickImg.style.filter = "brightness(40%)";
       quickImg.setAttribute('src', 'img/Growth/quick.png')
       quickImg.setAttribute('onclick', 'growthMark(["quick", "0"])');
+      gAbilities[4] = '0';
     }
   }
 }

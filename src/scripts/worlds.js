@@ -28,7 +28,8 @@ var hintsKnown = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0
 var notepad = "";
 var disabledWorlds = [];
 var formToggle = [];
-var gAbilities = [];
+//Growth - Aerial, Dodge, Glide, Jump, Quick
+var gAbilities = ['0','0','0','0','0'];
 
 //Call on load
 function init(){
@@ -399,7 +400,8 @@ var saveT = new Store(
       hintsKnown: hintsKnown,
       notepad: notepad,
       disabled: disabledWorlds,
-      formToggle: formToggle
+      formToggle: formToggle,
+      gAbilities: gAbilities
     }
   }
 )
@@ -466,6 +468,7 @@ function save(){
   saveT.set('notepad', notepad);
   saveT.set('disabled', disabledWorlds);
   saveT.set('formToggle', formToggle);
+  saveT.set('gAbilities', gAbilities)
 
   document.getElementById('saveText').innerHTML = 'Progress Saved';
   setTimeout(function(){
@@ -503,6 +506,7 @@ function load(){
   notepad = saveT.get('notepad');
   disabledWorlds = saveT.get('disabled');
   formToggle = saveT.get('formToggle');
+  gAbilities = saveT.get('gAbilities');
 
   list('STT');
   hintsLoad();
@@ -867,13 +871,13 @@ function load(){
     pCharm.setAttribute('src','img/Required/Charm_2.png');
     pCharmVC = 1;
   }
-  if (disabledWorlds[18] == 1){
+  if (disabledWorlds[19] == 1){
     document.getElementById('keyNum').innerHTML = 'X';
     reports.setAttribute('src','img/secret_reports_1.png');
     reports.style.filter = "brightness(100%)";
     reportVC = 1;
   }
-  if (disabledWorlds[19] == 1){
+  if (disabledWorlds[20] == 1){
     document.getElementById('pageNum').innerHTML = 'X';
     pages.setAttribute('src','img/pages_2.png');
     tpVC = 1;
@@ -899,6 +903,157 @@ function load(){
   if (formToggle[4] == 1){
     document.getElementById('fFinal').setAttribute('src', 'img/Forms/autofinal.png');
     fToggle = '1';
+  }
+
+  //Growth Variables
+  var aerialImg = document.getElementById('aerial');
+  var dodgeImg = document.getElementById('dodge');
+  var glideImg = document.getElementById('glide');
+  var jumpImg = document.getElementById('jump');
+  var quickImg = document.getElementById('quick');
+
+  //Load Growth Abilities
+  for (var i = 0; i < gAbilities.length; i++){
+    if (gAbilities[i] == '0'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(40%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "0"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(40%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "0"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(40%)";
+          glideImg.setAttribute('src', 'img/Growth/glide.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "0"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(40%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "0"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(40%)";
+          quickImg.setAttribute('src', 'img/Growth/quick.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "0"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '1'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)"
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "1"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)"
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "1"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)"
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "1"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)"
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "1"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)"
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "1"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '2'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial2.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "2"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge2.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "2"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide2.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "2"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump2.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "2"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick2.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "2"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '3'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial3.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "3"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge3.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "3"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide3.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "3"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump3.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "3"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick3.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "3"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '4'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial4.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "4"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge4.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "4"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide4.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "4"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump4.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "4"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick4.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "4"])');
+          break;
+      }
+    }
   }
 
   document.getElementById('saveText').innerHTML = 'Progress Loaded';
