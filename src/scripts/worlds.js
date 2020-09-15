@@ -516,324 +516,10 @@ function load(){
   loadMarkSummons();
   loadMarkMagic();
   loadMarkForms();
-
-  //Update Hover tooltip
-  document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
-  document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
-  document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
-  document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
-  document.getElementById('trCC').innerHTML = (12 - trDone.length);
-  document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
-  document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
-  document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
-  document.getElementById('prCC').innerHTML = (29 - prDone.length);
-  document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
-  document.getElementById('htCC').innerHTML = (21 - htDone.length);
-  document.getElementById('plCC').innerHTML = (29 - plDone.length);
-  document.getElementById('spCC').innerHTML = (18 - spDone.length);
-  document.getElementById('corCC').innerHTML = (21 - corDone.length);
-  document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
-  document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
-  document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
-  document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
-
-  //Restore Disabled Worlds
-  if (disabledWorlds[0] == 1){
-    document.getElementById('stt').innerHTML = 'X';
-    roxasWorld.setAttribute('src','img/Disabled/simulated_twilight_town.png');
-    roxasWorld.style.filter = "brightness(100%)"
-    sttVC = 1;
-  }
-  if (disabledWorlds[1] == 1){
-    document.getElementById('tt').innerHTML = 'X';
-    ttWorld.setAttribute('src','img/Disabled/twilight_town.png');
-    ttWorld.style.filter = "brightness(100%)"
-    ttVC = 1;
-  }
-  if (disabledWorlds[2] == 1){
-    document.getElementById('hb').innerHTML = 'X';
-    hbWorld.setAttribute('src','img/Disabled/hollow_bastion.png');
-    hbWorld.style.filter = "brightness(100%)";
-    hbVC = 1;
-  }
-  if (disabledWorlds[3] == 1){
-    document.getElementById('dc').innerHTML = 'X';
-    dcWorld.setAttribute('src','img/Disabled/disney_castle.png');
-    dcWorld.style.filter = "brightness(100%)"
-    dcVC = 1;
-  }
-  if (disabledWorlds[4] == 1){
-    document.getElementById('tr').innerHTML = 'X';
-    trWorld.setAttribute('src','img/Disabled/timeless_river.png');
-    trWorld.style.filter = "brightness(100%)"
-    trVC = 1;
-  }
-  if (disabledWorlds[5] == 1){
-    document.getElementById('lod').innerHTML = 'X';
-    lodWorld.setAttribute('src','img/Disabled/land_of_dragons.png');
-    lodWorld.style.filter = "brightness(100%)";
-    lodVC = 1;
-  }
-  if (disabledWorlds[6] == 1){
-    document.getElementById('bc').innerHTML = 'X';
-    bcWorld.setAttribute('src',"img/Disabled/beast's_castle.png");
-    bcWorld.style.filter = "brightness(100%)";
-    bcVC = 1;
-  }
-  if (disabledWorlds[7] == 1){
-    document.getElementById('oc').innerHTML = 'X';
-    ocWorld.setAttribute('src','img/Disabled/olympus_coliseum.png');
-    document.getElementById('oc').style.filter = 'brightness(100%)'
-    ocVC = 1;
-  }
-  if (disabledWorlds[8] == 1){
-    document.getElementById('pr').innerHTML = 'X';
-    prWorld.setAttribute('src','img/Disabled/port_royal.png');
-    prWorld.style.filter = "brightness(100%)";
-    prVC = 1;
-  }
-  if (disabledWorlds[9] == 1){
-    document.getElementById('agr').innerHTML = 'X';
-    agrWorld.setAttribute('src','img/Disabled/agrabah.png');
-    agrWorld.style.filter = "brightness(100%)";
-    agrVC = 1;
-  }
-  if (disabledWorlds[10] == 1){
-    document.getElementById('ht').innerHTML = 'X';
-    htWorld.setAttribute('src','img/Disabled/halloween_town.png');
-    htWorld.style.filter = "brightness(100%)";
-    htVC = 1;
-  }
-  if (disabledWorlds[11] == 1){
-    document.getElementById('pl').innerHTML = 'X';
-    plWorld.setAttribute('src','img/Disabled/pride_land.png');
-    plWorld.style.filter = "brightness(100%)";
-    plVC = 1;
-  }
-  if (disabledWorlds[12] == 1){
-    document.getElementById('sp').innerHTML = 'X';
-    spWorld.setAttribute('src','img/Disabled/space_paranoids.png');
-    spWorld.style.filter = "brightness(100%)";
-    spVC = 1;
-  }
-  if (disabledWorlds[13] == 1){
-    document.getElementById('cor').innerHTML = 'X';
-    corWorld.setAttribute('src','img/Disabled/cavern_of_remembrance.png');
-    corWorld.style.filter = "brightness(100%)";
-    corVC = 1;
-  }
-  if (disabledWorlds[14] == 1){
-    document.getElementById('twtnw').innerHTML = 'X';
-    twtnwWorld.setAttribute('src','img/Disabled/the_world_that_never_was.png');
-    twtnwWorld.style.filter = "brightness(100%)";
-    twtnwVC = 1;
-  }
-  if (disabledWorlds[15] == 1){
-    document.getElementById('acre').innerHTML = 'X';
-    acreWorld.setAttribute('src','img/Disabled/100_acre_wood.png');
-    acreWorld.style.filter = "brightness(100%)";
-    acreVC = 1;
-  }
-  if (disabledWorlds[16] == 1){
-    document.getElementById('atl').innerHTML = 'X';
-    atlWorld.setAttribute('src','img/Disabled/atlantica.png');
-    atlWorld.style.filter = "brightness(100%)";
-    atlVC = 1;
-  }
-  if (disabledWorlds[17] == 1){
-    document.getElementById('dataNum').innerHTML = 'X';
-    dataWorld.setAttribute('src','img/Disabled/replica_data.png');
-    dataWorld.style.filter = "brightness(100%)";
-    dataVC = 1;
-  }
-  if (disabledWorlds[18] == 1){
-    pCharm.setAttribute('src','img/Required/Charm_2.png');
-    pCharmVC = 1;
-  }
-  if (disabledWorlds[19] == 1){
-    document.getElementById('keyNum').innerHTML = 'X';
-    reports.setAttribute('src','img/secret_reports_1.png');
-    reports.style.filter = "brightness(100%)";
-    reportVC = 1;
-  }
-  if (disabledWorlds[20] == 1){
-    document.getElementById('pageNum').innerHTML = 'X';
-    pages.setAttribute('src','img/pages_2.png');
-    tpVC = 1;
-  }
-
-  //Restore Auto Forms
-  if (formToggle[0] == 1){
-    document.getElementById('fValor').setAttribute('src', 'img/Forms/autovalor.png');
-    vToggle = '1';
-  }
-  if (formToggle[1] == 1){
-    document.getElementById('fWisdom').setAttribute('src', 'img/Forms/autowisdom.png');
-    wToggle = '1';
-  }
-  if (formToggle[2] == 1){
-    document.getElementById('fLimit').setAttribute('src', 'img/Forms/autolimit.png');
-    lToggle = '1';
-  }
-  if (formToggle[3] == 1){
-    document.getElementById('fMaster').setAttribute('src', 'img/Forms/automaster.png');
-    mToggle = '1';
-  }
-  if (formToggle[4] == 1){
-    document.getElementById('fFinal').setAttribute('src', 'img/Forms/autofinal.png');
-    fToggle = '1';
-  }
-
-  //Growth Variables
-  var aerialImg = document.getElementById('aerial');
-  var dodgeImg = document.getElementById('dodge');
-  var glideImg = document.getElementById('glide');
-  var jumpImg = document.getElementById('jump');
-  var quickImg = document.getElementById('quick');
-
-  //Load Growth Abilities
-  for (var i = 0; i < gAbilities.length; i++){
-    if (gAbilities[i] == '0'){
-      switch(i){
-        case 0:
-          aerialImg.style.filter = "brightness(40%)";
-          aerialImg.setAttribute('src', 'img/Growth/aerial.png')
-          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "0"])');
-          break;
-        case 1:
-          dodgeImg.style.filter = "brightness(40%)";
-          dodgeImg.setAttribute('src', 'img/Growth/dodge.png')
-          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "0"])');
-          break;
-        case 2:
-          glideImg.style.filter = "brightness(40%)";
-          glideImg.setAttribute('src', 'img/Growth/glide.png')
-          glideImg.setAttribute('onclick', 'growthMark(["glide", "0"])');
-          break;
-        case 3:
-          jumpImg.style.filter = "brightness(40%)";
-          jumpImg.setAttribute('src', 'img/Growth/jump.png')
-          jumpImg.setAttribute('onclick', 'growthMark(["jump", "0"])');
-          break;
-        case 4:
-          quickImg.style.filter = "brightness(40%)";
-          quickImg.setAttribute('src', 'img/Growth/quick.png')
-          quickImg.setAttribute('onclick', 'growthMark(["quick", "0"])');
-          break;
-      }
-    }
-    if (gAbilities[i] == '1'){
-      switch(i){
-        case 0:
-          aerialImg.style.filter = "brightness(100%)"
-          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "1"])');
-          break;
-        case 1:
-          dodgeImg.style.filter = "brightness(100%)"
-          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "1"])');
-          break;
-        case 2:
-          glideImg.style.filter = "brightness(100%)"
-          glideImg.setAttribute('onclick', 'growthMark(["glide", "1"])');
-          break;
-        case 3:
-          jumpImg.style.filter = "brightness(100%)"
-          jumpImg.setAttribute('onclick', 'growthMark(["jump", "1"])');
-          break;
-        case 4:
-          quickImg.style.filter = "brightness(100%)"
-          quickImg.setAttribute('onclick', 'growthMark(["quick", "1"])');
-          break;
-      }
-    }
-    if (gAbilities[i] == '2'){
-      switch(i){
-        case 0:
-          aerialImg.style.filter = "brightness(100%)";
-          aerialImg.setAttribute('src', 'img/Growth/aerial2.png')
-          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "2"])');
-          break;
-        case 1:
-          dodgeImg.style.filter = "brightness(100%)";
-          dodgeImg.setAttribute('src', 'img/Growth/dodge2.png')
-          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "2"])');
-          break;
-        case 2:
-          glideImg.style.filter = "brightness(100%)";
-          glideImg.setAttribute('src', 'img/Growth/glide2.png')
-          glideImg.setAttribute('onclick', 'growthMark(["glide", "2"])');
-          break;
-        case 3:
-          jumpImg.style.filter = "brightness(100%)";
-          jumpImg.setAttribute('src', 'img/Growth/jump2.png')
-          jumpImg.setAttribute('onclick', 'growthMark(["jump", "2"])');
-          break;
-        case 4:
-          quickImg.style.filter = "brightness(100%)";
-          quickImg.setAttribute('src', 'img/Growth/quick2.png')
-          quickImg.setAttribute('onclick', 'growthMark(["quick", "2"])');
-          break;
-      }
-    }
-    if (gAbilities[i] == '3'){
-      switch(i){
-        case 0:
-          aerialImg.style.filter = "brightness(100%)";
-          aerialImg.setAttribute('src', 'img/Growth/aerial3.png')
-          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "3"])');
-          break;
-        case 1:
-          dodgeImg.style.filter = "brightness(100%)";
-          dodgeImg.setAttribute('src', 'img/Growth/dodge3.png')
-          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "3"])');
-          break;
-        case 2:
-          glideImg.style.filter = "brightness(100%)";
-          glideImg.setAttribute('src', 'img/Growth/glide3.png')
-          glideImg.setAttribute('onclick', 'growthMark(["glide", "3"])');
-          break;
-        case 3:
-          jumpImg.style.filter = "brightness(100%)";
-          jumpImg.setAttribute('src', 'img/Growth/jump3.png')
-          jumpImg.setAttribute('onclick', 'growthMark(["jump", "3"])');
-          break;
-        case 4:
-          quickImg.style.filter = "brightness(100%)";
-          quickImg.setAttribute('src', 'img/Growth/quick3.png')
-          quickImg.setAttribute('onclick', 'growthMark(["quick", "3"])');
-          break;
-      }
-    }
-    if (gAbilities[i] == '4'){
-      switch(i){
-        case 0:
-          aerialImg.style.filter = "brightness(100%)";
-          aerialImg.setAttribute('src', 'img/Growth/aerial4.png')
-          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "4"])');
-          break;
-        case 1:
-          dodgeImg.style.filter = "brightness(100%)";
-          dodgeImg.setAttribute('src', 'img/Growth/dodge4.png')
-          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "4"])');
-          break;
-        case 2:
-          glideImg.style.filter = "brightness(100%)";
-          glideImg.setAttribute('src', 'img/Growth/glide4.png')
-          glideImg.setAttribute('onclick', 'growthMark(["glide", "4"])');
-          break;
-        case 3:
-          jumpImg.style.filter = "brightness(100%)";
-          jumpImg.setAttribute('src', 'img/Growth/jump4.png')
-          jumpImg.setAttribute('onclick', 'growthMark(["jump", "4"])');
-          break;
-        case 4:
-          quickImg.style.filter = "brightness(100%)";
-          quickImg.setAttribute('src', 'img/Growth/quick4.png')
-          quickImg.setAttribute('onclick', 'growthMark(["quick", "4"])');
-          break;
-      }
-    }
-  }
+  loadUpdateTool();
+  loadDisabled();
+  loadAutoForms();
+  loadGrowth();
 
   document.getElementById('saveText').innerHTML = 'Progress Loaded';
   setTimeout(function(){
@@ -1074,6 +760,332 @@ function loadMarkForms(){
     var count = formDone[4];
     for (var i = 0; i < count; i++){
       formMark('final');
+    }
+  }
+}
+
+function loadUpdateTool(){
+  //Update Hover tooltip
+  document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
+  document.getElementById('ttCC').innerHTML = (46 - ttDone.length);
+  document.getElementById('hbCC').innerHTML = (34 - hbDone.length);
+  document.getElementById('dcCC').innerHTML = (10 - dctrDone.length);
+  document.getElementById('trCC').innerHTML = (12 - trDone.length);
+  document.getElementById('lodCC').innerHTML = (28 - tlodDone.length);
+  document.getElementById('bcCC').innerHTML = (28 - bcDone.length);
+  document.getElementById('ocCC').innerHTML = (34 - ocDone.length);
+  document.getElementById('prCC').innerHTML = (29 - prDone.length);
+  document.getElementById('agrCC').innerHTML = (33 - agrDone.length);
+  document.getElementById('htCC').innerHTML = (21 - htDone.length);
+  document.getElementById('plCC').innerHTML = (29 - plDone.length);
+  document.getElementById('spCC').innerHTML = (18 - spDone.length);
+  document.getElementById('corCC').innerHTML = (21 - corDone.length);
+  document.getElementById('twtnwCC').innerHTML = (28 - twtnwDone.length);
+  document.getElementById('acreCC').innerHTML = (22 - acreDone.length);
+  document.getElementById('atlCC').innerHTML = (3 - atlDone.length);
+  document.getElementById('dataCC').innerHTML = (13 - dataDone.length);
+}
+
+function loadDisabled(){
+  //Restore Disabled Worlds
+  if (disabledWorlds[0] == 1){
+    document.getElementById('stt').innerHTML = 'X';
+    roxasWorld.setAttribute('src','img/Disabled/simulated_twilight_town.png');
+    roxasWorld.style.filter = "brightness(100%)"
+    sttVC = 1;
+  }
+  if (disabledWorlds[1] == 1){
+    document.getElementById('tt').innerHTML = 'X';
+    ttWorld.setAttribute('src','img/Disabled/twilight_town.png');
+    ttWorld.style.filter = "brightness(100%)"
+    ttVC = 1;
+  }
+  if (disabledWorlds[2] == 1){
+    document.getElementById('hb').innerHTML = 'X';
+    hbWorld.setAttribute('src','img/Disabled/hollow_bastion.png');
+    hbWorld.style.filter = "brightness(100%)";
+    hbVC = 1;
+  }
+  if (disabledWorlds[3] == 1){
+    document.getElementById('dc').innerHTML = 'X';
+    dcWorld.setAttribute('src','img/Disabled/disney_castle.png');
+    dcWorld.style.filter = "brightness(100%)"
+    dcVC = 1;
+  }
+  if (disabledWorlds[4] == 1){
+    document.getElementById('tr').innerHTML = 'X';
+    trWorld.setAttribute('src','img/Disabled/timeless_river.png');
+    trWorld.style.filter = "brightness(100%)"
+    trVC = 1;
+  }
+  if (disabledWorlds[5] == 1){
+    document.getElementById('lod').innerHTML = 'X';
+    lodWorld.setAttribute('src','img/Disabled/land_of_dragons.png');
+    lodWorld.style.filter = "brightness(100%)";
+    lodVC = 1;
+  }
+  if (disabledWorlds[6] == 1){
+    document.getElementById('bc').innerHTML = 'X';
+    bcWorld.setAttribute('src',"img/Disabled/beast's_castle.png");
+    bcWorld.style.filter = "brightness(100%)";
+    bcVC = 1;
+  }
+  if (disabledWorlds[7] == 1){
+    document.getElementById('oc').innerHTML = 'X';
+    ocWorld.setAttribute('src','img/Disabled/olympus_coliseum.png');
+    document.getElementById('oc').style.filter = 'brightness(100%)'
+    ocVC = 1;
+  }
+  if (disabledWorlds[8] == 1){
+    document.getElementById('pr').innerHTML = 'X';
+    prWorld.setAttribute('src','img/Disabled/port_royal.png');
+    prWorld.style.filter = "brightness(100%)";
+    prVC = 1;
+  }
+  if (disabledWorlds[9] == 1){
+    document.getElementById('agr').innerHTML = 'X';
+    agrWorld.setAttribute('src','img/Disabled/agrabah.png');
+    agrWorld.style.filter = "brightness(100%)";
+    agrVC = 1;
+  }
+  if (disabledWorlds[10] == 1){
+    document.getElementById('ht').innerHTML = 'X';
+    htWorld.setAttribute('src','img/Disabled/halloween_town.png');
+    htWorld.style.filter = "brightness(100%)";
+    htVC = 1;
+  }
+  if (disabledWorlds[11] == 1){
+    document.getElementById('pl').innerHTML = 'X';
+    plWorld.setAttribute('src','img/Disabled/pride_land.png');
+    plWorld.style.filter = "brightness(100%)";
+    plVC = 1;
+  }
+  if (disabledWorlds[12] == 1){
+    document.getElementById('sp').innerHTML = 'X';
+    spWorld.setAttribute('src','img/Disabled/space_paranoids.png');
+    spWorld.style.filter = "brightness(100%)";
+    spVC = 1;
+  }
+  if (disabledWorlds[13] == 1){
+    document.getElementById('cor').innerHTML = 'X';
+    corWorld.setAttribute('src','img/Disabled/cavern_of_remembrance.png');
+    corWorld.style.filter = "brightness(100%)";
+    corVC = 1;
+  }
+  if (disabledWorlds[14] == 1){
+    document.getElementById('twtnw').innerHTML = 'X';
+    twtnwWorld.setAttribute('src','img/Disabled/the_world_that_never_was.png');
+    twtnwWorld.style.filter = "brightness(100%)";
+    twtnwVC = 1;
+  }
+  if (disabledWorlds[15] == 1){
+    document.getElementById('acre').innerHTML = 'X';
+    acreWorld.setAttribute('src','img/Disabled/100_acre_wood.png');
+    acreWorld.style.filter = "brightness(100%)";
+    acreVC = 1;
+  }
+  if (disabledWorlds[16] == 1){
+    document.getElementById('atl').innerHTML = 'X';
+    atlWorld.setAttribute('src','img/Disabled/atlantica.png');
+    atlWorld.style.filter = "brightness(100%)";
+    atlVC = 1;
+  }
+  if (disabledWorlds[17] == 1){
+    document.getElementById('dataNum').innerHTML = 'X';
+    dataWorld.setAttribute('src','img/Disabled/replica_data.png');
+    dataWorld.style.filter = "brightness(100%)";
+    dataVC = 1;
+  }
+  if (disabledWorlds[18] == 1){
+    pCharm.setAttribute('src','img/Required/Charm_2.png');
+    pCharmVC = 1;
+  }
+  if (disabledWorlds[19] == 1){
+    document.getElementById('keyNum').innerHTML = 'X';
+    reports.setAttribute('src','img/secret_reports_1.png');
+    reports.style.filter = "brightness(100%)";
+    reportVC = 1;
+  }
+  if (disabledWorlds[20] == 1){
+    document.getElementById('pageNum').innerHTML = 'X';
+    pages.setAttribute('src','img/pages_2.png');
+    tpVC = 1;
+  }
+}
+
+function loadAutoForms(){
+  //Restore Auto Forms
+  if (formToggle[0] == 1){
+    document.getElementById('fValor').setAttribute('src', 'img/Forms/autovalor.png');
+    vToggle = '1';
+  }
+  if (formToggle[1] == 1){
+    document.getElementById('fWisdom').setAttribute('src', 'img/Forms/autowisdom.png');
+    wToggle = '1';
+  }
+  if (formToggle[2] == 1){
+    document.getElementById('fLimit').setAttribute('src', 'img/Forms/autolimit.png');
+    lToggle = '1';
+  }
+  if (formToggle[3] == 1){
+    document.getElementById('fMaster').setAttribute('src', 'img/Forms/automaster.png');
+    mToggle = '1';
+  }
+  if (formToggle[4] == 1){
+    document.getElementById('fFinal').setAttribute('src', 'img/Forms/autofinal.png');
+    fToggle = '1';
+  }
+}
+
+function loadGrowth(){
+  //Growth Variables
+  var aerialImg = document.getElementById('aerial');
+  var dodgeImg = document.getElementById('dodge');
+  var glideImg = document.getElementById('glide');
+  var jumpImg = document.getElementById('jump');
+  var quickImg = document.getElementById('quick');
+
+  //Load Growth Abilities
+  for (var i = 0; i < gAbilities.length; i++){
+    if (gAbilities[i] == '0'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(40%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "0"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(40%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "0"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(40%)";
+          glideImg.setAttribute('src', 'img/Growth/glide.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "0"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(40%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "0"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(40%)";
+          quickImg.setAttribute('src', 'img/Growth/quick.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "0"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '1'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)"
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "1"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)"
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "1"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)"
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "1"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)"
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "1"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)"
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "1"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '2'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial2.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "2"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge2.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "2"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide2.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "2"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump2.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "2"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick2.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "2"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '3'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial3.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "3"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge3.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "3"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide3.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "3"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump3.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "3"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick3.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "3"])');
+          break;
+      }
+    }
+    if (gAbilities[i] == '4'){
+      switch(i){
+        case 0:
+          aerialImg.style.filter = "brightness(100%)";
+          aerialImg.setAttribute('src', 'img/Growth/aerial4.png')
+          aerialImg.setAttribute('onclick', 'growthMark(["aerial", "4"])');
+          break;
+        case 1:
+          dodgeImg.style.filter = "brightness(100%)";
+          dodgeImg.setAttribute('src', 'img/Growth/dodge4.png')
+          dodgeImg.setAttribute('onclick', 'growthMark(["dodge", "4"])');
+          break;
+        case 2:
+          glideImg.style.filter = "brightness(100%)";
+          glideImg.setAttribute('src', 'img/Growth/glide4.png')
+          glideImg.setAttribute('onclick', 'growthMark(["glide", "4"])');
+          break;
+        case 3:
+          jumpImg.style.filter = "brightness(100%)";
+          jumpImg.setAttribute('src', 'img/Growth/jump4.png')
+          jumpImg.setAttribute('onclick', 'growthMark(["jump", "4"])');
+          break;
+        case 4:
+          quickImg.style.filter = "brightness(100%)";
+          quickImg.setAttribute('src', 'img/Growth/quick4.png')
+          quickImg.setAttribute('onclick', 'growthMark(["quick", "4"])');
+          break;
+      }
     }
   }
 }
