@@ -42,7 +42,7 @@ const importantOptions = {
   buttons: ['Close'],
   title: label + ' v' + version,
   message: 'Changelog:',
-  detail: `Changes
+  detail: `Changes since v1.5.0
 - Changed Auto Form icons to be less confusing.
 - Added Growth Abilities
 - Performed background work to make it web ready with next version.
