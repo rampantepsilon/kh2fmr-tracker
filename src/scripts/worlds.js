@@ -511,232 +511,11 @@ function load(){
   list('STT');
   hintsLoad();
 
-  //Update Worlds
-  if (sttDone.includes('24') || sttDone.includes(24)){
-    document.getElementById('worldRoxas').style.filter = "brightness(100%)"
-    document.getElementById('stt').innerHTML = 'X';
-  }
-  if (ttDone.includes('24') || ttDone.includes(24)){
-    document.getElementById('tt').innerHTML = '1';
-  }
-  if (ttDone.includes('26') || ttDone.includes(26)){
-    document.getElementById('tt').innerHTML = '2';
-  }
-  if (ttDone.includes('46') || ttDone.includes(46)){
-    document.getElementById('worldTT').style.filter = 'brightness(100%)';
-    document.getElementById('tt').innerHTML = 'X';
-  }
-  if (hbDone.includes('18') || hbDone.includes(18)){
-    document.getElementById('hb').innerHTML = '1';
-  }
-  if (hbDone.includes('28') || hbDone.includes(28)){
-    document.getElementById('worldHB').style.filter = 'brightness(100%)';
-    document.getElementById('hb').innerHTML = 'X';
-  }
-  if (dctrDone.includes('10') || dctrDone.includes(10)){
-    document.getElementById('worldDC').style.filter = 'brightness(100%)';
-    document.getElementById('dc').innerHTML = 'X';
-  }
-  if (trDone.includes('11') || trDone.includes(11)){
-    document.getElementById('worldTR').style.filter = 'brightness(100%)';
-    document.getElementById('tr').innerHTML = 'X';
-  }
-  if (tlodDone.includes('19') || tlodDone.includes(19)){
-    document.getElementById('lod').innerHTML = '1';
-  }
-  if (tlodDone.includes('28') || tlodDone.includes(28)){
-    document.getElementById('worldTLoD').style.filter = 'brightness(100%)';
-    document.getElementById('lod').innerHTML = 'X';
-  }
-  if (bcDone.includes('25') || bcDone.includes(25)){
-    document.getElementById('bc').innerHTML = '1';
-  }
-  if (bcDone.includes('28') || bcDone.includes(28)){
-    document.getElementById('worldBC').style.filter = 'brightness(100%)';
-    document.getElementById('bc').innerHTML = 'X';
-  }
-  if (ocDone.includes('27') || ocDone.includes(27)){
-    document.getElementById('oc').innerHTML = '1';
-  }
-  if (ocDone.includes('30') || ocDone.includes(30)){
-    document.getElementById('worldOC').style.filter = 'brightness(100%)';
-    document.getElementById('oc').innerHTML = 'X';
-  }
-  if (prDone.includes('18') || prDone.includes(18)){
-    document.getElementById('pr').innerHTML = '1';
-  }
-  if (prDone.includes('29') || prDone.includes(29)){
-    document.getElementById('worldPR').style.filter = 'brightness(100%)';
-    document.getElementById('pr').innerHTML = 'X';
-  }
-  if (agrDone.includes('27') || agrDone.includes(27)){
-    document.getElementById('agr').innerHTML = '1';
-  }
-  if (agrDone.includes('30') || agrDone.includes(30)){
-    document.getElementById('worldAgrabah').style.filter = 'brightness(100%)';
-    document.getElementById('agr').innerHTML = 'X';
-  }
-  if (htDone.includes('17') || htDone.includes(17)){
-    document.getElementById('ht').innerHTML = '1';
-  }
-  if (htDone.includes('21') || htDone.includes(21)){
-    document.getElementById('worldHT').style.filter = 'brightness(100%)';
-    document.getElementById('ht').innerHTML = 'X';
-  }
-  if (plDone.includes('28') || plDone.includes(28)){
-    document.getElementById('pl').innerHTML = '1';
-  }
-  if (plDone.includes('29') || plDone.includes(29)){
-    document.getElementById('worldPL').style.filter = 'brightness(100%)';
-    document.getElementById('pl').innerHTML = 'X';
-  }
-  if (spDone.includes('12') || spDone.includes(12)){
-    document.getElementById('sp').innerHTML = '1';
-  }
-  if (spDone.includes('18') || spDone.includes(18)){
-    document.getElementById('worldSP').style.filter = 'brightness(100%)';
-    document.getElementById('sp').innerHTML = 'X';
-  }
-  if (corDone.includes('21') || corDone.includes(21)){
-    document.getElementById('worldCoR').style.filter = 'brightness(100%)';
-    document.getElementById('cor').innerHTML = 'X';
-  }
-  if (twtnwDone.includes('28') || twtnwDone.includes(28)){
-    document.getElementById('worldTWTNW').style.filter = 'brightness(100%)';
-    document.getElementById('twtnw').innerHTML = 'X';
-  }
-  if (acreDone.includes('22') || acreDone.includes(22)){
-    document.getElementById('world100').style.filter = 'brightness(100%)';
-    document.getElementById('acre').innerHTML = 'X';
-  }
-  if (atlDone.includes('1') || atlDone.includes(1)){
-    document.getElementById('atl').innerHTML = '1';
-  }
-  if (atlDone.includes('2') || atlDone.includes(2)){
-    document.getElementById('atl').innerHTML = '2';
-  }
-  if (atlDone.includes('3') || atlDone.includes(3)){
-    document.getElementById('worldAtlantica').style.filter = 'brightness(100%)';
-    document.getElementById('atl').innerHTML = 'X';
-  }
-  if (dataDone.length == 13){
-    document.getElementById('worldData').style.filter = 'brightness(100%)';
-  }
-  document.getElementById('dataNum').innerHTML = dataDone.length;
-
-  //Mark Required Checks
-  if (requiredDone[0] == "1"){
-    requiredMark('charm');
-  }
-  if (requiredDone[1] == '1'){
-    requiredMark('peace');
-  }
-  if (requiredDone[2] == '1'){
-    requiredMark('nonexist');
-  }
-  if (requiredDone[3] == '1'){
-    requiredMark('connection');
-  }
-
-  //Mark Summons
-  if (summonDone[0] == "1"){
-    summonMark('bBall');
-  }
-  if (summonDone[1] == '1'){
-    summonMark('lamp');
-  }
-  if (summonDone[2] == '1'){
-    summonMark('ukulele');
-  }
-  if (summonDone[3] == '1'){
-    summonMark('feather');
-  }
-
-  //Mark Forms
-  if (formDone[0] != "0"){
-    var count = formDone[0];
-    for (var i = 0; i < count; i++){
-      formMark('valor');
-    }
-  }
-  if (formDone[1] != "0"){
-    var count = formDone[1];
-    for (var i = 0; i < count; i++){
-      formMark('wisdom');
-    }
-  }
-  if (formDone[2] != "0"){
-    var count = formDone[2];
-    for (var i = 0; i < count; i++){
-      formMark('limit');
-    }
-  }
-  if (formDone[3] != "0"){
-    var count = formDone[3];
-    for (var i = 0; i < count; i++){
-      formMark('master');
-    }
-  }
-  if (formDone[4] != "0"){
-    var count = formDone[4];
-    for (var i = 0; i < count; i++){
-      formMark('final');
-    }
-  }
-
-  //Mark Magic
-  if (magicDone[0] != "0"){
-    var count = magicDone[0];
-    for (var i = 0; i < count; i++){
-      magicMark('fire');
-    }
-  }
-  if (magicDone[1] != "0"){
-    var count = magicDone[1];
-    for (var i = 0; i < count; i++){
-      magicMark('blizzard');
-    }
-  }
-  if (magicDone[2] != "0"){
-    var count = magicDone[2];
-    for (var i = 0; i < count; i++){
-      magicMark('thunder');
-    }
-  }
-  if (magicDone[3] != "0"){
-    var count = magicDone[3];
-    for (var i = 0; i < count; i++){
-      magicMark('cure');
-    }
-  }
-  if (magicDone[4] != "0"){
-    var count = magicDone[4];
-    for (var i = 0; i < count; i++){
-      magicMark('reflect');
-    }
-  }
-  if (magicDone[5] != "0"){
-    var count = magicDone[5];
-    for (var i = 0; i < count; i++){
-      magicMark('magnet');
-    }
-  }
-
-  //Mark Reports (Still need to rename)
-  if (keybladeDone != "0"){
-    var loop = parseInt(keybladeDone);
-    for (var i = 0; i < loop; i++){
-      keybladeMark();
-    }
-  }
-
-  //Mark Pages
-  if (pageDone != "0"){
-    var loop = parseInt(pageDone);
-    for (var i = 0; i < loop; i++){
-      pageMark();
-    }
-  }
+  loadMarkWorlds();
+  loadMarkRequired();
+  loadMarkSummons();
+  loadMarkMagic();
+  loadMarkForms();
 
   //Update Hover tooltip
   document.getElementById('sttCC').innerHTML = (24 - sttDone.length);
@@ -1060,4 +839,241 @@ function load(){
   setTimeout(function(){
     document.getElementById('saveText').innerHTML = '';
   }, 3000);
+}
+
+function loadMarkWorlds(){
+  //Update Worlds
+  if (sttDone.includes('24') || sttDone.includes(24)){
+    document.getElementById('worldRoxas').style.filter = "brightness(100%)"
+    document.getElementById('stt').innerHTML = 'X';
+  }
+  if (ttDone.includes('24') || ttDone.includes(24)){
+    document.getElementById('tt').innerHTML = '1';
+  }
+  if (ttDone.includes('26') || ttDone.includes(26)){
+    document.getElementById('tt').innerHTML = '2';
+  }
+  if (ttDone.includes('46') || ttDone.includes(46)){
+    document.getElementById('worldTT').style.filter = 'brightness(100%)';
+    document.getElementById('tt').innerHTML = 'X';
+  }
+  if (hbDone.includes('18') || hbDone.includes(18)){
+    document.getElementById('hb').innerHTML = '1';
+  }
+  if (hbDone.includes('28') || hbDone.includes(28)){
+    document.getElementById('worldHB').style.filter = 'brightness(100%)';
+    document.getElementById('hb').innerHTML = 'X';
+  }
+  if (dctrDone.includes('10') || dctrDone.includes(10)){
+    document.getElementById('worldDC').style.filter = 'brightness(100%)';
+    document.getElementById('dc').innerHTML = 'X';
+  }
+  if (trDone.includes('11') || trDone.includes(11)){
+    document.getElementById('worldTR').style.filter = 'brightness(100%)';
+    document.getElementById('tr').innerHTML = 'X';
+  }
+  if (tlodDone.includes('19') || tlodDone.includes(19)){
+    document.getElementById('lod').innerHTML = '1';
+  }
+  if (tlodDone.includes('28') || tlodDone.includes(28)){
+    document.getElementById('worldTLoD').style.filter = 'brightness(100%)';
+    document.getElementById('lod').innerHTML = 'X';
+  }
+  if (bcDone.includes('25') || bcDone.includes(25)){
+    document.getElementById('bc').innerHTML = '1';
+  }
+  if (bcDone.includes('28') || bcDone.includes(28)){
+    document.getElementById('worldBC').style.filter = 'brightness(100%)';
+    document.getElementById('bc').innerHTML = 'X';
+  }
+  if (ocDone.includes('27') || ocDone.includes(27)){
+    document.getElementById('oc').innerHTML = '1';
+  }
+  if (ocDone.includes('30') || ocDone.includes(30)){
+    document.getElementById('worldOC').style.filter = 'brightness(100%)';
+    document.getElementById('oc').innerHTML = 'X';
+  }
+  if (prDone.includes('18') || prDone.includes(18)){
+    document.getElementById('pr').innerHTML = '1';
+  }
+  if (prDone.includes('29') || prDone.includes(29)){
+    document.getElementById('worldPR').style.filter = 'brightness(100%)';
+    document.getElementById('pr').innerHTML = 'X';
+  }
+  if (agrDone.includes('27') || agrDone.includes(27)){
+    document.getElementById('agr').innerHTML = '1';
+  }
+  if (agrDone.includes('30') || agrDone.includes(30)){
+    document.getElementById('worldAgrabah').style.filter = 'brightness(100%)';
+    document.getElementById('agr').innerHTML = 'X';
+  }
+  if (htDone.includes('17') || htDone.includes(17)){
+    document.getElementById('ht').innerHTML = '1';
+  }
+  if (htDone.includes('21') || htDone.includes(21)){
+    document.getElementById('worldHT').style.filter = 'brightness(100%)';
+    document.getElementById('ht').innerHTML = 'X';
+  }
+  if (plDone.includes('28') || plDone.includes(28)){
+    document.getElementById('pl').innerHTML = '1';
+  }
+  if (plDone.includes('29') || plDone.includes(29)){
+    document.getElementById('worldPL').style.filter = 'brightness(100%)';
+    document.getElementById('pl').innerHTML = 'X';
+  }
+  if (spDone.includes('12') || spDone.includes(12)){
+    document.getElementById('sp').innerHTML = '1';
+  }
+  if (spDone.includes('18') || spDone.includes(18)){
+    document.getElementById('worldSP').style.filter = 'brightness(100%)';
+    document.getElementById('sp').innerHTML = 'X';
+  }
+  if (corDone.includes('21') || corDone.includes(21)){
+    document.getElementById('worldCoR').style.filter = 'brightness(100%)';
+    document.getElementById('cor').innerHTML = 'X';
+  }
+  if (twtnwDone.includes('28') || twtnwDone.includes(28)){
+    document.getElementById('worldTWTNW').style.filter = 'brightness(100%)';
+    document.getElementById('twtnw').innerHTML = 'X';
+  }
+  if (acreDone.includes('22') || acreDone.includes(22)){
+    document.getElementById('world100').style.filter = 'brightness(100%)';
+    document.getElementById('acre').innerHTML = 'X';
+  }
+  if (atlDone.includes('1') || atlDone.includes(1)){
+    document.getElementById('atl').innerHTML = '1';
+  }
+  if (atlDone.includes('2') || atlDone.includes(2)){
+    document.getElementById('atl').innerHTML = '2';
+  }
+  if (atlDone.includes('3') || atlDone.includes(3)){
+    document.getElementById('worldAtlantica').style.filter = 'brightness(100%)';
+    document.getElementById('atl').innerHTML = 'X';
+  }
+  if (dataDone.length == 13){
+    document.getElementById('worldData').style.filter = 'brightness(100%)';
+  }
+  document.getElementById('dataNum').innerHTML = dataDone.length;
+}
+
+function loadMarkRequired(){
+  //Mark Required Checks
+  if (requiredDone[0] == "1"){
+    requiredMark('charm');
+  }
+  if (requiredDone[1] == '1'){
+    requiredMark('peace');
+  }
+  if (requiredDone[2] == '1'){
+    requiredMark('nonexist');
+  }
+  if (requiredDone[3] == '1'){
+    requiredMark('connection');
+  }
+
+  //Mark Reports (Still need to rename)
+  if (keybladeDone != "0"){
+    var loop = parseInt(keybladeDone);
+    for (var i = 0; i < loop; i++){
+      keybladeMark();
+    }
+  }
+
+  //Mark Pages
+  if (pageDone != "0"){
+    var loop = parseInt(pageDone);
+    for (var i = 0; i < loop; i++){
+      pageMark();
+    }
+  }
+}
+
+function loadMarkSummons(){
+  //Mark Summons
+  if (summonDone[0] == "1"){
+    summonMark('bBall');
+  }
+  if (summonDone[1] == '1'){
+    summonMark('lamp');
+  }
+  if (summonDone[2] == '1'){
+    summonMark('ukulele');
+  }
+  if (summonDone[3] == '1'){
+    summonMark('feather');
+  }
+}
+
+function loadMarkMagic(){
+  //Mark Magic
+  if (magicDone[0] != "0"){
+    var count = magicDone[0];
+    for (var i = 0; i < count; i++){
+      magicMark('fire');
+    }
+  }
+  if (magicDone[1] != "0"){
+    var count = magicDone[1];
+    for (var i = 0; i < count; i++){
+      magicMark('blizzard');
+    }
+  }
+  if (magicDone[2] != "0"){
+    var count = magicDone[2];
+    for (var i = 0; i < count; i++){
+      magicMark('thunder');
+    }
+  }
+  if (magicDone[3] != "0"){
+    var count = magicDone[3];
+    for (var i = 0; i < count; i++){
+      magicMark('cure');
+    }
+  }
+  if (magicDone[4] != "0"){
+    var count = magicDone[4];
+    for (var i = 0; i < count; i++){
+      magicMark('reflect');
+    }
+  }
+  if (magicDone[5] != "0"){
+    var count = magicDone[5];
+    for (var i = 0; i < count; i++){
+      magicMark('magnet');
+    }
+  }
+}
+
+function loadMarkForms(){
+  //Mark Forms
+  if (formDone[0] != "0"){
+    var count = formDone[0];
+    for (var i = 0; i < count; i++){
+      formMark('valor');
+    }
+  }
+  if (formDone[1] != "0"){
+    var count = formDone[1];
+    for (var i = 0; i < count; i++){
+      formMark('wisdom');
+    }
+  }
+  if (formDone[2] != "0"){
+    var count = formDone[2];
+    for (var i = 0; i < count; i++){
+      formMark('limit');
+    }
+  }
+  if (formDone[3] != "0"){
+    var count = formDone[3];
+    for (var i = 0; i < count; i++){
+      formMark('master');
+    }
+  }
+  if (formDone[4] != "0"){
+    var count = formDone[4];
+    for (var i = 0; i < count; i++){
+      formMark('final');
+    }
+  }
 }
