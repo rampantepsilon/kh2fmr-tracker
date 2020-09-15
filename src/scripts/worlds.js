@@ -28,6 +28,7 @@ var hintsKnown = ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0
 var notepad = "";
 var disabledWorlds = [];
 var formToggle = [];
+var gAbilities = [];
 
 //Call on load
 function init(){
@@ -880,23 +881,23 @@ function load(){
 
   //Restore Auto Forms
   if (formToggle[0] == 1){
-    document.getElementById('fValor').setAttribute('src', 'img/Forms/formvalor_1.png');
+    document.getElementById('fValor').setAttribute('src', 'img/Forms/autovalor.png');
     vToggle = '1';
   }
   if (formToggle[1] == 1){
-    document.getElementById('fWisdom').setAttribute('src', 'img/Forms/formwisdom_1.png');
+    document.getElementById('fWisdom').setAttribute('src', 'img/Forms/autowisdom.png');
     wToggle = '1';
   }
   if (formToggle[2] == 1){
-    document.getElementById('fLimit').setAttribute('src', 'img/Forms/formlimit_1.png');
+    document.getElementById('fLimit').setAttribute('src', 'img/Forms/autolimit.png');
     lToggle = '1';
   }
   if (formToggle[3] == 1){
-    document.getElementById('fMaster').setAttribute('src', 'img/Forms/formmaster_1.png');
+    document.getElementById('fMaster').setAttribute('src', 'img/Forms/automaster.png');
     mToggle = '1';
   }
   if (formToggle[4] == 1){
-    document.getElementById('fFinal').setAttribute('src', 'img/Forms/formfinal_1.png');
+    document.getElementById('fFinal').setAttribute('src', 'img/Forms/autofinal.png');
     fToggle = '1';
   }
 
