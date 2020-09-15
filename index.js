@@ -33,14 +33,8 @@ Saving Tracker
 - Loading will use the file noted above to return values.
 
 Changes
-- Added way to see check left in each world. (Hover over the world and the popup will tell you.)
-- Added way to disable worlds. This will also remove the count from the total locations left number.
-- Fixed issue in v1.4.0 where the disabled worlds wouldn't load properly.
-- Fixed issue causing Auto Forms to not differentiate from obtained forms.
-- Added Dialog to confirm saving and loading.
-- Fixed issue where disabling Disney Castle or Timeless River would cause issues when reenabling them.
-- Moved Data Fights to separate location. Data fights can be disabled just like any world.
-- Updated to allow for disabling Promise Charm, Reports, and Torn Pages.
+- Changed Auto Form icons to be less confusing.
+- Added Growth Abilities
 
 To Be Added
 - Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`
