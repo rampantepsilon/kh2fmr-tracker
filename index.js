@@ -30,14 +30,7 @@ Notes/Hints
 
 Saving Tracker
 - Using the Save Progress button will add/update a file called tracker.json found in '%APPDATA%/kh2fm-rando-tracker'
-- Loading will use the file noted above to return values.
-
-Changes
-- Changed Auto Form icons to be less confusing.
-- Added Growth Abilities
-
-To Be Added
-- Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`
+- Loading will use the file noted above to return values.`
 }
 
 //Important Message Remove for next build?
@@ -45,10 +38,14 @@ const importantOptions = {
   type: 'info',
   buttons: ['Close'],
   title: label + ' v' + version,
-  message: 'Important information',
-  detail: `Please Read Below:
+  message: 'Changelog:',
+  detail: `Changes
+- Changed Auto Form icons to be less confusing.
+- Added Growth Abilities
+- Performed background work to make it web ready with next version.
 
-Old Saved Progress will not work with the new system. If you are experiencing issues, please save the new progress then try again.`
+To Be Added
+- Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)`
 }
 
 //Global Variables

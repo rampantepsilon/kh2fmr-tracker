@@ -1,6 +1,13 @@
 html, body{
   height: 99%;
+  background-image: url("img/kingdom-hearts-background_6803295.jpg");
+}
+.checkTable{
   background-color: rgba(0,0,0,1);
+  height: 705px;
+}
+.checkTable2{
+  background-color: rgba(0,0,0,0.75);
 }
 li{
   font-size: 18px;
