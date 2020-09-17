@@ -47,6 +47,8 @@ const importantOptions = {
 - Added Growth Abilities
 - Performed background work to make it web ready with next version.
 - Added a new font and background to the tracker. (Streamers can capture the solid black area around the locations/items for stream view)
+- Added Secondary Hint System with Growth Abilities hinted.
+- Fixed scroll issue where the tracker would move as a whole.
 
 To Be Added
 - Adding Support For Tracking Misc Fights (Sephiroth, Cups, etc.)
@@ -92,6 +94,11 @@ let menuT = [
         label: `TGSN's Hint Generator`,
         click(){
           hint2Window()
+        }
+      },{
+        label: `RampantEpsilon's Hint Generator`,
+        click(){
+          hint3Window()
         }
       }
     ]
@@ -193,6 +200,22 @@ function hint2Window(){
   })
 
   h2Window.loadURL('https://tgsnetwork.org/staff/kh2fmr-hints');
+
+  //Menu.setApplicationMenu(menu)
+}
+
+function hint3Window(){
+  const h3Window = new BrowserWindow({
+    width: 850,
+    height: 900,
+    title: label,
+    icon: __dirname + "/icon.png",
+    webPreferences: {
+      nodeIntegration: true
+    }
+  })
+
+  h3Window.loadURL('https://rampantepsilon.site/projectResources/kh2fmr/hints');
 
   //Menu.setApplicationMenu(menu)
 }
